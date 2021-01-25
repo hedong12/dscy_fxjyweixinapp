@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "#5985c4",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的活动订单",
+  "usingComponents": {
+    "van-card": "/static/vant/card/index",
+    "van-dropdown-menu": "/static/vant/dropdown-menu/index",
+    "van-dropdown-item": "/static/vant/dropdown-item/index",
+    "van-divider": "/static/vant/divider/index"
+  }
+}

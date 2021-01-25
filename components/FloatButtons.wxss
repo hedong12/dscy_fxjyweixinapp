@@ -1,0 +1,60 @@
+.float-buttons.data-v-4eba315d {
+	position: fixed;
+	width: 116rpx;
+	bottom: 220rpx;
+	right: 30rpx;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	z-index: 1000
+}
+
+.custom-cycle.data-v-4eba315d {
+	width: 116rpx;
+	height: 116rpx;
+	border-radius: 58rpx;
+	background: #fff;
+	-webkit-box-shadow: 0 0 10rpx #eee;
+	box-shadow: 0 0 10rpx #eee;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	margin-bottom: 20rpx
+}
+
+.small-cycle.data-v-4eba315d {
+	width: 102rpx;
+	height: 102rpx;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 58rpx
+}
+
+.talkB.data-v-4eba315d {
+	width: 88rpx;
+	height: 30rpx;
+	position: absolute;
+	bottom: -10rpx;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 20rpx;
+	text-align: center
+}
+
+.market-title.data-v-4eba315d {
+	width: 62rpx
+}

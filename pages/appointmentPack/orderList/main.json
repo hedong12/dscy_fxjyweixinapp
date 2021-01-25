@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的预约",
+  "usingComponents": {
+    "no-data": "/components/noData",
+    "dialog-box": "/components/dialogBox",
+    "order-item": "/pages/appointmentPack/orderList/components/OrderItem"
+  }
+}

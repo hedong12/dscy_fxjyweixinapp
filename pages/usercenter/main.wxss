@@ -1,0 +1,292 @@
+.card-bottom-text {
+	font-size: 24rpx;
+	color: #000;
+	font-weight: 700
+}
+
+.card-bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+	border-top: 1px solid #f5f5f6
+}
+
+.card-bottom>._div:nth-child(1) {
+	border-right: 1rpx solid #f5f5f6;
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card-my-coming-price.png)
+}
+
+.card-bottom>._div:nth-child(2) {
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card-my-price.png)
+}
+
+.card-bottom>._div {
+	padding-top: 29rpx;
+	padding-bottom: 32rpx;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-size: 49rpx 49rpx;
+	background-position-y: center;
+	background-position-x: 76rpx;
+	padding-left: 130rpx;
+	padding-right: 50rpx
+}
+
+.card-bottom-price {
+	color: #7f62c3;
+	font-size: 24rpx;
+	margin-top: 11rpx;
+	font-weight: 700
+}
+
+.card-top-price {
+	font-size: 48rpx;
+	text-align: center;
+	font-weight: 700;
+	color: #7f62c3
+}
+
+.card-top-text {
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30rpx;
+	margin-top: 26rpx;
+	margin-bottom: 36rpx
+}
+
+.card-detailed {
+	position: absolute;
+	top: 25rpx;
+	right: 23rpx;
+	font-size: 24rpx;
+	color: #818181
+}
+
+.card {
+	-webkit-box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
+	box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
+	padding-top: 48rpx;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	width: calc(100% - 42rpx);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20rpx;
+	background: -webkit-gradient(linear, left top, right top, from(#c1a168), to(#ead9b3));
+	background: -o-linear-gradient(left, #c1a168, #ead9b3);
+	background: linear-gradient(90deg, #c1a168, #ead9b3);
+	margin-top: 38rpx;
+	margin-bottom: 29rpx
+}
+
+.userinfo-membership-bg {
+	background: -webkit-gradient(linear, right top, left top, from(#baa28f), to(#feeddc));
+	background: -o-linear-gradient(right, #baa28f 0, #feeddc 100%);
+	background: linear-gradient(270deg, #baa28f 0, #feeddc);
+	-webkit-transform: skew(-30deg);
+	-ms-transform: skew(-30deg);
+	transform: skew(-30deg);
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1
+}
+
+.userinfo-membership-text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 45rpx
+}
+
+.userinfo-membership {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 17rpx;
+	color: #fff;
+	font-size: 28rpx;
+	text-align: center;
+	position: relative;
+	width: 170rpx;
+	height: 36rpx;
+	line-height: 36rpx
+}
+
+.userinfo-name {
+	font-size: 30rpx;
+	margin-top: 20rpx
+}
+
+.userinfo-text {
+	margin-top: 30rpx
+}
+
+.userinfo-text ._div {
+	margin-top: 17rpx
+}
+
+.userinfo-logo {
+	width: 121rpx;
+	height: 121rpx;
+	border-radius: 100%
+}
+
+.userinfo-tag {
+	padding: 7rpx 20rpx
+}
+
+.userinfo {
+	margin-top: 50rpx
+}
+
+.nav-bar {
+	background-color: #7f63c3 !important
+}
+
+.nav-bar .van-nav-bar__title {
+	color: #fff !important
+}
+
+.van-grid-item__text {
+	margin-top: 30rpx
+}
+
+.visitor-count {
+	margin-top: 17rpx;
+	color: #7f62c3;
+	font-size: 30rpx
+}
+
+.visitor {
+	padding-top: 37rpx;
+	padding-bottom: 37rpx;
+	font-size: 24rpx;
+	color: #aaa
+}
+
+button.textc {
+	line-height: 0 !important;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: inherit;
+	color: inherit
+}
+
+.evaluating {
+	padding-bottom: 37rpx;
+	padding-left: 71rpx;
+	padding-right: 71rpx;
+	font-size: 30rpx;
+	color: #1e1e1e
+}
+
+.about {
+	border-top: 20rpx solid #f5f5f6
+}
+
+.userinfo {
+	color: #fff;
+	font-size: 22rpx
+}
+
+.userinfo-tag {
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 100rpx;
+	padding: 7 20rpx;
+	font-size: 22rpx;
+	display: inline-block
+}
+
+.evaluating-age {
+	float: right
+}
+
+.content-body {
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/crm/mine-top-bg.png);
+	background-size: 100% 750rpx;
+	background-repeat: no-repeat
+}
+
+.user-logo {
+	border-radius: 100%
+}
+
+.name-id {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around
+}
+
+.link-list>._div,
+.link-list>button {
+	width: 25%;
+	position: relative
+}
+
+.link-list>._div>.count,
+.link-list>button>.count {
+	position: absolute;
+	top: -10rpx;
+	right: 24rpx;
+	width: 32rpx;
+	height: 32rpx;
+	text-align: center;
+	line-height: 32rpx;
+	font-size: 28rpx;
+	color: #fff;
+	background: #fd634e;
+	border-radius: 50%
+}
+
+.toCRMBtn {
+	margin: 30rpx 86rpx 0;
+	margin-bottom: 30rpx;
+	height: 88rpx;
+	line-height: 88rpx;
+	background: var(--theme-purple);
+	border-radius: 10rpx;
+	color: #fff;
+	font-size: 40rpx;
+	font-weight: 400
+}
+
+.servers-list>._div {
+	width: 80rpx
+}
+
+.servers-list>._div ._p {
+	margin: 0 -20rpx
+}
+.bottom-text{
+   padding-bottom: env(safe-area-inset-bottom);  
+   height: 48px;
+}

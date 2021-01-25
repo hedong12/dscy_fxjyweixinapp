@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#000000",
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "短视频",
+  "usingComponents": {
+    "van-dialog": "/static/vant/dialog/index",
+    "van-progress": "/static/vant/progress/index",
+    "video-swiper": "/static/video-swiper",
+    "share-or-save": "/components/shareOrSave",
+    "get-user-phone": "/components/getPhone"
+  }
+}

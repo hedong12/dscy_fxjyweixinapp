@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-id": "/components/formId",
+    "get-phone-number": "/components/getPhoneNumber"
+  }
+}

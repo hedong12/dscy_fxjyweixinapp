@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "login-intercept": "/components/LoginIntercept",
+    "phone-number-intercept": "/components/PhoneNumberIntercept"
+  }
+}

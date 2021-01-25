@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单确认",
+  "usingComponents": {  
+    "address-item": "/components/addressItem",
+    "order-item": "/components/orderItem"
+  }
+}

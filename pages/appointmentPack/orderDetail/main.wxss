@@ -1,0 +1,1 @@
+.before_line{position:relative}.before_line::before{content:"";position:absolute;width:8rpx;height:40rpx;background:var(--theme-purple);left:0;top:0;bottom:0;margin:auto}.order_detail_addr>._div{padding-left:32rpx}.footer-btns{position:-webkit-sticky;position:sticky;bottom:0}

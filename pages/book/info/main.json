@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#8063C4",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "绘本",
+  "usingComponents": {
+    "van-overlay": "/static/vant/overlay/index",
+    "van-toast": "/static/vant/toast/index"
+  }
+}

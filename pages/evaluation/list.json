@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "测评详情",
+  "usingComponents": {
+    "van-radio": "/static/vant/radio/index",
+    "van-radio-group": "/static/vant/radio-group/index",
+    "van-divider": "/static/vant/divider/index",
+    "van-progress": "/static/vant/progress/index"
+  }
+}

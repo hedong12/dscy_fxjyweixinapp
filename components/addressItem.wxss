@@ -1,0 +1,9 @@
+.yeye{
+	color: #979797;
+}
+.bgimagecolor{
+	background-color: #ACDED3;
+	text-align: center;
+	border-radius: 100%;
+	line-height: 90rpx;
+}

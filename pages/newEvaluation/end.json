@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "教育建议",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#6224EA",
+  "usingComponents": {
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index"
+  }
+}

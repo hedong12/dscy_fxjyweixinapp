@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dialog-box": "/components/dialogBox",
+    "selector-one": "/components/selectorOne",
+    "bottom-button-small": "/components/bottom_button_small"
+  }
+}

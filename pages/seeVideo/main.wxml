@@ -1,0 +1,1 @@
+<view class="ellis _div"><video src="{{videoUrl}}"></video></view>

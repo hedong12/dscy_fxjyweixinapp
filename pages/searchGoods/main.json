@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索商品",
+  "usingComponents": {
+    "get-phone-number-goods": "/components/getPhoneNumberGoods"
+  }
+}

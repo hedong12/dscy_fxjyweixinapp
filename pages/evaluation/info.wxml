@@ -1,0 +1,1 @@
+<view class="alice _div"><web-view src="{{url+'?cardId='+cardId+'&userId='+userId}}" data-event-opts="{{[['message',[['h5PostMessage',['$event']]]]]}}" bindmessage="__e"></web-view></view>

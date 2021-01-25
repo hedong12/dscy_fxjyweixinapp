@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "文章详情",
+  "usingComponents": {
+    "bottom-button-small": "/components/bottom_button_small",
+    "login-intercept": "/components/LoginIntercept"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "编辑名片",
+  "usingComponents": {
+    "bottom-button-small": "/components/bottom_button_small",
+    "card_1": "/components/card_1",
+    "card_2": "/components/card_2",
+    "card_3": "/components/card_3",
+    "card_4": "/components/card_4"
+  }
+}

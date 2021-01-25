@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "van-popup": "/static/vant/popup/index",
+    "van-stepper": "/static/vant/stepper/index",
+    "van-divider": "/static/vant/divider/index",
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index",
+    "van-cell": "/static/vant/cell/index",
+    "van-cell-group": "/static/vant/cell-group/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "van-skeleton": "/static/vant/skeleton/index",
+    "van-action-sheet": "/static/vant/action-sheet/index",
+    "self-swiper": "/components/swiper",
+    "share-or-save": "/components/shareOrSave"
+  }
+}

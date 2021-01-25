@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "名片夹",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "me-card": "/components/MeCard",
+    "business-card": "/components/BusinessCard",
+    "selector-one": "/components/selectorOne",
+    "get-phone-number": "/components/getPhoneNumber",
+    "get-phone-number-card": "/components/getPhoneNumberCard",
+    "app-notice": "/components/AppNotice",
+    "nav-bar-by-user": "/components/NavBarByUser",
+    "insert-card": "/pages/cardCase/components/InsertCard"
+  }
+}

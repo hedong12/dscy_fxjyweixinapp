@@ -1,0 +1,8 @@
+/* pages/demo04/demo04.wxss */
+image{
+	box-sizing: border-box;
+	border: 1px solid red;
+	
+	width: 750rpx;
+	height: 500px;
+}

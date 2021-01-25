@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "get-phone-number": "/components/getPhoneNumber",
+    "business-card": "/components/BusinessCard"
+  }
+}

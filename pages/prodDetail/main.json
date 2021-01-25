@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "入园盒子",
+  "usingComponents": {
+    "van-popup": "/static/vant/popup/index",
+    "van-stepper": "/static/vant/stepper/index",
+    "van-divider": "/static/vant/divider/index",
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index",
+    "van-cell": "/static/vant/cell/index",
+    "van-cell-group": "/static/vant/cell-group/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "van-skeleton": "/static/vant/skeleton/index",
+    "self-swiper": "/components/swiper",
+    "right-float": "/components/rightFloat",
+    "share-or-save": "/components/shareOrSave"
+  }
+}

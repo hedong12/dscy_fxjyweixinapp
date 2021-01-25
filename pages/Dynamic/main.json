@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "dynamic-item": "/components/dynamicItem",
+    "no-data": "/components/noData",
+    "self-swiper": "/components/swiper",
+    "nav-bar-by-user": "/components/NavBarByUser",
+    "float-buttons": "/components/FloatButtons",
+    "login-intercept": "/components/LoginIntercept",
+    "get-user-phone": "/components/getPhone"
+  }
+}

@@ -1,0 +1,79 @@
+.before_line {
+	position: relative
+}
+
+.before_line::before {
+	content: "";
+	position: absolute;
+	width: 8rpx;
+	height: 40rpx;
+	background: #41AB9F;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto
+}
+
+.order_detail_addr{
+	position: absolute;
+	z-index: 999;
+	top: 200rpx;
+	width: 90%;
+}
+
+.order_detail_addr>._div {
+	padding-left: 32rpx
+}
+
+.bg_line_color{
+	background-color: #ACDED3;
+	position: relative;
+}
+.sbnb{
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.dagevwu{
+	color: #2F9686;
+	margin-left: 40rpx;
+}
+.bgfff{
+	width: 100%;
+	border-radius: 20rpx;
+}
+.eleme{
+	background-color: #EEEEEE;
+	border-radius: 16rpx;
+	margin: 20rpx 0;
+}
+.mctianyou{
+	background-color: white;width: 92%;margin: 0 auto;border-radius: 16rpx;    margin-bottom: 20rpx;
+}
+.bgwidth92{
+	width: 92%;
+	margin: 0 auto;
+	border-radius: 16rpx; 
+	margin-bottom: 36rpx;
+	background-color: white;
+}
+.oragle{
+	 color: #EE8758;
+}
+.plctr{
+	padding-left: 44%;
+}
+.fukuan{
+	    background-color: #ACDED3;
+	    color: #46ADA2;
+}
+.quxiao{
+	    background-color: #F0F3F1;
+}
+.bottom-text{
+   padding-bottom: env(safe-area-inset-bottom);  
+   height: 48px;
+}
+.fkbgfff{
+	background: #fff;
+}

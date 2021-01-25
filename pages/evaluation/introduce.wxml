@@ -1,0 +1,1 @@
+<view class="alice _div"><image mode="widthFix" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/Evaluation/images/20200806093331.jpg" alt data-event-opts="{{[['tap',[['goToIndex',['$event']]]]]}}" bindtap="__e" class="_img"></image></view>

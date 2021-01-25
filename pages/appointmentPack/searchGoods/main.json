@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索预约",
+  "usingComponents": {
+    "get-phone-number-goods": "/components/getPhoneNumberGoods"
+  }
+}

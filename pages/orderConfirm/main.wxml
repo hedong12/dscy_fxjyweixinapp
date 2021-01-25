@@ -1,0 +1,20 @@
+<view class="pb50 _div">
+	<view class="mt10 mb10 _div">
+		<address-item vue-id="52ddd6b9-1" addr="{{default_addr}}" ismore="{{true}}" bind:__l="__l"></address-item>
+	</view>
+	<block wx:for="{{cart_lists}}" wx:for-item="cart_item" wx:for-index="k" wx:key="k">
+		<view class="mb10 _div">
+			<order-item vue-id="{{'52ddd6b9-2-'+k}}" orderData="{{cart_item}}" orderIndex="{{k}}" index1="{{k}}" isorder="{{true}}"
+			 order_type="1" bind:__l="__l"></order-item>
+			<view class="textr lh44 pr15 fs14 c333 bgfff _div"><label class="_span">{{'共'+cart_item.allNum+"件商品"}}</label><label
+				 class="_span">小计:<label class="corange fs16 fbold _span">{{"￥"+cart_item.orderPrice}}</label></label></view>
+		</view>
+	</block>
+	<view class="pl16 pr16 fs16 c38 lh44 bgfff disflex bbf5f6 _div"><label for="mark">买家留言</label><input class="fs14 phe8 lh44 h44 pl16 flex1"
+		 id="mark" type="text" placeholder="选填:填写内容已和卖家协商确认" data-event-opts="{{[['input',[['__set_model',['','remark','$event',[]]]]]]}}"
+		 value="{{remark}}" bindinput="__e" /></view>
+	<view class="disflex row-reverse fix_bottom pt5 pb5 lh39 bgfff _div"><label data-event-opts="{{[['tap',[['toPay',['$event']]]]]}}"
+		 class="bg_line_blue textc cfff fs18 fbold bradius20 w110 mr16 _span" bindtap="__e">提交订单</label>
+		<view class="fs16 c38 pr26 _div"><label class="_span">实付:</label><label class="corange fbold _span">{{"￥"+total_money}}</label></view>
+	</view>
+</view>

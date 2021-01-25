@@ -1,0 +1,1 @@
+.prod_choose_class{position:fixed;left:0;background:rgba(0,0,0,.5);z-index:100;bottom:-100%;-webkit-transition:.2s;-o-transition:.2s;transition:.2s}.prod_choose_class.show{bottom:0}.prod_choose_class .inner{border-radius:10rpx 10rpx 0 0}

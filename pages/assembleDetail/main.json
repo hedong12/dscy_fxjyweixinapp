@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "拼团详情",
+  "usingComponents": {
+    "van-count-down": "/static/vant/count-down/index",
+    "van-progress": "/static/vant/progress/index",
+    "van-popup": "/static/vant/popup/index",
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index",
+    "share-or-save": "/components/shareOrSave",
+    "product-recommend": "/components/productRecommend"
+  }
+}

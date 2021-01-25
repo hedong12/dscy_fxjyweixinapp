@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "share-or-save": "/components/shareOrSave"
+  }
+}

@@ -1,0 +1,61 @@
+<view class="pt46 _div">
+	<view class="disflex bgfff textc jsaround fs16 lh44 c78 bbf7 fix_top zindex999 bgfff _div"><label data-event-opts="{{[['tap',[['menu_tap',[1]]]]]}}"
+		 class="{{['_span',menu_id==1?'bbblue_2 cblue fbold':'']}}" bindtap="__e">收藏产品</label><label data-event-opts="{{[['tap',[['menu_tap',[2]]]]]}}"
+		 class="{{['_span',menu_id==2?'bbblue_2 cblue fbold':'']}}" bindtap="__e">收藏文章</label><label data-event-opts="{{[['tap',[['menu_tap',[3]]]]]}}"
+		 class="{{['_span',menu_id==3?'bbblue_2 cblue fbold':'']}}" bindtap="__e">收藏校园</label></view>
+	<block wx:if="{{menu_id==3}}">
+		<view class="_div">
+			<block wx:for="{{prods}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+				<view class="bgfff pt15 pl15 pr15 pb15 disflex jsbet _div">
+					<image class="w50 h50 bradius5 mr10 _img" src="{{v.photos}}" mode="aspectFill" alt></image>
+					<view class="flex1 disflex jsbet align-cen _div"><label class="c38 fs16 fbold disflex align-cen _span">{{v.name}}</label>
+						<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/del.png"
+						 alt data-event-opts="{{[['tap',[['del_tap',['$0',k],[[['prods','',k,'itemId']]]]]]]}}" catchtap="__e"></image>
+					</view>
+				</view>
+			</block>
+		</view>
+	</block>
+	<block wx:else>
+		<block wx:if="{{menu_id==2}}">
+			<view class="_div">
+				<block wx:for="{{prods}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+					<view data-event-opts="{{[['tap',[['toDetail',['$0'],[[['prods','',k,'itemId']]]]]]]}}" class="bgfff pt10 pl9 pr16 pb15 disflex jsbet _div"
+					 bindtap="__e">
+						<image class="w60 h60 bradius5 mr23 _img" src="{{v.photos}}" mode="aspectFill" alt></image>
+						<view class="flex1 _div">
+							<view class="fs14 c38 over_2 pt3  _p">{{v.name}}</view>
+							<view class="disflex jsbet pt4 row-reverse align-cen _div">
+								<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/del.png"
+								 alt data-event-opts="{{[['tap',[['del_tap',['$0',k],[[['prods','',k,'itemId']]]]]]]}}" catchtap="__e"></image>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</block>
+		<block wx:else>
+			<block wx:if="{{menu_id==1}}">
+				<view class="_div">
+					<block wx:for="{{prods}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+						<view data-event-opts="{{[['tap',[['toProdDetail',['$0'],[[['prods','',k,'itemId']]]]]]]}}" class="bgfff pt10 pl9 pr16 pb15 disflex jsbet _div"
+						 bindtap="__e">
+							<image class="w60 h60 bradius5 mr23 _img" src="{{v.photos}}" mode="aspectFill" alt></image>
+							<view class="flex1 _div">
+								<view class="fs14 c38 over_2 pt3  _p">{{v.name}}</view>
+								<view class="disflex jsbet pt4 row-reverse align-cen _div">
+									<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/del.png"
+									 alt data-event-opts="{{[['tap',[['del_tap',['$0',k],[[['prods','',k,'itemId']]]]]]]}}" catchtap="__e"></image>
+									<block wx:if="{{menu_id==1}}"><label class="corange fs12 _span">{{"￥"+v.price/100}}</label></block>
+								</view>
+							</view>
+						</view>
+					</block>
+				</view>
+			</block>
+		</block>
+	</block>
+	<block wx:if="{{nodata}}">
+		<view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view>
+	</block>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bottom-button-small": "/components/bottom_button_small",
+    "bottom-button-two": "/components/bottom_button_two"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "预约中心",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#8063C4",
+  "usingComponents": {
+    "van-progress": "/static/vant/progress/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "get-user-phone": "/components/getPhone",
+    "self-swiper": "/components/swiper",
+    "authentication-tag": "/components/AuthenticationTag",
+    "float-buttons": "/components/FloatButtons",
+    "nav-bar-by-user": "/components/NavBarByUser",
+    "share-or-save": "/components/shareOrSave",
+    "product-recommend": "/components/productRecommend",
+    "van-search": "/static/vant/search/index"
+  }
+}

@@ -1,0 +1,12 @@
+<view class="textc outer _div data-v-6500b036">
+	<image mode="widthFix" width="340rpx" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/20190418164236.png"
+	 alt class="_img data-v-6500b036"></image>
+	<view class="desc _p data-v-6500b036">
+		<block wx:if="{{$slots.default}}">
+			<slot></slot>
+		</block>
+		<block wx:else>购物车空空如也</block>
+	</view>
+	
+	<navigator class="toindex" url = "/pages/index/main" open-type = "switchTab">去首页逛逛</navigator>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "招聘详情",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "bottom-button-small": "/components/bottom_button_small"
+  }
+}

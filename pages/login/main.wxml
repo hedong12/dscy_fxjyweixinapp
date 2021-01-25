@@ -1,0 +1,1 @@
+<view class="_div"><login vue-id="086f4ca4-1" is-show="{{true}}" data-event-opts="{{[['^cancelLogin',[['cancelLogin']]],['^loginSuccess',[['loginSuccess']]]]}}" bind:cancelLogin="__e" bind:loginSuccess="__e" bind:__l="__l"></login></view>

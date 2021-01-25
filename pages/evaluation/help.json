@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "van-dialog": "/static/vant/dialog/index",
+    "share-or-save": "/components/shareOrSave"
+  }
+}

@@ -1,0 +1,1 @@
+<block wx:if="{{!phone}}"><view class="phone-slots _div data-v-5215892a">{{''+(phone||'')+''}}<button class="user-info data-v-5215892a" open-type="getPhoneNumber" data-event-opts="{{[['getphonenumber',[['getPhoneNumbers',['$event']]]]]}}" bindgetphonenumber="__e"></button></view></block>

@@ -1,0 +1,244 @@
+
+<scroll-view class="main" scroll-y="{{true}}" scroll-anchoring="{{true}}">
+	
+	<van-nav-bar vue-id="1a10b852-1" fixed placeholder data-com-type="wx" bind:__l="__l" vue-slots="{{['left','right']}}">
+		<view class="nav-bar-left _div" slot="left">入园盒子</view>
+	</van-nav-bar>
+	
+	
+	<swiper class="banner" indicator-dots="{{true}}" autoplay="{{true}}">
+		<block wx:for="{{banners}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<swiper-item>
+				<image src="{{item.img}}" mode="aspectFill" data-event-opts="{{[['tap',[['',['$event']]]]]}}" bindtap="__e" class="_img"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
+	 bind:__l="__l" vue-slots="{{['default']}}">
+		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-card.png"
+		 text="我的名片" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
+		 bind:__l="__l"></van-grid-item>
+		<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-poster.png"
+		 text="校园海报" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-mail.png"
+		 text="同步通讯录" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-phone.png"
+		 text="拨打电话" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-wxcode.png"
+		 text="添加微信" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-wxcode.png"
+		  text="添加微信" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		  <van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-wxcode.png"
+		    text="添加微信" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+			<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-wxcode.png"
+			  text="添加微信" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+	</van-grid>
+	<view class="seen_peo disflex pl15 pr26 fs10 ca8 jsbet bgfff _div">
+		<view class="_div">
+			<view class="disflex _div">
+				<image class="lovepng" src="../../static/images/love.png"></image>
+				<block wx:for="{{card_msg.browsePhoto}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+					<image class="w33 h33 bradius3 mr3 _img" src="{{v}}" alt mode="aspectFill"></image>
+				</block>
+				<view class="lh20 _p shenglue">···</view>
+			</view>
+	
+			<!-- <view class="lh20 _p">{{"已有"+card_msg.browseNum+"人浏览"}}</view> -->
+			
+		</view>
+		<view data-event-opts="{{[['tap',[['goTo',['cardCase/main']]]]]}}" class="switch-card _div" bindtap="__e">
+			<image src="{{card_msg.logo}}" alt class="_img"></image>
+			<image class="switch-logo _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-switch.png"
+			 alt></image>{{''+card_msg.username+''}}
+		</view>
+	</view>
+	<view class="evaluation-button _div">
+		<scroll-view scroll-x>
+				<view class="evaluation-card">
+					<image  src="{{testImg}}" alt data-event-opts="{{[['tap',[['goToEvaluation',['$event']]]]]}}" bindtap="__e"
+					 class="_img"></image> 
+					<view class="card-view">
+						入园测评
+					</view>
+				</view>
+				<view class="evaluation-card-yellow">
+					<image  src="{{bookImg}}" alt data-event-opts="{{[['tap',[['goTo',['book/main/main']]]]]}}" bindtap="__e"
+					 class="_img"></image>
+					<view class="card-view-yellow">
+						睡前故事
+					</view>
+				</view> 
+				<view class="evaluation-card-fense">
+					<image  src="{{testImg}}" alt data-event-opts="{{[['tap',[['goToEvaluation',['$event']]]]]}}" bindtap="__e"
+					 class="_img"></image> 
+					<view class="card-view-fense">
+						入园测评
+					</view>
+				</view>
+				<view class="evaluation-card-zise">
+					<image  src="{{testImg}}" alt data-event-opts="{{[['tap',[['goToEvaluation',['$event']]]]]}}" bindtap="__e"
+					 class="_img"></image> 
+					<view class="card-view-zise">
+						入园测评
+					</view>
+				</view>
+				<view class="evaluation-card-green">
+					<image  src="{{testImg}}" alt data-event-opts="{{[['tap',[['goToEvaluation',['$event']]]]]}}" bindtap="__e"
+					 class="_img"></image> 
+					<view class="card-view-green">
+						入园测评
+					</view>
+				</view>
+			
+		</scroll-view>
+	</view>
+	
+	<block wx:if="{{productRecommend.length}}">
+		<view class="product-recommend _div">
+			<view class="product-recommend-title _div">课程推荐
+				<text class="text-nav" decode="{{true}}">更多推荐&gt;</text>
+			</view>
+			<view style="width:100%;" class="_div">
+				<view class="product-recommend-list _div" style="{{''+('padding-bottom:'+('31rpx')+';')}}">
+					<block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+						<view wx:if="{{index % 2 == 0}}"  data-event-opts="{{[['tap',[['goToProductInfo',['$0'],[[['productRecommend','',index]]]]]]]}}" class="product-recommend-item _div"
+						 bindtap="__e">
+							<image src="{{item.g0[0]}}" alt class="_img"></image> 
+							<view class="product-recommend-content _div">
+								<view class="product-recommend-item-title _div">{{item.$orig.goodsName}}</view>
+								<view class="product-recommend-item-tag _div">
+									<block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
+									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block>
+								</view>
+							</view>
+							<view class="product-view-go">
+								<text class="product-text-go">GO</text>
+							</view>
+						</view>
+						<view wx:else  data-event-opts="{{[['tap',[['goToProductInfo',['$0'],[[['productRecommend','',index]]]]]]]}}" class="product-recommend-item-else _div"
+						 bindtap="__e">
+							<image src="{{item.g0[0]}}" alt class="_img"></image> 
+							<view class="product-recommend-content _div">
+								<view class="product-recommend-item-title _div">{{item.$orig.goodsName}}</view>
+								<view class="product-recommend-item-tag _div">
+									<block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
+									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block>
+								</view>
+							</view>
+							<view class="product-view-go">
+								<text class="product-text-go">GO</text>
+							</view>
+						</view>
+						
+						
+					</block>
+				
+				</view>
+			</view>
+		</view>
+	</block>
+	
+	<view class='ticket-container'>
+	    <scroll-view scroll-y>
+	      <!--Tab布局--> 
+	      <view class='title'>
+	        <view  data-event-opts="{{[['tap',[['titleClick',['0']]]]]}}" bindtap="__e" class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}"  >
+	          <text>园所介绍</text>
+	          <hr class="line-style"/>
+	        </view>  
+	         
+	        <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" data-event-opts="{{[['tap',[['titleClick',['1']]]]]}}" bindtap="__e">
+	          <text>园所图片</text>
+	          <hr class="line-style"/>
+	        </view>
+	        <view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" data-event-opts="{{[['tap',[['titleClick',['2']]]]]}}"  bindtap="__e" >
+	          <text>园所视频</text>
+	          <hr class="line-style" />
+	        </view> 
+	      </view>
+	 
+	      <!--内容布局-->
+	      <swiper class='swiper' bindchange='pagechange'  current='{{currentIndex}}'>
+	        <swiper-item class='swiper'>
+	          <view class='record-item'>
+	            <view class='name'>
+	              <view>随着80、80后新一代符文教育程度及消费升级，更加注重教育的品质和便捷性，让孩子从小接受良好的教育，使孩子赢在起跑线上，为高品质婴幼儿教育带来全新的发展机遇千亿市场规模，掘金教育财富</view>
+				  <view></view>
+				  <view>
+					  4+2+1的家庭结构，教育支出占家庭支出比重增大，普通家庭平均每年教育支出费用达3.6万元。
+				  </view>
+	            </view>
+	          </view>
+	        </swiper-item>
+	        <swiper-item class='swiper'  >
+	          <view wx:for="{{secondList}}" wx:for-item="item" class='record-item'>
+				<rich-text  nodes="{{companyInfo.companyIntroduce}}"></rich-text>
+	          </view>
+	        </swiper-item>
+	        <swiper-item class='swiper' >
+	          <view wx:if="{{companyInfo.goodsIntroduce}}" class='record-item'>
+					<block wx:for="{{companyInfo.companyVideoModelList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+						<video src="{{item.url}}" poster="{{item.cover}}"></video>
+					</block>
+	          </view>
+	        </swiper-item>
+	      </swiper>
+	    </scroll-view>
+	</view> 
+	
+	<!-- <block wx:if="{{companyInfo.companyIntroduce}}">
+		<view class="product-recommend _div">
+			<view class="product-recommend-title _div">校园介绍</view>
+			<view class="product-recommend-list _div" style="width:calc(100% - 21rpx);">
+				<rich-text nodes="{{companyInfo.companyIntroduce}}"></rich-text>
+			</view>
+		</view>
+	</block>
+	<block wx:if="{{companyInfo.goodsIntroduce}}">
+		<view class="product-recommend _div">
+			<view class="product-recommend-title _div">产品介绍</view>
+			<view class="product-recommend-list _div" style="width:calc(100% - 21rpx);">
+				<rich-text nodes="{{companyInfo.goodsIntroduce}}"></rich-text>
+			</view>
+		</view>
+	</block>
+	<block wx:if="{{companyInfo.goodsIntroduce}}">
+		<view class="product-recommend _div">
+			<view class="product-recommend-title _div">校园视频</view>
+			<view class="product-recommend-list _div" style="width:calc(100% - 21rpx);">
+				<block wx:for="{{companyInfo.companyVideoModelList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+					<view class="product-recommend-video _div"><video src="{{item.url}}" poster="{{item.cover}}"></video>{{''+item.describes+''}}</view>
+				</block>
+			</view>
+		</view> 
+	</block> --> 
+	<view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view> 
+	<view class="bottom-text"></view>
+	<block wx:if="{{isShowCourse}}">
+		<view class="_div">
+			<add-wx-course vue-id="1a10b852-8" top="136rpx" isShow="{{isShowCourse}}" data-event-opts="{{[['^close',[['e0']]]]}}"
+			 bind:close="__e" bind:__l="__l"></add-wx-course>
+		</view>
+	</block>
+	<float-buttons class="index_float_right trans2 overhidden" vue-id="1a10b852-9" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}"
+	 data-event-opts="{{[['^talk',[['talk']]]]}}" bind:talk="__e" bind:__l="__l"></float-buttons>
+	<login vue-id="1a10b852-10" is-show="{{!loginIsSHow}}" data-event-opts="{{[['^cancelLogin',[['e1']]],['^loginSuccess',[['loginSuccess']]]]}}"
+	 bind:cancelLogin="__e" bind:loginSuccess="__e" bind:__l="__l"></login>
+	<van-overlay vue-id="1a10b852-11" show="{{isEvaluation&&isEllis}}" class-name="delte-demo" data-com-type="wx" bind:__l="__l"
+	 vue-slots="{{['default']}}"> 
+		<view class="isEvaluation _div">
+			<block wx:if="{{!phone}}"><button class="isEvaluation-close no-button" open-type="getPhoneNumber" data-close="true"
+				 data-event-opts="{{[['getphonenumber',[['getPhone',['$event']]]]]}}" bindgetphonenumber="__e">×</button></block>
+			<block wx:else><label data-event-opts="{{[['tap',[['e2',['$event']]]]]}}" class="isEvaluation-close _span" bindtap="__e">×</label></block>
+			<block wx:if="{{!phone}}"><button class="no-button" open-type="getPhoneNumber" data-event-opts="{{[['tap',[['',['$event']]]],['getphonenumber',[['getPhone',['$event']]]]]}}"
+				 catchtap="__e" bindgetphonenumber="__e">
+					<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/card/isEvaluation.gif"></image>
+				</button></block>
+			<block wx:else>
+				<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/card/isEvaluation.gif" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+				 catchtap="__e"></image>
+			</block>
+		</view> 
+	</van-overlay>
+	
+</scroll-view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "视频展示",
+  "usingComponents": {
+    "bottom-button-small": "/components/bottom_button_small"
+  }
+}

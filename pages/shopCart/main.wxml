@@ -1,0 +1,40 @@
+<view class="shopcart_bg w100p h100p posre _div">
+	<view class="disflex jsbet lh44 pl16 pr16 cfff fs16 _div">
+		<view class="disflex _div">共<view class="_b">{{cart_total}}</view>件宝贝</view><label data-event-opts="{{[['tap',[['todel',['$event']]]]]}}"
+		 class="fs18 fbold _span" bindtap="__e">{{isdel?'完成':'管理'}}</label>
+	</view>
+	<view class="pl15 pr15 pb50 _div">
+		<block wx:if="{{!cart_lists.length}}">
+			<view class="mb10 _div">
+				<view class="bgfff bradius10 _div">
+					<no-data-shop-cart vue-id="ecf3a446-1" bind:__l="__l"></no-data-shop-cart>
+				</view>
+			</view>
+		</block>
+		<block wx:else>
+			<view class="_div">
+				<block wx:for="{{cart_lists}}" wx:for-item="cart_item" wx:for-index="k" wx:key="k">
+					<view class="mb10 _div">
+						<order-item vue-id="{{'ecf3a446-2-'+k}}" orderData="{{cart_item}}" orderIndex="{{k}}" iscart="true" index1="{{k}}"
+						 label_prod="{{labels[k].prod}}" label_company="{{labels[k].company}}" order_type="1" data-event-opts="{{[['^prodChangeNum',[['prodChangeNum']]],['^choose_order',[['choose_order']]],['^order_tap',[['toDetail']]]]}}"
+						 bind:prodChangeNum="__e" bind:choose_order="__e" bind:order_tap="__e" bind:__l="__l"></order-item>
+					</view>
+				</block>
+			</view>
+		</block>
+	</view>
+	<view hidden="{{!(!isdel)}}" class="disflex jsbet fix_bottom bgfff lh39 fs16 pt5 pb5 borderbox pl15 pr16 bte8 _div">
+		<view data-event-opts="{{[['tap',[['choose_all',['all']]]]]}}" class="c68 _div" bindtap="__e"><label class="{{['checkBox',label_all?'active':'']}}"><label
+				 class="_span"></label></label><label class="pl30 _span">全选</label></view>
+		<view class="pl21 _div"><label class="c38 _span">合计：</label><label class="corange fbold _span">{{"￥"+choose_total_money}}</label></view><label
+		 data-event-opts="{{[['tap',[['toPay',['$event']]]]]}}" class="{{[' bradius20 trans2 cfff w110 textc lh39 _span',choose_total_num>0?'bg_line_blue':'bga8']}}"
+		 bindtap="__e">{{'结算('+choose_total_num+')'}}</label>
+	</view>
+	<view hidden="{{!(isdel)}}" class="disflex jsbet fix_bottom bgfff lh30 fs16 pt10 pb10 borderbox pl15 pr16 bte8 h50 borderbox _div">
+		<view data-event-opts="{{[['tap',[['choose_all',['all']]]]]}}" class="c68 _div" bindtap="__e"><label class="{{['checkBox',label_all?'active':'']}}"><label
+				 class="_span"></label></label><label class="pl30 _span">全选</label></view>
+		<view class="disflex _div"><label data-event-opts="{{[['tap',[['toCollect',['$event']]]]]}}" class="w90 textc byellow cyellow fs14 mr10 bradius15 h30 borderbox _span"
+			 bindtap="__e">移入收藏夹</label><label data-event-opts="{{[['tap',[['delCart',['$event']]]]]}}" class="w50 textc borange corange fs14 bradius15 h30 borderbox _span"
+			 bindtap="__e">删除</label></view>
+	</view>
+</view>

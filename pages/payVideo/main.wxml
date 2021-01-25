@@ -1,0 +1,1 @@
+<view class="content _div"><video src="{{videoUrl}}" id="videoplayer"></video></view>

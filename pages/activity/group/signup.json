@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "拼团详情",
+  "usingComponents": {
+    "van-sticky": "/static/vant/sticky/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "van-field": "/static/vant/field/index",
+    "van-cell": "/static/vant/cell/index",
+    "van-cell-group": "/static/vant/cell-group/index"
+  }
+}

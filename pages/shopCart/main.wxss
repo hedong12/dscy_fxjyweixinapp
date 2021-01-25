@@ -1,0 +1,10 @@
+.shopcart_bg::after {
+	content: "";
+	width: 100%;
+	height: 248rpx;
+	background: var(--theme-purple);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1
+}

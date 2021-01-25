@@ -1,0 +1,23 @@
+<view class="bgfff pl9 disflex pt20 _div">
+<!-- 	<image class="w30 h30 mr11 mt4 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/addr_blue_bg.png"
+	 alt></image> -->
+	<view class="w34 h34 mr11 bgimagecolor mt4">
+	 <image class="w22 h22 _img" src="../static/images/dingwei.png"
+	  alt></image>
+    </view>
+	<view data-event-opts="{{[['tap',[['toAddr',['$event']]]]]}}" class="disflex jsbet flex1 _div" bindtap="__e">
+		<block wx:if="{{addr.name}}">
+			<view class="addr_detail _div">
+				<view class="fs16 c38 _p"><label style="font-size: 34rpx;" class="_span">{{addr.name}}</label><label style="margin-left:20rpx;" class="yeye _span">{{''+addr.tel}}</label></view>
+				<view class="fs13 c38  pt10 pb21 _p">{{addr.address}}</view>
+			</view>
+		</block>
+		<block wx:else>
+			<view class="addr_detail pb21 fs16 c38 _div">去添加地址</view>
+		</block>
+		<block wx:if="{{ismore}}">
+			<image class="w10 h10 mt14 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+			 alt></image>
+		</block>
+	</view>
+</view>

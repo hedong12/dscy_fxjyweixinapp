@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "预约产品",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "self-swiper": "/components/swiper",
+    "right-float": "/components/rightFloat",
+    "share-or-save": "/components/shareOrSave"
+  }
+}

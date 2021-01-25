@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "address-item": "/components/addressItem",
+    "order-item": "/components/orderDetialItem",
+    "dialog-box": "/components/dialogBox"
+  }
+}

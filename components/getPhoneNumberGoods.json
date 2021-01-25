@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "get-phone-number": "/components/getPhoneNumber",
+    "product-card": "/components/ProductCard",
+    "form-id": "/components/formId",
+    "login-intercept": "/components/LoginIntercept"
+  }
+}

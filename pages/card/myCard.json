@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-dropdown-item": "/static/vant/dropdown-item/index",
+    "card_5": "/components/card_5"
+  }
+}

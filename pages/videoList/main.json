@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#151922",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "视频列表",
+  "usingComponents": {
+    "van-dialog": "/static/vant/dialog/index",
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index",
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index"
+  }
+}

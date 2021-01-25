@@ -1,0 +1,16 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-search": "/static/vant/search/index",
+    "van-grid": "/static/vant/grid/index",
+    "van-grid-item": "/static/vant/grid-item/index",
+    "no-data": "/components/noData",
+    "get-phone-number-goods": "/components/getPhoneNumberGoods",
+    "self-swiper": "/components/swiper",
+    "authentication-tag": "/components/AuthenticationTag",
+    "float-buttons": "/components/FloatButtons",
+    "nav-bar-by-user": "/components/NavBarByUser",
+    "login-intercept": "/components/LoginIntercept",
+    "share-or-save": "/components/shareOrSave"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "edit-inputer": "/components/editInputer",
+    "add-wx-course": "/components/addWxCourse"
+  }
+}

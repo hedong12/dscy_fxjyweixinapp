@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#000000",
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "用户登录",
+  "usingComponents": {
+    "login": "/components/login"
+  }
+}

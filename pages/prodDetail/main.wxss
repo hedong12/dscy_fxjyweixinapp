@@ -1,0 +1,317 @@
+@font-face {
+font-family: 'dian2';  /* project id 2187374 */
+src: url('//at.alicdn.com/t/font_2187374_qm7sn7cpx4.eot');
+src: url('//at.alicdn.com/t/font_2187374_qm7sn7cpx4.eot?#iefix') format('embedded-opentype'),
+url('//at.alicdn.com/t/font_2187374_qm7sn7cpx4.woff2') format('woff2'),
+url('//at.alicdn.com/t/font_2187374_qm7sn7cpx4.woff') format('woff'),
+url('//at.alicdn.com/t/font_2187374_qm7sn7cpx4.ttf') format('truetype'),
+url('//at.alicdn.com/t/font_2187374_qm7sn7cpx4.svg#dian2') format('svg');
+}
+
+page {
+	width: 100%;
+	height: 100%;
+	background: #f5f5f6
+}
+
+.notice-content {
+	font-size: 24rpx
+}
+
+.notice-content ._p {
+	margin-bottom: 40rpx
+}
+
+.notice-title-image {
+	margin: 0 auto;
+	width: 80rpx
+}
+
+.notice-title ._span {
+	border-bottom: 1px dashed #000;
+	padding: 5rpx
+}
+
+.notice-title {
+	font-size: 24rpx;
+	color: #000;
+	text-align: center;
+	font-weight: 700
+}
+
+.notice {
+	border: 10rpx solid #8163c5;
+	border-radius: 10rpx;
+	padding: 26rpx 16rpx;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 34rpx;
+	margin-bottom: 34rpx
+}
+
+.notice-parent {
+	background-color: #f5f5f7;
+	margin-left: -30rpx;
+	margin-right: -30rpx
+}
+
+.control-count-down view {
+	color: #fff
+}
+
+.control-count-down {
+	display: inline-block;
+	color: #fff;
+	font-size: 24rpx;
+	margin-left: 10rpx
+}
+
+.spike-box {
+	background-color: rgba(129, 99, 197, .8);
+	color: #fff;
+	text-align: center;
+	font-size: 24rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	position: absolute;
+	margin-top: -70rpx;
+	width: 100%
+}
+
+.tag-item {
+	background-color: #8968c8;
+	height: 27rpx;
+	line-height: 27rpx;
+	padding-left: 7rpx;
+	padding-right: 7rpx;
+	color: #fff;
+	margin-right: 20rpx;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 18rpx;
+	margin-bottom: 29rpx
+}
+
+.remark {
+	margin-top: 23rpx;
+	padding-bottom: 17rpx;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #aaa;
+	font-size: 24rpx;
+	min-height: 54rpx
+}
+
+.share {
+	background: #C1E7DE;
+	color: #41AB9F;
+	position: absolute;
+	right: 0;
+	top: 90rpx;
+	height: 43rpx;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 24rpx;
+	line-height: 43rpx;
+	font-weight: 600;
+	padding-left: 50rpx;
+	padding-right: 28rpx;
+	border-top-left-radius: 10rpx;
+	border-bottom-left-radius: 10rpx;
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/goods-info-share-icon.png);
+	
+
+	background-size: 23rpx 28rpx;
+	background-position-y: center;
+	background-position-x: 22rpx;
+	    
+	background-repeat: no-repeat
+}
+
+.sku-active {
+	background-color: #e4f8f7 !important;
+	border: 1rpx solid #8063c4 !important
+}
+
+.sku-type-item {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 63rpx;
+	line-height: 63rpx;
+	padding-left: 24rpx;
+	padding-right: 24rpx;
+	margin: 10rpx;
+	border-radius: 9rpx;
+	background: #f5f5f7
+}
+
+.sku-type ._div,
+.sku-spec ._div {
+	display: inline-block
+}
+
+.sku-type-content {
+	width: calc(100% - 50rpx);
+	margin-left: 27rpx
+}
+
+.sku-type-label {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 21rpx;
+	color: #aaa;
+	font-size: 24rpx;
+	float: left
+}
+
+.sku-num-right {
+	float: right
+}
+
+.sku-num {
+	height: 40rpx;
+	line-height: 40rpx;
+	margin-top: 25rpx;
+	margin-bottom: 25rpx;
+	color: #aaa;
+	font-size: 24rpx;
+	padding-left: 7rpx
+}
+
+.sku-button ._div:nth-child(1) {
+	background-color: #8264c6;
+	border-top-left-radius: 100rpx;
+	border-bottom-left-radius: 100rpx
+}
+
+.sku-button ._div:nth-child(2) {
+	background-color: #fc644f;
+	border-top-right-radius: 100rpx;
+	border-bottom-right-radius: 100rpx
+}
+
+.sku-button ._div {
+	width: 50%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	font-size: 28rpx;
+	height: 71rpx;
+	line-height: 71rpx
+}
+
+.sku-type {
+	margin-top: 66rpx
+}
+
+.sku-stock {
+	margin-top: 19rpx;
+	color: #aaa;
+	font-size: 24rpx;
+	text-align: center
+}
+
+.sku-price ._span {
+	font-size: 30rpx
+}
+
+.sku-price {
+	color: #ed7b6a;
+	font-size: 48rpx;
+	text-align: center
+}
+
+.sku {
+	padding-top: 20rpx;
+	padding-left: 17rpx;
+	padding-right: 17rpx;
+	padding-bottom: 15rpx
+}
+
+.contentbox ._img {
+	width: 60rpx;
+	height: 60rpx
+}
+
+.size_item.active {
+	color: var(--theme-purple);
+	background: #e5f8f7;
+	border: 1rpx solid var(--theme-purple)
+}
+
+.add_to_card {
+	position: relative;
+	top: 10%;
+	background-color: #F6C874;
+	color: #E08121;
+	font-size: 16px;
+	line-height: 60rpx;
+	border-radius: 40rpx 0 0 40rpx
+}
+
+.buy_now {
+	position: relative;
+	top: 10%;
+	font-size: 16px;
+	line-height: 60rpx;
+	border-radius: 0 40rpx 40rpx 0;
+	color: #3EA99D;
+	background-color: #ACDED3
+}
+
+.prod_detail_float>._div {
+	bottom: 200rpx
+}
+
+.number-change-btn-group>._span:first-child {
+	line-height: 46rpx;
+	border-radius: 10rpx 0 0 10rpx
+}
+
+.number-change-btn-group>._span:last-child {
+	line-height: 46rpx;
+	border-radius: 0 10rpx 10rpx 0
+}
+
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 100
+}
+
+.img-size {
+	width: 465rpx;
+	height: 827.08rpx;
+	margin-top: 30rpx;
+	margin-bottom: 60rpx
+}
+
+.collage {
+	height: 98rpx
+}
+
+.nav-bar-left {
+	text-align: center;
+}
+.lwzs{
+	border: 1px solid #EFEFEF;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: 600;
+	color: black;
+}
+.ppq{
+	border: 1px solid #2BA195;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	width: 17%;
+}
+

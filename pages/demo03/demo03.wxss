@@ -1,0 +1,15 @@
+/* 
+	1 小程序中 不需要引入样式文件
+	
+	
+ */
+
+view{
+	/* width: 200px; */
+	height: 200px;
+	font-size: 40px;
+	background-color: aqua;
+	/* 以下代码写法是错误的 */
+	/* width: 750 rpx * 100 / 375; */
+	width: calc(750rpx * 100 / 375);
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-progress": "/static/vant/progress/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "van-search": "/static/vant/search/index",
+    "van-dropdown-menu": "/static/vant/dropdown-menu/index",
+    "van-dropdown-item": "/static/vant/dropdown-item/index"
+  }
+}

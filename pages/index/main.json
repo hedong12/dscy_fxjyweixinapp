@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "入园盒子",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-dialog": "/static/vant/dialog/index",
+    "van-overlay": "/static/vant/overlay/index",
+    "van-grid": "/static/vant/grid/index",
+    "van-grid-item": "/static/vant/grid-item/index",
+    "van-nav-bar": "/static/vant/nav-bar/index",
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index",
+    "add-wx-course": "/components/addWxCourse",
+    "float-buttons": "/components/FloatButtons",
+    "login": "/components/login"
+  }
+ 
+}

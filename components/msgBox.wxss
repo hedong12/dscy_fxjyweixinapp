@@ -1,0 +1,1 @@
+.send{color:var(--theme-purple);border:1rpx solid var(--theme-purple)}.receive{color:var(--theme-light-purple);border:1rpx solid var(--theme-light-purple)}

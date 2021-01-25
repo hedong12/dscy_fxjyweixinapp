@@ -1,0 +1,1 @@
+<view class="disflex fs18 textc lh49 fix_bottom bte8 _div"><label data-event-opts="{{[['tap',[['page_turn',['$0'],['left.url']]]]]}}" class="w50p ca8 bgfff _span" bindtap="__e">{{left.text}}</label><label data-event-opts="{{[['tap',[['page_turn',['$0'],['right.url']]]]]}}" class="w50p bg_line_blue cfff _span" bindtap="__e">{{right.text}}</label></view>

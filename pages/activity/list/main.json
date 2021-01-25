@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "活动中心",
+  "usingComponents": {
+    "van-progress": "/static/vant/progress/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "product-recommend": "/components/productRecommend"
+  }
+}

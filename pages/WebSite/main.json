@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "官网",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "self-swiper": "/components/swiper",
+    "nav-bar-by-user": "/components/NavBarByUser",
+    "float-buttons": "/components/FloatButtons"
+  }
+}

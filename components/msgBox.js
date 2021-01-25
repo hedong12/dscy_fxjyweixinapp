@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/msgBox"],{"0797":function(t,e,n){"use strict";n.r(e);var i=n("4f4b"),u=n("54b6");for(var a in u)"default"!==a&&function(t){n.d(e,t,(function(){return u[t]}))}(a);n("de5f");var o,r=n("f0c5"),s=Object(r["a"])(u["default"],i["b"],i["c"],!1,null,null,null,!1,i["a"],o);e["default"]=s.exports},"4f4b":function(t,e,n){"use strict";var i,u=function(){var t=this,e=t.$createElement;t._self._c},a=[];n.d(e,"b",(function(){return u})),n.d(e,"c",(function(){return a})),n.d(e,"a",(function(){return i}))},"54b6":function(t,e,n){"use strict";n.r(e);var i=n("6ae3"),u=n.n(i);for(var a in i)"default"!==a&&function(t){n.d(e,t,(function(){return i[t]}))}(a);e["default"]=u.a},"6ae3":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var i=u(n("ed08"));function u(t){return t&&t.__esModule?t:{default:t}}var a={name:"",props:["msg","type","bradius","isaddLog","isrightpoint","ismsg","isrank","istime","istel","isaction","issppend_record","istags","isImMsg","islogtitle","isport","isusertag","actionType","index","telReverse"],components:{},data:function(t){return{myid:""}},computed:{dateTime:function(){return this.istime?i.default.dateFormat(this.istime):""}},mounted:function(){this.myid=wx.getStorageSync("userId")||""},methods:{row_tap:function(){this.$emit("row_tap",this.msg.cardId,this.msg.userId)},page_turn:function(t,e){e=e||"",wx.navigateTo({url:"../"+t+"/main"+e})},makePhone:function(t){i.default.MakePhone(t||"")},dateT:function(t){console.log(i.default.dateFormat(t))}}};e.default=a},de5f:function(t,e,n){"use strict";var i=n("e7b2"),u=n.n(i);u.a},e7b2:function(t,e,n){}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/msgBox-create-component',
+    {
+        'components/msgBox-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("0797"))
+        })
+    },
+    [['components/msgBox-create-component']]
+]);

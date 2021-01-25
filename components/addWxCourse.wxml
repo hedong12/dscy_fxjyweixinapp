@@ -1,0 +1,1 @@
+<block wx:if="{{isShow}}"><cover-view data-event-opts="{{[['tap',[['close',['$event']]]]]}}" class="mask data-v-c703dd70" style="{{(top?'top:'+top:'')}}" bindtap="__e"><cover-image class="img data-v-c703dd70" mode="widthFix" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/20190423140716.png"></cover-image></cover-view></block>

@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#6336CF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "儿童感觉综合评量",
+  "usingComponents": {
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index"
+  }
+}
