@@ -6,7 +6,7 @@
     "pages/address/main",
     "pages/seeVideo/main",  
     "pages/evaluationReport/main",
-    "pages/usercenter/main",
+  "pages/usercenter/main",
     "pages/collect/main",
     "pages/shopCart/main",
     "pages/orderConfirm/main",

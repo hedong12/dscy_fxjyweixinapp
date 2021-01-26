@@ -1,6 +1,4 @@
-
 <scroll-view class="main" scroll-y="{{true}}" scroll-anchoring="{{true}}">
-	
 	<van-nav-bar vue-id="1a10b852-1" fixed placeholder data-com-type="wx" bind:__l="__l" vue-slots="{{['left','right']}}">
 		<view class="nav-bar-left _div" slot="left">入园盒子</view>
 	</van-nav-bar>
@@ -100,8 +98,13 @@
 							<view class="product-recommend-content _div">
 								<view class="product-recommend-item-title _div">{{item.$orig.goodsName}}</view>
 								<view class="product-recommend-item-tag _div">
-									<block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
+									<!-- <block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
+									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block> -->
+									
+									<block ><label class="product-recommend-item-tags _span">免费</label></block>
 									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block>
+									
+									
 								</view>
 							</view>
 							<view class="product-view-go">

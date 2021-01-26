@@ -1,32 +1,45 @@
 <view class="content-body _div">
-	<van-nav-bar vue-id="34081c72-1" fixed placeholder z-index="5" title="个人中心" custom-class="nav-bar" border="{{false}}"
+	<van-nav-bar vue-id="34081c72-1" fixed placeholder z-index="5" title="我的" custom-class="nav-bar" border="{{false}}"
 	 data-com-type="wx" bind:__l="__l"></van-nav-bar>
 	<van-row vue-id="34081c72-2" custom-class="userinfo text-center" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-		<van-col vue-id="{{('34081c72-3')+','+('34081c72-2')}}" span="8" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+		<van-col vue-id="{{('34081c72-3')+','+('34081c72-2')}}" span="6" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+			<image class="userinfo-logo _img" src="{{userInfo.logo||'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user_default_avatar_square.png'}}"
+			 mode="aspectFill"></image>
+			
+		</van-col>
+		<van-col vue-id="{{('34081c72-4')+','+('34081c72-2')}}" span="0" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 			<view class="userinfo-text _div">
-				<view class="_div">{{"用户ID:"+userInfo.userId}}</view>
+				<view class="_div">
+					{{userInfo.username}}
+					<image class="w15 h15 _img"  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_qh.png"></image>
+				</view>
+				<view class="userjifen">
+					{{"用户ID:"+userInfo.userId}}
+				</view>
 				<block wx:if="{{userInfo.companyId!=0}}">
 					<view class="_div">{{"校园ID:"+userInfo.companyId}}</view>
 				</block>
 			</view>
-		</van-col>
-		<van-col vue-id="{{('34081c72-4')+','+('34081c72-2')}}" span="8" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-			<image class="userinfo-logo _img" src="{{userInfo.logo||'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user_default_avatar_square.png'}}"
-			 mode="aspectFill"></image>
-			<view class="userinfo-name _div">{{userInfo.username}}</view>
+			<view class="userinfo-name _div"></view>
+			
 			<view class="userinfo-membership _div">
-				<view class="userinfo-membership-bg _div"></view>
-				<view class="userinfo-membership-text _div">普通会员</view>
+				<image class="w29 h24 mt13 dscyhg _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_hg.jpg"></image>
+				<view class="userinfo-membership-text _div">尊贵会员</view>
+				<view class="jiantou">
+					<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+						 alt></image>
+				</view>
 			</view>
+			
 		</van-col>
-		<van-col vue-id="{{('34081c72-5')+','+('34081c72-2')}}" span="8" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-			<view class="userinfo-text _div">
+		<!-- <van-col vue-id="{{('34081c72-5')+','+('34081c72-2')}}" span="8" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+			<viass="userew clinfo-text _div">
 				<view class="_div">积分</view>
 				<view class="_div">0</view>
 			</view>
-		</van-col>
+		</van-col> -->
 	</van-row>
-	<view class="card _div">
+	<!-- <view class="card _div">
 		<view data-event-opts="{{[['tap',[['goTo',['profit/index/main']]]]]}}" class="card-detailed _div" bindtap="__e">明细  ></view>
 		<view class="card-top-price _div">0.00</view>
 		<view class="card-top-text _div">可提现收益(元)</view>
@@ -40,43 +53,49 @@
 				<view class="card-bottom-price _div">0.00</view>
 			</view>
 		</view>
+	</view> -->
+	
+	
+	<view class="dscyss _div"> 
+		<view class=""></view>
+		<van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
+		 bind:__l="__l" vue-slots="{{['default']}}"> 
+			<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kj.jpg"
+			 text="卡券" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
+			 bind:__l="__l"></van-grid-item>
+			<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_jf.jpg"
+			 text="积分" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>              
+			<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yg.jpg"
+			 text="已购" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>        
+			<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yt.jpg"
+			 text="已听" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		</van-grid>
 	</view>
-	<view class="bgfff fs12 c78 mb10 _div">
-		<view data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
-		 bindtap="__e"><label class="fs16 c38 fbold _span">访客导购</label>
-			<view class="_div"><label class="ca8 pr11 _span">查看更多</label>
-				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
-				 alt></image>
+	
+	
+	
+	<view class="bgfff h93 fs12 c78 mt10 mb10 _div">
+		
+		<view class="leftaa">
+			<view class="item-ctr">
+			<image class="w29 h24 _img zuofudong" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdtg.jpg"></image>
+					<view class="fontjiacu">我的推广</view>
+					<view class="">为爱发声·传递</view>
 			</view>
 		</view>
-		<van-row vue-id="34081c72-6" custom-class="text-center visitor" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-			<van-col vue-id="{{('34081c72-7')+','+('34081c72-6')}}" span="12" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">今日访问人数</van-col>
-			<van-col vue-id="{{('34081c72-8')+','+('34081c72-6')}}" span="12" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">七日内访问人数</van-col>
-			<van-col vue-id="{{('34081c72-9')+','+('34081c72-6')}}" span="12" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-				<view class="visitor-count _div">0</view>
-			</van-col>
-			<van-col vue-id="{{('34081c72-10')+','+('34081c72-6')}}" span="12" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-				<view class="visitor-count _div">0</view>
-			</van-col>
-		</van-row>
-	</view>
-	<view class="bgfff fs12 c78 mb10 _div">
-		<view data-event-opts="{{[['tap',[['goTo',['analysis/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
-		 bindtap="__e"><label class="fs16 c38 fbold _span">测评报告</label>
-			<view class="_div"><label class="ca8 pr11 _span">查看更多</label>
-				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
-				 alt></image>
-			</view>
+		<view class="centeraa"></view>
+		<view class="rightaa">
+			<view class="item-ctr">
+			<image class="w29 h24 _img zuofudong" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yqyl.jpg"></image>
+			<view class="fontjiacu">邀请有礼</view> 
+			<view class="">倾听百科</view>
+				</view>
 		</view>
-		<view style="height:37rpx;" class="_div"></view>
-		<block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-			<view class="evaluating _div">
-				<view class="evaluating-age _div">{{"月龄: "+item.m0}}</view>
-				<view class="evaluating-birthday _div">{{"出生日期: "+item.$orig.birthdays}}</view>
-			</view>
-		</block>
+		
 	</view>
-	<view class="bgfff fs12 c78 mb10 _div">
+	
+	
+	<!-- <view class="bgfff fs12 c78 mb10 _div">
 		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
 		 bindtap="__e"><label class="fs16 c38 fbold _span">我的订单</label>
 			<view class="_div"><label class="ca8 pr11 _span">查看全部订单</label>
@@ -101,7 +120,215 @@
 			 text="我的收藏" data-event-opts="{{[['^click',[['goTo',['collect/main']]]]]}}" data-com-type="wx" bind:click="__e"
 			 bind:__l="__l"></van-grid-item>
 		</van-grid>
+	</view> -->
+	
+	
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e"><label class="fs14 c38 fbold _span">我的订单</label>
+			<view class="_div"><label class="ca8 pr11 _span">查看全部订单</label>
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+		<van-grid vue-id="34081c72-11" column-num="5" border="{{false}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+			<van-grid-item vue-id="{{('34081c72-12')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dfk.jpg"
+			 text="待付款" data-event-opts="{{[['^click',[['goTo',['shopCart/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 bind:__l="__l"></van-grid-item>
+			<van-grid-item vue-id="{{('34081c72-13')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dfh.jpg"
+			 text="待发货" data-event-opts="{{[['^click',[['goTo',['address/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 bind:__l="__l"></van-grid-item>
+			<van-grid-item vue-id="{{('34081c72-14')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dsh.jpg"
+			 text="待收货" data-event-opts="{{[['^click',[['goTo',['appointmentPack/orderList/main']]]]]}}" data-com-type="wx"
+			 bind:click="__e" bind:__l="__l"></van-grid-item>
+			<van-grid-item vue-id="{{('34081c72-15')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_ywc.jpg"
+			 text="已完成" data-event-opts="{{[['^click',[['goTo',['activity/order/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 bind:__l="__l"></van-grid-item>
+			<van-grid-item vue-id="{{('34081c72-16')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_tksh.jpg"
+			 text="退款/售后" data-event-opts="{{[['^click',[['goTo',['collect/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 bind:__l="__l"></van-grid-item>
+		</van-grid>
 	</view>
+	
+	
+	
+	
+	<view class="bglvse fs12 c78 mb10 ml15 mr15 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['analysis/main']]]]]}}" class="lh18 pl15 pr15 align-cen disflex jsbet _div"
+		 bindtap="__e">
+		 <label class="fs16  c38 fbold _span">
+				<image class="w60 mr10 h63 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dp1.png"></image>
+			 </label>
+			 <view class="_div"><label class="ca8 pr11 baogaofont _span">测评报告</label>
+			 	
+			 </view>
+			<view class="chakanbg _div"><label class="ca8 chakanfont _span">查看更多</label>
+			<!-- 	<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image> -->
+			</view>
+		</view>
+	<!-- 	<view style="height:37rpx;" class="_div"></view>
+		<block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<view class="evaluating _div">
+				<view class="evaluating-age _div">{{"月龄: "+item.m0}}</view>
+				<view class="evaluating-birthday _div">{{"出生日期: "+item.$orig.birthdays}}</view>
+			</view>
+		</block> -->
+	</view>
+	
+	<!-- 开始 -->
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdyy.jpg"></image>
+				<label class="fs14 c38 _span">
+							我的预约	
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdhd.jpg"></image>
+				<label class="fs14 c38 _span">
+							我的活动	
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdsc.jpg"></image>
+				<label class="fs14 c38 _span">
+							我的收藏
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdzl.jpg"></image>
+				<label class="fs14 c38 _span">
+							我的资料	
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bdsjh.jpg"></image>
+				<label class="fs14 c38 _span">
+							绑定手机号	
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdxxqk.jpg"></image>
+				<label class="fs14 c38 _span">
+							我的学习情况
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdxly.jpg"></image>
+				<label class="fs14 c38 _span">
+							我的训练营
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_xy.jpg"></image>
+				<label class="fs14 c38 _span">
+							校园
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['orderLists/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_zp.jpg"></image>
+				<label class="fs14 c38 _span">
+							招聘
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+	
+	<!-- 结束 -->
+	
+	
+	<!-- 
 	<view class="bgfff fs12 c78 mb10 _div">
 		<view class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"><label class="fs16 c38 fbold _span">营销推广</label></view>
 		<view class="disflex pl20 pr20 mb10 fs12 c78 pt20 pb20 textc bgfff link-list _div">
@@ -156,10 +383,10 @@
 				<van-grid-item vue-id="{{('34081c72-25')+','+('34081c72-17')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card-my-msg.png"
 				 text="我的消息" data-event-opts="{{[['^click',[['toMSGPage']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 			</block>
-		</van-grid>
-	</view>
+		</van-grid> 
+	</view> -->
 	<block wx:if="{{isMyUser}}">
-		<view data-event-opts="{{[['tap',[['toCrmAPP',['$event']]]]]}}" class="toCRMBtn textc _div" bindtap="__e">前往管理系统</view>
+		<view data-event-opts="{{[['tap',[['toCrmAPP',['$event']]]]]}}"  class="toCRMBtn textc _div" bindtap="__e">前往管理系统</view>
 	</block>
 	<view class="bottom-text"></view>
 </view>
