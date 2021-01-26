@@ -287,9 +287,8 @@
 .evaluation-button ._img {
 	width: 85%;
 	padding: 25rpx 15rpx 15rpx;
-	height: 165rpx;
+	height: 145rpx;
 	border-radius: 20rpx;
-	font-size: 16rpx;
 	
 }
 
@@ -319,12 +318,11 @@
 }
 
 .banner {
-	width: calc(100% - 40rpx);
+	width: calc(100% - 0rpx);
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 20rpx;
 	overflow: hidden;
-	height: 385rpx
+	height: 262rpx
 }
 
 .banner swiper-item,
@@ -667,7 +665,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 280rpx;
+	height: 250rpx;
 	border-radius: 30rpx;
 	background-color: #ACDED3;
 }
@@ -677,16 +675,17 @@ video {
 	    width: 85%;
 	    margin: 0 auto;
 	    text-align: center;
-		height: 50rpx;
+		height: 40rpx;
 		color: white;
-		line-height: 50rpx;
+		line-height: 40rpx;
+		font-size: 24rpx;
 }
 
 .evaluation-card-yellow{
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 280rpx;
+	height: 250rpx;
 	border-radius: 30rpx;
 	background-color: #FFCF73;
 }
@@ -696,8 +695,9 @@ video {
 	width: 85%;
 	margin: 0 auto;
 	text-align: center;
-	height: 50rpx;
-	line-height: 50rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 24rpx;
 	color: white;
 }
 
@@ -706,7 +706,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 280rpx;
+	height: 250rpx;
 	border-radius: 30rpx;
 	background-color: #F5C7C7;
 }
@@ -716,9 +716,10 @@ video {
 	width: 85%;
 	margin: 0 auto;
 	text-align: center;
-	height: 50rpx;
+	height: 40rpx;
 	color: white;
-	line-height: 50rpx;
+	line-height: 40rpx;
+	font-size: 24rpx;
 }
 
 
@@ -726,7 +727,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 280rpx;
+	height: 250rpx;
 	border-radius: 30rpx;
 	background-color: #D9CBFE;
 }
@@ -736,9 +737,10 @@ video {
 	width: 85%;
 	margin: 0 auto;
 	text-align: center;
-	height: 50rpx;
+	height: 40rpx;
 	color: white;
-	line-height: 50rpx;
+	line-height: 40rpx;
+	font-size: 24rpx;
 }
 
 
@@ -746,7 +748,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 280rpx;
+	height: 250rpx;
 	border-radius: 30rpx;
 	background-color: #0FE858;
 }
@@ -756,9 +758,10 @@ video {
 	width: 85%;
 	margin: 0 auto;
 	text-align: center;
-	height: 50rpx;
+	height: 40rpx;
 	color: white;
-	line-height: 50rpx;
+	line-height: 40rpx;
+	font-size: 24rpx;
 }
 .bottom-text{
    padding-bottom: env(safe-area-inset-bottom);  

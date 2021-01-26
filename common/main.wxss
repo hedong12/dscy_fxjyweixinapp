@@ -352,8 +352,8 @@ button::after {
 }
 
 .lh20 {
-	line-height: 40rpx
-}
+	line-height: 40rpx 
+} 
 
 .lh22 {
 	line-height: 44rpx
