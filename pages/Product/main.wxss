@@ -147,7 +147,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 40rpx);
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
   margin: 0 auto;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -156,6 +158,7 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background: #fff;
 }
 
 .product-parent>._div {
@@ -325,7 +328,7 @@
 
 .nav-item.active {
   border-bottom: 6rpx solid var(--theme-green);
-  color: #333;
+  color: var(--theme-green);
   font-weight: 700
 }
 

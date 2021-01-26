@@ -6,7 +6,7 @@
     bind:__l="__l"></nav-bar-by-user> -->
 
     <view class="search _div">
-      <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索"
+      <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索" shape="round"
       data-event-opts="{{[['tap',[['toSearchGoods',['$event']]]]]}}" bindtap="__e">
       </van-search>
     </view>

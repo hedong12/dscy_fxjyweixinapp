@@ -7,8 +7,9 @@
     bind:__l="__l"></nav-bar-by-user> -->
 
   <view class="search _div">
-    <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索"
-      data-event-opts="{{[['tap',[['goToList']]]]}}" bindtap="__e">
+    <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索" shape="round"
+      data-event-opts="{{[['tap',[['goToList']]]]}}" bindtap="__e" use-action-slot>
+      <view slot="action" style="color:#41AB9F;">关注</view>
     </van-search>
   </view>
 
@@ -43,10 +44,10 @@
 		 text="育儿百问" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bj.png"
 		 text="健康保健" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kczx.png"
-		 text="课程中心" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_fmxy.png"
+     <van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_fmxy.png"
 		 text="父母学院" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+     <van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kczx.png"
+		 text="课程中心" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_xyhb.png"
 		  text="校园海报" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		  <van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dh.png"
@@ -55,16 +56,8 @@
 			  text="同步通讯录" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 	</van-grid>
 
-  <image class="order-center" src="/static/tabs/computer_select.png" data-event-opts="{{[['tap',[['goTo']]]]}}" bindtap="__e"></image>
+  <image class="order-center" src="/static/images/order-center.png" data-event-opts="{{[['tap',[['goTo']]]]}}" bindtap="__e"></image>
 
-  <scroll-view
-    class="dynamic-content"
-    style="{{'height:'+('calc('+scrollContentHeight+'px - 54px - 160rpx - 224rpx - 90rpx - 48px)')+';'}}"
-    scroll-y="{{true}}"
-    enable-back-to-top="{{true}}"
-    scroll-anchoring="{{true}}"
-    upper-threshold="{{0}}"
-    lower-threshold="{{0}}">
     <!-- <view class="bgfff _div">
       <view class="fs18 cfff disflex pl15 pr16 company-title _div">
         <image class="w60 h60 bradius5 mr10 bgfff _img"
@@ -100,8 +93,10 @@
           </block>
         </view>
       </block>
-      <view class="product-title _div"><label class="_span">精选推荐</label><label
-          data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多></label></view>
+      <view class="product-title _div">
+        <label class="_span">精选推荐</label>
+        <label data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多></label>
+      </view>
       <block wx:if="{{list.length}}">
         <view class="product-parent _div">
           <block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
@@ -133,8 +128,7 @@
         </view>
       </block>
     </view>
-    <view class="textc lh42 fs12 ca8 bgf5f6 _div" style="height: 110rpx">- 到底了，看看其他的吧 -</view>
-  </scroll-view>
+    <view class="textc lh42 fs12 ca8 bgf5f6 _div" style="margin-bottom: 130rpx">- 到底了，看看其他的吧 -</view>
 
   <!-- <float-buttons class="index_float_right trans2 overhidden" vue-id="06c73858-7" isShowTalk="{{isShowTalk}}"
     avatarUrl="{{targetAvatarUrl}}" data-event-opts="{{[['^talk',[['talk']]],['^loginGuide',[['loginGuide']]]]}}"

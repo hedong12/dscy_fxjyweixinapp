@@ -1,6 +1,6 @@
 <view class="posre borderbox wrapper h100p _div">
   <view class="search _div">
-    <van-search vue-id="36971996-1" placeholder="请输入搜索关键词"
+    <van-search vue-id="36971996-1" placeholder="请输入搜索关键词" shape="round"
       data-event-opts="{{[['^search',[['onSearch']]],['^clear',[['clearSearch']]]]}}" data-com-type="wx"
       bind:search="__e" bind:clear="__e" bind:__l="__l"></van-search>
   </view>
