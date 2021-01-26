@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "seckill-cuntdown": "/components/SeckillCuntdown"
+    "seckill-cuntdown": "/components/SeckillCuntdown",
+    "van-swipe-cell": "/static/vant/swipe-cell/index",
+    "van-icon": "/static/vant/icon/index"
   }
 }

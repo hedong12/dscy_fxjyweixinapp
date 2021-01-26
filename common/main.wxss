@@ -11,7 +11,12 @@ page {
 	--theme-purple-bg: var(--theme-purple);
 	--theme-purple-text: var(--theme-purple);
 	--theme-light-purple: #c7bae5;
-	--theme-light-purple-text: #c7bae5
+	--theme-light-purple-text: #c7bae5;
+	--theme-green: #41AB9F;
+  --theme-light-green: #ACDED3;
+  --theme-bg: #F5F7F6;
+  --theme-green-bg: var(--theme-light-green);
+  --theme-green-text: var(--theme-green);
 }
 
 .text-theme {
@@ -72,7 +77,7 @@ button::after {
 }
 
 .bg_line_blue {
-	background: var(--theme-purple)
+	background: var(--theme-light-green)
 }
 
 .bg_line_orange {
@@ -152,6 +157,10 @@ button::after {
 
 .cfff {
 	color: #fff
+}
+
+.cgreen {
+  color: var(--theme-green)
 }
 
 .c78 {
@@ -1057,10 +1066,11 @@ button::after {
 }
 
 .disflex {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8rpx;
 }
 
 .disblock {
@@ -1701,13 +1711,11 @@ button::after {
 }
 
 .fix_bottom {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	/* transform: translate3d(0px, -5rpx, 10px); */
-	/* box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22); */
-	z-index: 99
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99
 }
 
 .fix_top {

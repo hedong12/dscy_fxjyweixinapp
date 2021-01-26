@@ -42,19 +42,43 @@
   "compileType": "miniprogram",
   "libVersion": "2.9.2",
   "appid": "wx8df68106dc803c77",
-  "projectname": "悦客R",
+  "projectname": "%E6%82%A6%E5%AE%A2R",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
       "list": []
     },
-    "miniprogram": {
+    "gamePlugin": {
       "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/shopCart/main",
+          "pathName": "pages/shopCart/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Product/main",
+          "pathName": "pages/Product/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/newEvaluation/simple",
+          "pathName": "pages/newEvaluation/simple",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/appointment/main",
+          "pathName": "pages/appointment/main",
+          "scene": null
+        }
+      ]
     }
   }
 }

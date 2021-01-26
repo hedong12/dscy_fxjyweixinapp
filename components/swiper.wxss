@@ -1,1 +1,64 @@
-.swiper-wrap-self{width:100%;background:#fff;position:relative}.swiper-wrap-self .swiper-inner{width:100%;height:100%;margin:0 auto}.swiper-wrap-self image{height:100%;width:100%}.swiper-wrap-self .dots{width:100%;position:absolute;right:0;bottom:26rpx;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;z-index:2;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.swiper-wrap-self .dot{width:20rpx;height:20rpx;margin-right:20rpx;border-radius:200rpx;background-color:hsla(0,0%,100%,.4)}.swiper-wrap-self .active{background-color:#fff}.mask{position:absolute;left:0;right:0;top:0;bottom:0;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.5)),to(hsla(0,0%,100%,0)));background:-o-linear-gradient(bottom,rgba(0,0,0,.5) 0,hsla(0,0%,100%,0) 100%);background:linear-gradient(0deg,rgba(0,0,0,.5),hsla(0,0%,100%,0));opacity:.8;pointer-events:none}
+.swiper-wrap-self {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+}
+
+.swiper-wrap-self .swiper-inner {
+  width: 722rpx;
+  height: 200rpx;
+  margin: 0 auto;
+}
+
+.swiper-wrap-self image {
+  width: 722rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.swiper-wrap-self .dots {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 36rpx;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.swiper-wrap-self .dot {
+  width: 12rpx;
+  height: 12rpx;
+  margin-right: 20rpx;
+  border-radius: 200rpx;
+  border: 1px solid #333;
+  background-color: transparent;
+}
+
+.swiper-wrap-self .active {
+  background-color: #333
+}
+
+.mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .5)), to(hsla(0, 0%, 100%, 0)));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, .5) 0, hsla(0, 0%, 100%, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, .5), hsla(0, 0%, 100%, 0));
+  opacity: .8;
+  pointer-events: none
+}

@@ -1,1 +1,125 @@
-<view class="posre borderbox wrapper h100p appointment _div" style="{{'height:'+(mainHeight+'px')+';'}}"><nav-bar-by-user vue-id="5d681f24-1" isLogin="{{isLogin}}" isShowLoginGuide="{{isShowLoginGuide}}" isShowCardCase="{{true}}" avatarUrl="{{avatarUrl}}" data-event-opts="{{[['^cancelLoginGuide',[['cancelLoginGuide']]],['^loginSuccess',[['loginSuccess']]],['^loginFailed',[['loginFailed']]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]]]}}" bind:cancelLoginGuide="__e" bind:loginSuccess="__e" bind:loginFailed="__e" bind:updateAvatarUrl="__e" bind:__l="__l"></nav-bar-by-user><scroll-view class="dynamic-content" style="{{'height:'+(scrollContentHeight+'px')+';'}}" scroll-y="{{true}}" enable-back-to-top="{{true}}" scroll-anchoring="{{true}}" data-event-opts="{{[['scrolltoupper',[['scrolltoupper',['$event']]]],['scrolltolower',[['scrolltolower',['$event']]]]]}}" bindscrolltoupper="__e" bindscrolltolower="__e"><view class="w100p _div" style="position:relative;z-index:2;"><self-swiper vue-id="5d681f24-2" imgUrls="{{banners}}" self_class="h211" isShowMask="{{true}}" isShowDots="{{false}}" data-event-opts="{{[['^swipclick',[['preview']]]]}}" bind:swipclick="__e" bind:__l="__l"></self-swiper></view><view class="bgfff _div"><view class="fs18 cfff disflex pl15 pr16 company-title _div"><image class="w60 h60 bradius5 mr10 bgfff _img" src="{{company_msg.company_logo||'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card1_user.png'}}" mode="aspectFill" alt></image><view class="flex1 _div"><view class="disflex jsbet align-cen _div"><view class="pb10 fbold over_1 w190 _b">{{company_msg.company_name}}</view><authentication-tag vue-id="5d681f24-3" bind:__l="__l"></authentication-tag></view><view class="disflex jsbet mt8 _div"><view class="_div"></view><view class="disflex align-cen _div"><image class="w20 h20 mr7 _img" style="flex:0 0 40rpx;" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/share2.png" alt data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e"></image><block wx:if="{{isCollect}}"><image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/20190418161144.png" alt data-event-opts="{{[['tap',[['collect',['$event']]]]]}}" bindtap="__e"></image></block><block wx:if="{{!isCollect}}"><image class="w20 h20 posre _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/star.png" alt data-event-opts="{{[['tap',[['collect',['$event']]]]]}}" bindtap="__e"></image></block></view></view></view></view></view><view class="_div"><view class="nav_top _div"><view class="posre pl15 pr42 bgfff _div"><scroll-view class="nav" scroll-x scroll-with-animation><view class="_div"><block wx:for="{{menu}}" wx:for-item="navItem" wx:for-index="idx" wx:key="idx"><view data-event-opts="{{[['tap',[['menu_tap',['$0'],[[['menu','',idx,'productsTypeId']]]]]]]}}" class="{{['nav-item _div',menu_id==navItem.productsTypeId?'active':'']}}" bindtap="__e">{{navItem.productsTypeName+''}}</view></block></view></scroll-view><image class="w20 h20 menu_more posab _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/search.png" alt data-event-opts="{{[['tap',[['toSearchGoods',['$event']]]]]}}" bindtap="__e"></image></view></view><block wx:if="{{prod_lists.length}}"><view class="bgf5f6 pl15 pr15 pb23 _div"><block wx:for="{{prod_lists}}" wx:for-item="v" wx:for-index="k" wx:key="k"><get-phone-number-goods vue-id="{{'5d681f24-4-'+k}}" goodsType="product" goodInfo="{{v}}" data-event-opts="{{[['^next',[['toProdDetail',['$0'],[[['prod_lists','',k,'productsId']]]]]],['^loginGuide',[['loginGuide']]]]}}" bind:next="__e" bind:loginGuide="__e" bind:__l="__l"></get-phone-number-goods></block></view></block><block wx:else><view class="_div"><no-data vue-id="5d681f24-5" bind:__l="__l" vue-slots="{{['default']}}">暂无商品</no-data></view></block></view><block wx:if="{{nodata&&prod_lists.length}}"><view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view></block></scroll-view><float-buttons class="index_float_right trans2 overhidden" vue-id="5d681f24-6" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}" data-event-opts="{{[['^talk',[['talk']]],['^loginGuide',[['loginGuide']]]]}}" bind:talk="__e" bind:loginGuide="__e" bind:__l="__l"></float-buttons><view class="foot-type _div"><view data-event-opts="{{[['tap',[['goTo',['$event']]]]]}}" bindtap="__e" class="_div">课程中心</view><view class="foot-active _div">预约中心</view></view><block wx:if="{{showShareOrSave}}"><view class="_div"><share-or-save vue-id="5d681f24-7" status="{{showShareOrSave}}" saveId="{{3}}" typeId="{{3}}" data-event-opts="{{[['^closeModal',[['e1']]],['^save',[['GeneratePoster']]]]}}" bind:closeModal="__e" bind:save="__e" bind:__l="__l"></share-or-save></view></block></view>
+<view class="posre borderbox wrapper h100p appointment _div" style="{{'height:'+('calc('+mainHeight+'px - 98rpx)')+';'}}">
+  <!-- <nav-bar-by-user vue-id="5d681f24-1" isLogin="{{isLogin}}" isShowLoginGuide="{{isShowLoginGuide}}"
+    isShowCardCase="{{true}}" avatarUrl="{{avatarUrl}}"
+    data-event-opts="{{[['^cancelLoginGuide',[['cancelLoginGuide']]],['^loginSuccess',[['loginSuccess']]],['^loginFailed',[['loginFailed']]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]]]}}"
+    bind:cancelLoginGuide="__e" bind:loginSuccess="__e" bind:loginFailed="__e" bind:updateAvatarUrl="__e"
+    bind:__l="__l"></nav-bar-by-user> -->
+
+    <view class="search _div">
+      <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索"
+      data-event-opts="{{[['tap',[['toSearchGoods',['$event']]]]]}}" bindtap="__e">
+      </van-search>
+    </view>
+
+    <view class="w100p _div" style="position:relative;z-index:2;">
+      <self-swiper vue-id="5d681f24-2" imgUrls="{{banners}}" self_class="h211" isShowMask="{{true}}"
+        isShowDots="{{false}}" data-event-opts="{{[['^swipclick',[['preview']]]]}}" bind:swipclick="__e" bind:__l="__l">
+      </self-swiper>
+    </view>
+
+    <view class="foot-type _div">
+      <view class="_div" data-event-opts="{{[['tap',[['goTo',['$event']]]]]}}" bindtap="__e" >
+        <image src="/static/tabs/appointment_select.png"></image>
+        <text>课程中心</text>
+      </view>
+      <view class="_div">
+        <image src="/static/tabs/computer_select.png"></image>
+        <text>预约中心</text>
+      </view>
+    </view>
+
+    <view class="nav_top _div">
+      <view class="posre pl15 bgfff _div">
+        <scroll-view class="nav" scroll-x scroll-with-animation>
+          <view class="_div">
+            <block wx:for="{{menu}}" wx:for-item="navItem" wx:for-index="idx" wx:key="idx">
+              <view data-event-opts="{{[['tap',[['menu_tap',['$0'],[[['menu','',idx,'productsTypeId']]]]]]]}}"
+                class="{{['nav-item _div',menu_id==navItem.productsTypeId?'active':'']}}" bindtap="__e">
+                {{navItem.productsTypeName+''}}</view>
+            </block>
+          </view>
+        </scroll-view>
+        <!-- <image class="w20 h20 menu_more posab _img"
+          src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/search.png" alt
+          data-event-opts="{{[['tap',[['toSearchGoods',['$event']]]]]}}" bindtap="__e"></image> -->
+      </view>
+    </view>
+
+  <scroll-view
+    class="dynamic-content"
+    style="{{'height:'+('calc('+scrollContentHeight+'px - 54px - 160rpx - 224rpx - 90rpx)')+';'}}"
+    scroll-y="{{true}}"
+    enable-back-to-top="{{true}}"
+    scroll-anchoring="{{true}}"
+    data-event-opts="{{[['scrolltoupper',[['scrolltoupper',['$event']]]],['scrolltolower',[['scrolltolower',['$event']]]]]}}"
+    bindscrolltoupper="__e"
+    bindscrolltolower="__e">
+    
+    <!-- <view class="bgfff _div">
+      <view class="fs18 cfff disflex pl15 pr16 company-title _div">
+        <image class="w60 h60 bradius5 mr10 bgfff _img"
+          src="{{company_msg.company_logo||'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card1_user.png'}}"
+          mode="aspectFill" alt></image>
+        <view class="flex1 _div">
+          <view class="disflex jsbet align-cen _div">
+            <view class="pb10 fbold over_1 w190 _b">{{company_msg.company_name}}</view>
+            <authentication-tag vue-id="5d681f24-3" bind:__l="__l"></authentication-tag>
+          </view>
+          <view class="disflex jsbet mt8 _div">
+            <view class="_div"></view>
+            <view class="disflex align-cen _div">
+              <image class="w20 h20 mr7 _img" style="flex:0 0 40rpx;"
+                src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/share2.png" alt
+                data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e"></image>
+              <block wx:if="{{isCollect}}">
+                <image class="w20 h20 _img"
+                  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/20190418161144.png" alt
+                  data-event-opts="{{[['tap',[['collect',['$event']]]]]}}" bindtap="__e"></image>
+              </block>
+              <block wx:if="{{!isCollect}}">
+                <image class="w20 h20 posre _img"
+                  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/star.png" alt
+                  data-event-opts="{{[['tap',[['collect',['$event']]]]]}}" bindtap="__e"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view> -->
+    
+    <view class="_div">
+      <block wx:if="{{prod_lists.length}}">
+        <view class="product-parent _div">
+          <block wx:for="{{prod_lists}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+            <get-phone-number-goods vue-id="{{'5d681f24-4-'+k}}" goodsType="product" goodInfo="{{v}}"
+              data-event-opts="{{[['^next',[['toProdDetail',['$0'],[[['prod_lists','',k,'productsId']]]]]],['^loginGuide',[['loginGuide']]]]}}"
+              bind:next="__e" bind:loginGuide="__e" bind:__l="__l"></get-phone-number-goods>
+          </block>
+        </view>
+      </block>
+
+      <block wx:else>
+        <view class="_div">
+          <no-data vue-id="5d681f24-5" bind:__l="__l" vue-slots="{{['default']}}">暂无商品</no-data>
+        </view>
+      </block>
+    </view>
+    <block wx:if="{{nodata&&prod_lists.length}}">
+      <view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view>
+    </block>
+  </scroll-view>
+  <!-- <float-buttons class="index_float_right trans2 overhidden" vue-id="5d681f24-6" isShowTalk="{{isShowTalk}}"
+    avatarUrl="{{targetAvatarUrl}}" data-event-opts="{{[['^talk',[['talk']]],['^loginGuide',[['loginGuide']]]]}}"
+    bind:talk="__e" bind:loginGuide="__e" bind:__l="__l"></float-buttons> -->
+  <!-- <view class="foot-type _div">
+    <view data-event-opts="{{[['tap',[['goTo',['$event']]]]]}}" bindtap="__e" class="_div">课程中心</view>
+    <view class="foot-active _div">预约中心</view>
+  </view> -->
+  <!-- <block wx:if="{{showShareOrSave}}">
+    <view class="_div">
+      <share-or-save vue-id="5d681f24-7" status="{{showShareOrSave}}" saveId="{{3}}" typeId="{{3}}"
+        data-event-opts="{{[['^closeModal',[['e1']]],['^save',[['GeneratePoster']]]]}}" bind:closeModal="__e"
+        bind:save="__e" bind:__l="__l"></share-or-save>
+    </view>
+  </block> -->
+</view>

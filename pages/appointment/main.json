@@ -1,6 +1,7 @@
 {
-  "navigationStyle": "custom",
-  "navigationBarTitleText": "课程中心",
+  "navigationBarTitleText": "预约中心",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#ACDED3",
   "usingComponents": {
     "right-float": "/components/rightFloat",
     "no-data": "/components/noData",
@@ -9,6 +10,7 @@
     "authentication-tag": "/components/AuthenticationTag",
     "float-buttons": "/components/FloatButtons",
     "nav-bar-by-user": "/components/NavBarByUser",
-    "share-or-save": "/components/shareOrSave"
+    "share-or-save": "/components/shareOrSave",
+    "van-search": "/static/vant/search/index"
   }
 }

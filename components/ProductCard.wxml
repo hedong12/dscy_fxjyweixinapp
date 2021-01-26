@@ -1,1 +1,9 @@
-<view class="product-card _div data-v-3dbec60d" style="{{(outStyle)}}"><image class="thumbnail w100p h168 _img data-v-3dbec60d" src="{{imgUrl}}" alt mode="aspectFill"></image><view class="synopsis borderbox w200 _div data-v-3dbec60d"><view class="w100p _div data-v-3dbec60d"><view class="title w100p over_1 _div data-v-3dbec60d">{{''+title+''}}</view></view><view class="footer _div data-v-3dbec60d"><view class="price-type disflex jsbet align-cen _div data-v-3dbec60d"><view class="price _div data-v-3dbec60d">￥<label class="_span data-v-3dbec60d">{{price}}</label></view></view></view></view></view>
+<view class="product-card _div data-v-3dbec60d" style="{{(outStyle)}}">
+  <image class="thumbnail w100p h168 _img data-v-3dbec60d" src="{{imgUrl}}"></image>
+  <view class="synopsis borderbox w200 _div data-v-3dbec60d">
+    <view class="title w100p over_1 _div data-v-3dbec60d">{{''+title+''}}</view>
+    <view class="price-type disflex jsbet align-cen _div data-v-3dbec60d">
+      <view class="price _div data-v-3dbec60d">￥<label class="_span data-v-3dbec60d">{{price}}</label></view>
+    </view>
+  </view>
+</view>
