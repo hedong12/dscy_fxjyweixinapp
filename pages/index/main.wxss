@@ -7,29 +7,33 @@
 
 
 .switch-card {
-	height: 66rpx;
-	line-height: 66rpx;
-	font-size: 24rpx;
+	height: 56rpx;
+	line-height: 56rpx;
+	font-size: 20rpx;
 	color: #bbb;
 	position: relative
 }
 
 .switch-logo {
-	width: 33rpx !important;
-	height: 33rpx !important;
-	position: absolute;
-	left: 40rpx;
-	z-index: 1;
-	bottom: 0
+	    width: 22rpx !important;
+	    height: 22rpx !important;
+	    position: absolute;
+	    left: 26rpx;
+	    z-index: 1;
+	    bottom: 10rpx;
 }
 
 .switch-card ._img {
 	border-radius: 100%;
-	width: 66rpx;
-	height: 66rpx;
+	width: 40rpx;
+	height: 40rpx;
 	vertical-align: middle;
-	margin-right: 15rpx
+	margin-right: 7rpx
 }
+
+
+
+
 
 .nav-grid .van-grid-item__icon,
 .nav-grid .van-icon.van-icon--image {
@@ -42,6 +46,19 @@
 	font-size: 21rpx;
 	margin-top: 14rpx
 }
+
+.van-grid-item{
+	width: 25%;
+} 
+
+
+.nav-grid {
+	padding-left: 24rpx;
+	padding-right: 30rpx;
+}
+
+
+
 
 .grid-text {
 	color: #555;
@@ -123,6 +140,8 @@
 	box-shadow: 0 2rpx 7rpx 0 rgba(6, 0, 1, .17)
 }
 
+
+
 .introduce {
 	font-size: 1.1em
 }
@@ -155,7 +174,7 @@
 }
 
 .product-recommend {
-	padding-top: 29rpx;
+	padding-top: 18rpx;
 	padding-left: 21rpx;
 	padding-right: 21rpx;
 	-webkit-box-shadow: 0 2rpx 7rpx 0 rgba(6, 0, 1, .17);
@@ -167,15 +186,15 @@
 }
 
 .product-recommend-title {
-	font-size: 32rpx;
+	font-size: 28rpx;
 	font-weight: 700;
 	padding-left: 20rpx;
-	border-left: 6rpx solid #8063c4
+/* 	border-left: 6rpx solid #8063c4 */
 }
 
 .product-recommend-list {
-	padding-top: 28rpx;
 	padding-bottom: 28rpx;
+	width: 100%;
 	/* margin-left: 21rpx; */
 	overflow-x: scroll
 }
@@ -197,30 +216,30 @@
 }
 
 .product-recommend-item {
-	width: 42%;
+	width: 44%;
 	-webkit-box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	display: inline-block;
 	border-radius: 20rpx;
-	margin-right: 28rpx;
-	padding: 20rpx 20rpx 10rpx 20rpx;
+	margin-right: 10rpx;
+	padding: 10px;
 	margin-bottom: 10rpx;
 	overflow: hidden
 }
 
 .product-recommend-item-else{
-	width: 42%;
+	width: 44%;
 	-webkit-box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	display: inline-block;
 	border-radius: 20rpx;
 	margin-bottom: 10rpx;
-	padding: 20rpx;
+	padding: 10px;
 	overflow: hidden
 }
 
 .product-recommend-item-else ._img {
-	height: 137rpx;
+	height: 147rpx;
 	border: 5rpx solid #5EB6AD;
 	width: 100%;
 	border-radius: 20rpx;
@@ -259,19 +278,19 @@
 }
 
 .product-view-go{
-	 width: 20%;
-	 float: right;
-	 background-color: #ACDED3;
-	 text-align: center;
-	 border-radius: 100%;
-	 color: #40A99F;
-	 height: 65rpx;
-	 margin-top: 10rpx;
+	    width: 13%;
+	    float: right;
+	    background-color: #ACDED3;
+	    text-align: center;
+	    border-radius: 100%;
+	    color: #40A99F;
+	    height: 38rpx;
+	    margin-top: 18rpx;
 }
 
 .product-text-go{
-	font-size: 12px;
-	line-height: 65rpx;
+	font-size: 18rpx;
+	line-height: 38rpx;
 	font-weight: bold;
 }
 
@@ -279,28 +298,30 @@
 .evaluation-button {
 	width: calc(100% - 36rpx);
 	margin-left: auto;
+	background-color: #F5F7F6;
 	white-space:nowrap;
+	padding: 12rpx 0;
+	
 	margin-right: auto
 }
 
 .evaluation-button ._img {
-	width: 60%;
-	padding: 25rpx 35rpx 10rpx 35rpx;
-	height: 110rpx; 
+	width: 70%;
+	padding: 32rpx 25rpx 18rpx;
+	height: 125rpx;
 	border-radius: 20rpx;
-	
 } 
+
 
 .evaluation-button ._img:nth-child(2) {
 	margin-top: 17rpx
 }
 
 .seen_peo {
-	margin-top: 20rpx;
 	border-bottom: 3px solid #fff;
-	-webkit-box-shadow: 0 5rpx 5rpx 0 rgba(6, 0, 1, .17);
+/* 	-webkit-box-shadow: 0 5rpx 5rpx 0 rgba(6, 0, 1, .17);
 	box-shadow: 0 5rpx 5rpx 0 rgba(6, 0, 1, .17);
-	margin-bottom: 25rpx
+	margin-bottom: 25rpx */
 }
 
 .bgfff2 {
@@ -321,8 +342,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	height: 262rpx
+	height: 311rpx
 }
+
+
 
 .banner swiper-item,
 .banner swiper-item image {
@@ -561,20 +584,28 @@ video {
 	margin-bottom: 33rpx
 }
 .shenglue{
-	font-size: 50rpx;
+	font-size: 26rpx;
 }
 .lovepng{
-	    width: 66rpx;
-	    height: 66rpx;
-		padding-right: 20rpx;
+	    width: 46rpx;
+	    height: 44rpx;
+		padding-right: 44rpx;
 }
 .text-nav{
-	    float: right;
-	    font-size: 28rpx;
+	float: right;
+	    font-size: 20rpx;
 	    line-height: 42rpx;
 	    font-weight: 200;
+	    color: #BCBCBC;
 }
 
+.yuanjiao{
+	border-radius: 100%;
+	margin-left: -14px;
+	border: 2px solid #fff;
+	
+	
+}
 
 
 /* pages/demo05/demo05.wxss */
@@ -664,7 +695,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 210rpx;
+	height: 245rpx;
 	border-radius: 30rpx;
 	background-color: #ACDED3;
 }
@@ -677,14 +708,14 @@ video {
 		height: 40rpx;
 		color: white;
 		line-height: 40rpx;
-		font-size: 24rpx;
+		font-size: 28rpx;
 }
 
 .evaluation-card-yellow{
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 210rpx;
+	height: 245rpx;
 	border-radius: 30rpx;
 	background-color: #FFCF73;
 }
@@ -696,7 +727,7 @@ video {
 	text-align: center;
 	height: 40rpx;
 	line-height: 40rpx;
-	font-size: 24rpx;
+	font-size: 28rpx;
 	color: white;
 }
 
@@ -705,7 +736,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 210rpx;
+height: 245rpx;
 	border-radius: 30rpx;
 	background-color: #F5C7C7;
 }
@@ -718,7 +749,7 @@ video {
 	height: 40rpx;
 	color: white;
 	line-height: 40rpx;
-	font-size: 24rpx;
+	font-size: 28rpx;
 }
 
 
@@ -726,7 +757,7 @@ video {
 	display:inline-block;
 	width: 25%;
 	margin-right: 20rpx;
-	height: 210rpx;
+height: 245rpx;
 	border-radius: 30rpx;
 	background-color: #D9CBFE;
 }
@@ -739,30 +770,23 @@ video {
 	height: 40rpx;
 	color: white;
 	line-height: 40rpx;
-	font-size: 24rpx;
+	font-size: 28rpx;
 }
 
 
-.evaluation-card-green{
-	display:inline-block;
-	width: 25%;
-	margin-right: 20rpx;
-	height: 210rpx;
-	border-radius: 30rpx;
-	background-color: #0FE858;
-}
-.card-view-green{
-	background-color: #15AD48;
-	border-radius: 30rpx;
-	width: 85%;
-	margin: 0 auto;
-	text-align: center;
-	height: 40rpx;
-	color: white;
-	line-height: 40rpx;
-	font-size: 24rpx;
-}
 .bottom-text{
    padding-bottom: env(safe-area-inset-bottom);  
    height: 48px;
 }
+
+
+
+
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+width: 0;
+height: 0;
+color: transparent;
+}
+/* swiper 选项卡 结束 */

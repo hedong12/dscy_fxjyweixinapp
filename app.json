@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/productList/productList",
     "pages/index/main",
     "pages/login/main",
     "pages/liveList/main",
@@ -58,11 +59,15 @@
     "pages/recruit/main",
     "pages/about/main",
     "pages/analysis/main",
-	"pages/demo05/demo05",
+    "pages/demo05/demo05",
 	"pages/demo04/demo04",
     "pages/demo03/demo03",
   	"pages/demo02/demo02",
+   "pages/demo10/demo10",
+  
     "pages/demo01/demo01"
+   
+
   ],
   "subPackages": [
     {

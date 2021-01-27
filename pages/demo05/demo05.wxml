@@ -33,6 +33,15 @@
             <view class='name'>
               <span>名称：{{item.name}}</span>
               <span>面额：{{item.money}}</span>
+			  <span>名称：{{item.name}}</span>
+			  <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span> <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span>
             </view>
           </view>
         </swiper-item>

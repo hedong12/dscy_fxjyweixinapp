@@ -294,7 +294,7 @@
   						}
   						return t
   					}(),
-					
+					  
   					onTabItemTap: function(e) {
   						(0, r.authSubscribeMessage)(this.subscriptionNew)
   					},
@@ -377,6 +377,22 @@
   									t[0].photo) : (e.bookImg = t[0].photo, e.testImg = t[1].photo)
   							}))
   						},
+						// if ("touch" === e.detail.source) {
+						//     let currentPageIndex = this.data.currentIndex
+						//     currentPageIndex = (currentPageIndex + 1) % 3
+						//     this.setData({
+						//       currentIndex: currentPageIndex
+						//     })
+						//   }
+						// },
+						// //用户点击tab时调用
+						// titleClick: function (e) {
+						//   let currentPageIndex =
+						//     this.setData({
+						//       //拿到当前索引并动态改变
+						//       currentIndex: e.currentTarget.dataset.idx
+						//     })
+						// },
   						goToProductInfo: function(e) {
   							var t = e.goodsId;
   							i.default.isLogin({

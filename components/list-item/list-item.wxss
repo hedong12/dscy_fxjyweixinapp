@@ -1,0 +1,290 @@
+.border-t,
+.border-b,
+.border-l,
+.border-r {
+  position: relative;
+}
+
+.border-t:before,
+.border-b:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #eee;
+  right: 0;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.border-l::before,
+.border-r::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background-color: #eee;
+  left: 0;
+  width: 1px;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.border-b:after {
+  top: auto;
+  bottom: 0;
+}
+
+.border-r::after {
+  right: 0;
+  left: auto;
+}
+
+.flex-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -ms-box;
+  display: box;
+  display: flex;
+  align-items: center;
+}
+
+.flex-con {
+  -webkit-box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  box-flex: 1;
+  flex: 1;
+}
+
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: column;
+  -flex-direction: column;
+  flex-flow: column;
+}
+
+/* 产品列表 */
+.good-list {
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin-top: -20rpx;
+}
+
+.good-list .good-item {
+  padding: 20rpx 0;
+}
+
+.good-list .good-item:last-child:after {
+  height: 0;
+}
+
+.good-list .good-item .item-img {
+  border-radius: 10rpx;
+  width: 260rpx;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16rpx;
+  border: #F5D9B2 solid 2rpx;
+}
+
+.good-list .good-item .item-img .year-card {
+  position: absolute;
+  left: -2rpx;
+  bottom: 0;
+  width: 60rpx;
+  height: 36rpx;
+  background: linear-gradient(90deg, rgba(237, 211, 172, 1) 0%, rgba(244, 241, 241, 1) 100%);
+  box-shadow: -4rpx -4rpx 8rpx 0px rgba(0, 0, 0, 0.07);
+  border-radius: 0px 16rpx 0px 16rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(92, 0, 18, 1);
+  text-align: center;
+  z-index: 1;
+}
+
+.good-list .good-item .new {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 54rpx;
+  width: 54rpx;
+}
+
+.good-list .good-item .item-img .img {
+  display: block;
+  height: 100%;
+  max-height: 180rpx;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.good-list .good-item .item-intro {
+  min-height: 180rpx;
+  padding: 5rpx 0 0 20rpx;
+  font-size: 30rpx;
+}
+
+.good-list .good-item .item-title {
+  font-size: 30rpx;
+  max-width: 380rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 44rpx;
+  color: #000;
+}
+
+.good-list .good-item .item-brief {
+  font-size: 26rpx;
+  color: #999;
+  max-width: 380rpx;
+  margin: 4rpx 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+
+.good-list .good-item .item-label {
+  font-size: 0;
+  max-width: 380rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 38rpx;
+}
+
+.good-list .good-item .item-label text {
+  display: inline-block;
+  margin-right: 16rpx;
+  vertical-align: middle;
+  width: 60rpx;
+  height: 36rpx;
+  border-radius: 16rpx 0rpx 16rpx 0rpx;
+  font-size: 20rpx;
+  line-height: 36rpx;
+  text-align: center;
+}
+
+.bgFFF1F0 {
+  background-color: #FFF1F0;
+  color: #5C0012;
+}
+
+.bgF2F8FE {
+  background-color: #F2F8FE;
+  color: #060E35;
+}
+
+.good-list .good-item .item-other {
+  margin-top: 4rpx;
+}
+
+.good-list .good-item .item-other .other {
+  font-size: 24rpx;
+  color: rgba(185, 185, 185, 1);
+}
+
+.good-list .good-item .item-other .other image {
+  width: 38rpx;
+  margin-right: 10rpx;
+}
+
+.good-list .good-item .other-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  line-height: 1.2;
+}
+
+.good-list .good-item .other-item image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 26rpx;
+  height: 26rpx;
+  position: relative;
+  top: -2rpx;
+  margin-right: 6rpx;
+}
+
+.good-list .good-item .other-item text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.good-list .good-item .item-other .price {
+  color: rgba(255, 122, 68, 1);
+  font-size: 32rpx;
+}
+
+.good-list .good-item .item-other .price text {
+  font-size: 30rpx;
+}
+
+.video-good-list .good-item .item-img {
+  width: 320rpx;
+}
+
+.video-good-list .good-item.style2 .item-img {
+  width: 180rpx;
+}
+
+.video-good-list .good-item .item-title {
+  max-width: 380rpx;
+  height: 88rpx;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+}
+
+.video-good-list .good-item .item-brief {
+  max-width: 380rpx;
+}
+
+.video-good-list .good-item .item-label {
+  max-width: 380rpx;
+}
+
+.video-good-list .good-item.style2 .item-title {
+  max-width: 540rpx;
+}
+
+.video-good-list .good-item.style2 .item-brief {
+  max-width: 540rpx;
+}
+
+.video-good-list .good-item.style2 .item-label {
+  max-width: 540rpx;
+}
+
+
+.good-list .good-item.style2 .item-title {
+  max-width: 380rpx;
+}
+
+.good-list .good-item.style2 .item-brief {
+  max-width: 380rpx;
+}
+
+.good-list .good-item.style2 .item-label {
+  max-width: 380rpx;
+}

@@ -1,1 +1,60 @@
-<view class="content _div"><video-swiper vue-id="44865f80-1" video-list="{{videoList}}" data-event-opts="{{[['^timeupdate',[['timeupdate']]],['^change',[['changeVideo']]]]}}" data-com-type="wx" bind:timeupdate="__e" bind:change="__e" bind:__l="__l"></video-swiper><view class="video-info-username _div">{{user.companyName+''}}</view><view class="video-info pisition-bottom _div"><view class="userinfo _div">{{user.videoTitle}}</view></view><view class="head-type _div"></view><view class="companyNotice _div"><view class="companyNotice-title _div">校园公告</view><view class="companyNotice-content _div">{{companyNotice}}</view></view><view class="right-icon _div"><image class="liveIcon _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/liveIcon.png" alt data-event-opts="{{[['tap',[['goToLive',['$event']]]]]}}" bindtap="__e"></image><view data-event-opts="{{[['tap',[['goToViodeList',['$event']]]]]}}" class="user-logo _div" style="margin-top:32rpx;" bindtap="__e"><image src="{{user.logo}}"></image></view><view data-event-opts="{{[['tap',[['callPhone',['$event']]]]]}}" class="user-icon _div" bindtap="__e"><image mode="widthFix" src="{{IconUrl+'phone.png'}}"></image></view><view data-event-opts="{{[['tap',[['getWxCardId',['$event']]]]]}}" class="user-icon _div" bindtap="__e"><image mode="widthFix" src="{{IconUrl+'chat.png'}}"></image></view><get-phone-number vue-id="44865f80-2" bind:__l="__l" vue-slots="{{['default']}}"><view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="user-icon _div" bindtap="__e"><image mode="widthFix" src="{{IconUrl+'share.png'}}"></image><view class="_br"></view>分享</view></get-phone-number><view data-event-opts="{{[['tap',[['showQC',['$event']]]]]}}" class="user-icon big-user-icon _div" bindtap="__e"><image mode="widthFix" src="{{IconUrl+'showQC.png'}}"></image></view></view><block wx:if="{{user.goodsId}}"><view data-event-opts="{{[['tap',[['goToProduct',['$event']]]]]}}" class="shop-goods _div" bindtap="__e">{{''+(user.goodsName||'点击查看商品')+' >'}}</view></block><van-progress vue-id="44865f80-3" percentage="{{percent}}" show-pivot="{{false}}" pivot-color="#7232dd" color="linear-gradient(to right, #be99ff, #7232dd)" custom-class="progress" stroke-width="1px" data-com-type="wx" bind:__l="__l"></van-progress><block wx:if="{{showShareOrSave}}"><view class="_div"><share-or-save vue-id="44865f80-4" status="{{showShareOrSave}}" saveId="{{user.videoId}}" typeId="{{5}}" data-event-opts="{{[['^closeModal',[['e1']]],['^save',[['GeneratePoster']]]]}}" bind:closeModal="__e" bind:save="__e" bind:__l="__l"></share-or-save></view></block><van-dialog vue-id="44865f80-5" id="van-dialog" data-com-type="wx" bind:__l="__l"></van-dialog><van-dialog vue-id="44865f80-6" use-slot title="海报图" confirm-button-text="下载海报" show="{{ShowDisplayPoster}}" show-cancel-button customStyle="text-align:center;" data-event-opts="{{[['^close',[['e2']]],['^confirm',[['download']]]]}}" data-com-type="wx" bind:close="__e" bind:confirm="__e" bind:__l="__l" vue-slots="{{['default']}}"><image class="displayPosterImg _img" mode="heightFix" src="{{displayPosterImg}}"></image></van-dialog><canvas style="width:533px;height:932px;position:absolute;top:-9999999999px;" canvas-id="myCanvas"></canvas><get-user-phone vue-id="44865f80-7" bind:__l="__l"></get-user-phone></view>
+<view class="content _div">
+	<video-swiper vue-id="44865f80-1" video-list="{{videoList}}" data-event-opts="{{[['^timeupdate',[['timeupdate']]],['^change',[['changeVideo']]]]}}"
+	 data-com-type="wx" bind:timeupdate="__e" bind:change="__e" bind:__l="__l"></video-swiper>
+	<view class="video-info-username _div">{{user.companyName+''}}</view>
+	<view class="video-info pisition-bottom _div">
+		<view class="userinfo _div">{{user.videoTitle}}</view>
+		
+	</view>
+	
+	<view class="head-type _div"></view>
+	<view class="companyNotice _div">
+		<view class="companyNotice-title _div">校园公告</view>
+		<view class="companyNotice-content _div">{{companyNotice}}</view>
+			
+	</view>
+	<view class="right-icon _div">
+		<image class="liveIcon _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/liveIcon.png" alt
+		 data-event-opts="{{[['tap',[['goToLive',['$event']]]]]}}" bindtap="__e"></image>
+		<view data-event-opts="{{[['tap',[['goToViodeList',['$event']]]]]}}" class="user-logo _div" style="margin-top:32rpx;"
+		 bindtap="__e">
+			<image src="{{user.logo}}"></image>
+		</view>
+		<view data-event-opts="{{[['tap',[['callPhone',['$event']]]]]}}" class="user-icon _div" bindtap="__e">
+			<image mode="widthFix" src="{{IconUrl+'phone.png'}}"></image>
+		</view>
+		<view data-event-opts="{{[['tap',[['getWxCardId',['$event']]]]]}}" class="user-icon _div" bindtap="__e">
+			<image mode="widthFix" src="{{IconUrl+'chat.png'}}"></image>
+		</view>
+		<get-phone-number vue-id="44865f80-2" bind:__l="__l" vue-slots="{{['default']}}">
+			<view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="user-icon _div" bindtap="__e">
+				<image mode="widthFix" src="{{IconUrl+'share.png'}}"></image>
+				<view class="_br"></view>分享
+			</view>
+		</get-phone-number>
+		<view data-event-opts="{{[['tap',[['showQC',['$event']]]]]}}" class="user-icon big-user-icon _div" bindtap="__e">
+			<image mode="widthFix" src="{{IconUrl+'showQC.png'}}"></image>
+		</view>
+	</view>
+	<block wx:if="{{user.goodsId}}">
+		<view data-event-opts="{{[['tap',[['goToProduct',['$event']]]]]}}" class="shop-goods _div" bindtap="__e">{{''+(user.goodsName||'点击查看商品')+' >'}}</view>
+	</block>
+	<van-progress vue-id="44865f80-3" percentage="{{percent}}" show-pivot="{{false}}" pivot-color="#7232dd" color="linear-gradient(to right, #be99ff, #7232dd)"
+	 custom-class="progress" stroke-width="1px" data-com-type="wx" bind:__l="__l"></van-progress>
+	<block wx:if="{{showShareOrSave}}">
+		<view class="_div">
+			<share-or-save vue-id="44865f80-4" status="{{showShareOrSave}}" saveId="{{user.videoId}}" typeId="{{5}}"
+			 data-event-opts="{{[['^closeModal',[['e1']]],['^save',[['GeneratePoster']]]]}}" bind:closeModal="__e" bind:save="__e"
+			 bind:__l="__l"></share-or-save>
+		</view>
+	</block>
+	<van-dialog vue-id="44865f80-5" id="van-dialog" data-com-type="wx" bind:__l="__l"></van-dialog>
+	<van-dialog vue-id="44865f80-6" use-slot title="海报图" confirm-button-text="下载海报" show="{{ShowDisplayPoster}}"
+	 show-cancel-button customStyle="text-align:center;" data-event-opts="{{[['^close',[['e2']]],['^confirm',[['download']]]]}}"
+	 data-com-type="wx" bind:close="__e" bind:confirm="__e" bind:__l="__l" vue-slots="{{['default']}}">
+		<image class="displayPosterImg _img" mode="heightFix" src="{{displayPosterImg}}"></image>
+	</van-dialog><canvas style="width:533px;height:932px;position:absolute;top:-9999999999px;" canvas-id="myCanvas"></canvas>
+	<get-user-phone vue-id="44865f80-7" bind:__l="__l"></get-user-phone>
+	
+
+</view>

@@ -1,0 +1,165 @@
+<view class="good-list" wx:if="{{goodType=='zhuanlan'}}">
+	<block wx:for="{{goodData}}">
+		<view class="good-item flex-wrap border-b {{item.coverType==2?'style2':''}}" data-id="{{item.id}}" bindtap="_tozlDetail">
+			<view class="item-img">
+				<image src="/images/new.png" class="new" wx:if="{{item.isNew==1}}"></image>
+				<image src="{{item.cover}}" class="img fade_in" mode="widthFix"></image>
+			</view>
+			<view class="item-intro flex-con">
+				<view class="item-title">{{item.name}}</view>
+				<view class="item-brief">{{item.brief}}</view>
+				<view class="item-label">
+					<block wx:for="{{item.label}}" wx:for-item="label">
+						<text>{{label?label:''}}</text>
+					</block>
+				</view>
+				<view class="item-other flex-wrap">
+					<view class="flex-con other">
+						<block wx:if="{{item.coverType==1}}">已更新</block>{{item.updateNum}}/{{item.totalNum}}期　
+					</view>
+					<view class="price" wx:if="{{!alreadyBuy}}">
+						<block wx:if="{{item.hadBuy==1}}">已阅读{{item.hadReadNum}}/{{item.totalNum}}</block>
+						<block wx:elif="{{system!='ios'}}">
+							<block wx:if="{{item.price>0}}">￥<text>{{item.price>0?item.price:'0'}}</text></block>
+							<block wx:else><text style="color:#333;font-size:28rpx">免费</text></block>
+						</block>
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+	<!-- <view class="good-item flex-wrap border-b" bindtap="_tozlDetail">
+    <view class="item-img">
+      <image src="/images/new.png" class="new"></image>
+      <image src="/images/placeimg/img3.png" class="img fade_in" mode="aspectFill"></image>
+    </view>
+    <view class="item-intro flex-con">
+      <view class="item-title">专栏梦工厂 新零售--线下零售商的春天</view>
+      <view class="item-brief">新零售--线下零售商的春天只是短暂的回光返照</view>
+      <view class="item-label"><text>互联网</text><text>新零售</text></view>
+      <view class="item-other flex-wrap">
+        <view class="flex-con other">已更新15/50期　5011人订阅</view>
+        <view class="price"><block wx:if="{{item.hadBuy==1}}">已阅读12/25</block><block wx:else>￥<text>199</text></block></view>
+      </view>
+    </view>
+  </view> -->
+</view>
+<view class="good-list" wx:if="{{goodType=='audiolist' || goodType=='zhuanlan1'}}">
+	<block wx:for="{{goodData}}">
+		<view class="good-item flex-wrap border-b {{item.coverType==2?'style2':''}}" data-id="{{item.id}}" bindtap="{{goodType=='zhuanlan1'?'_tozlDetail':'_toaudioDetail'}}">
+			<view class="item-img">
+				<view wx:if="{{item.inYearCard}}" class="year-card">vip</view>
+				<image src="/images/new.png" class="new" wx:if="{{item.isNew==1}}"></image>
+				<image src="{{item.cover}}" class="img fade_in" mode="widthFix"></image>
+			</view>
+			<view class="item-intro flex-con">
+				<view class="item-title">{{item.name}}</view>
+				<view class="item-brief">{{item.brief}}</view>
+				<view class="item-label">
+					<block wx:for="{{item.label}}" wx:for-item="label" wx:for-index="labelInd">
+						<text class="{{labelInd%2==0?'bgFFF1F0':'bgFFF1F0'}}">{{label?label:''}}</text>
+					</block>
+				</view>
+				<view class="item-other flex-wrap">
+					<view class="flex-con other">
+						<view class="other-item">
+							<image mode="widthFix" class="icon_eye" src="https://zhfm.bjxzhjykj.com/html/zh/images/coursePage/eye.png"></image>
+							<text>{{item.readNum}}</text>
+						</view>
+					</view>
+					<view class="price" wx:if="{{!alreadyBuy}}">
+						<block wx:if="{{system!='ios' && good.hadBuy!=1}}">
+							<block wx:if="{{item.price>0 && item.hadBuy!==1}}">￥<text>{{item.price>0?item.price:'0'}}</text></block>
+							<block wx:if="{{item.price<=0 && item.hadBuy!==1}}"><text style="color:#333;font-size:28rpx">免费</text></block>
+						</block>
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+	<!-- <view class="good-item flex-wrap border-b" bindtap="_toaudioDetail">
+    <view class="item-img">
+      <image src="/images/placeimg/img3.png" class="img fade_in" mode="aspectFill"></image>
+    </view>
+    <view class="item-intro flex-con">
+      <view class="item-title">音频梦工厂  新零售--线下零售商的春天只是短暂的回光返照</view>
+      <view class="item-brief">新零售--线下零售商的春天只是短暂的回光返照</view>
+      <view class="item-label"><text>互联网</text><text>新零售</text></view>
+      <view class="item-other flex-wrap">
+        <view class="flex-con other">
+          <view class="other-item">
+            <image src="/images/icon_bofangliang.png" mode="aspectFit"></image>
+            <text>5011</text>
+          </view>
+          <view class="other-item">
+            <image src="/images/icon_jie.png" mode="aspectFit"></image>
+            <text>30节</text>
+          </view>
+        </view>
+        <view class="price"><block wx:if="{{item.hadBuy==1}}">已阅读12/25</block><block wx:else>￥<text>199</text></block></view>
+      </view>
+    </view>
+  </view> -->
+</view>
+<view class="good-list video-good-list" wx:if="{{goodType=='videolist'}}">
+	<block wx:for="{{goodData}}">
+		<view class="good-item flex-wrap border-b" data-id="{{item.id}}" bindtap="_tovideoDetail">
+			<view class="item-img">
+				<image src="/images/new.png" class="new" wx:if="{{item.isNew==1}}"></image>
+				<image src="{{item.cover}}" class="img fade_in" mode="widthFix"></image>
+			</view>
+			<view class="item-intro flex-con">
+				<view class="item-title">{{item.name}}</view>
+				<!-- <view class="item-brief">{{item.brief}}</view> -->
+				<view class="item-label">
+					<block wx:for="{{item.label}}" wx:for-item="label">
+						<text>{{label?label:''}}</text>
+					</block>
+				</view>
+				<view class="item-other flex-wrap">
+					<view class="flex-con other">
+						<view class="other-item">
+							<image src="/images/icon_bofangliang.png" mode="aspectFit"></image>
+							<text>{{item.sold}}</text>
+						</view>
+						<view class="other-item">
+							<image src="/images/icon_play.png" style="top:0;" mode="aspectFit"></image>
+							<text>{{item.totalNum}}节</text>
+						</view>
+					</view>
+					<view class="price" wx:if="{{!alreadyBuy}}">
+						<block wx:if="{{item.hadBuy==1}}">已看{{item.hadReadNum}}/{{item.totalNum}}</block>
+						<block wx:elif="{{system!='ios'}}">
+							<block wx:if="{{item.price>0}}">￥<text>{{item.price>0?item.price:'0'}}</text></block>
+							<block wx:else><text style="color:#333;font-size:28rpx">免费</text></block>
+						</block>
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+	<!-- <view class="good-item flex-wrap border-b" bindtap="_tovideoDetail">
+    <view class="item-img">
+      <image src="/images/new.png" class="new"></image>
+      <image src="/images/placeimg/img4.png" class="img fade_in" mode="aspectFill"></image>
+    </view>
+    <view class="item-intro flex-con">
+      <view class="item-title">视频梦工厂  新零售--线下零售商的春天只是短暂的回光返照</view>
+       <view class="item-brief">新零售--线下零售商的春天只是短暂的回光返照</view> 
+      <view class="item-label"><text>互联网</text><text>新零售</text></view>
+      <view class="item-other flex-wrap">
+        <view class="flex-con other">
+          <view class="other-item">
+            <image src="/images/icon_bofangliang.png" mode="aspectFit"></image>
+            <text>5011</text>
+          </view>
+          <view class="other-item">
+            <image src="/images/icon_play.png" style="top:0;" mode="aspectFit"></image>
+            <text>32节</text>
+          </view>
+        </view>
+        <view class="price"><block wx:if="{{item.hadBuy==1}}">已阅读12/25</block><block wx:else>￥<text>199</text></block></view>
+      </view>
+    </view>
+  </view> -->
+</view>

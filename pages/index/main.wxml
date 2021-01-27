@@ -13,7 +13,7 @@
 	</swiper>
 	<van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
 	 bind:__l="__l" vue-slots="{{['default']}}"> 
-		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_qzkt.png"
+		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" class="van-grid-item" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_qzkt.png"
 		 text="亲子课堂" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
 		 bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bw.png"
@@ -22,43 +22,48 @@
 		 text="健康保健" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kczx.png"
 		 text="课程中心" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_fmxy.png"
-		 text="父母学院" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_xyhb.png"
-		  text="校园海报" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		  <van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dh.png"
-		    text="拨打电话" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-			<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_txl.png"
-			  text="同步通讯录" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_fmxy.png"
+		 text="父母学院" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_xyhb.png"
+		  text="校园海报" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		  <van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dh.png"
+			text="拨打电话" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_txl.png"
+		  text="同步通讯录" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 	</van-grid>
+	
+	
 	<view class="seen_peo disflex pl15 pr26 fs10 ca8 jsbet bgfff _div">
 		<view class="_div">
 			<view class="disflex _div">
 				<image class="lovepng" src="../../static/images/love.png"></image>
 				<block wx:for="{{card_msg.browsePhoto}}" wx:for-item="v" wx:for-index="k" wx:key="k">
-					<image class="w33 h33 bradius3 mr3 _img" src="{{v}}" alt mode="aspectFill"></image>
-				</block>
-				<view class="lh25 _p shenglue">···</view>
+					<!-- 36 33  -->
+					<image class="w19 h20 yuanjiao mr3 _img" src="{{v}}" alt mode="aspectFill"></image>
+				</block> 
+				<view class="lh25 ml9 _p shenglue" space="ensp">·    ·     ·</view>
 			</view>
-	
 			<!-- <view class="lh20 _p">{{"已有"+card_msg.browseNum+"人浏览"}}</view> -->
-			
 		</view>
 		<view data-event-opts="{{[['tap',[['goTo',['cardCase/main']]]]]}}" class="switch-card _div" bindtap="__e">
 			<image src="{{card_msg.logo}}" alt class="_img"></image>
 			<image class="switch-logo _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-switch.png"
-			 alt></image>{{''+card_msg.username+''}}
+			 alt></image>
+			 {{''+card_msg.username+''}}
 		</view>
 	</view>
+	  
+	
+	
 	<view class="evaluation-button _div">
-		<scroll-view scroll-x>
+		<scroll-view style="height: 250rpx;" scroll-x>
 				<view class="evaluation-card">
 					<image  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_pc.png" alt data-event-opts="{{[['tap',[['goToEvaluation',['$event']]]]]}}" bindtap="__e"
 					 class="_img"></image> 
 					<view class="card-view">
 						入园测评
 					</view>
-				</view>
+				</view> 
 				<view class="evaluation-card-yellow">
 					<image  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_sqgs.png" alt data-event-opts="{{[['tap',[['goTo',['book/main/main']]]]]}}" bindtap="__e"
 					 class="_img"></image>
@@ -108,7 +113,7 @@
 								</view>
 							</view>
 							<view class="product-view-go">
-								<text class="product-text-go">GO</text>
+								<view class="product-text-go">GO</view>
 							</view>
 						</view>
 						<view wx:else  data-event-opts="{{[['tap',[['goToProductInfo',['$0'],[[['productRecommend','',index]]]]]]]}}" class="product-recommend-item-else _div"
@@ -117,12 +122,16 @@
 							<view class="product-recommend-content _div">
 								<view class="product-recommend-item-title _div">{{item.$orig.goodsName}}</view>
 								<view class="product-recommend-item-tag _div">
-									<block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
+									<!-- <block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
+									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block> -->
+									<block ><label class="product-recommend-item-tags _span">免费</label></block>
 									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block>
 								</view>
 							</view>
+						
+							
 							<view class="product-view-go">
-								<text class="product-text-go">GO</text>
+								<view class="product-text-go">GO</view>
 							</view>
 						</view>
 						
@@ -133,6 +142,10 @@
 			</view>
 		</view>
 	</block>
+	
+	
+	
+	
 	
 	<view class='ticket-container'>
 	    <scroll-view scroll-y>
@@ -216,9 +229,13 @@
 			 bind:close="__e" bind:__l="__l"></add-wx-course>
 		</view>
 	</block>
-	<float-buttons class="index_float_right trans2 overhidden" vue-id="1a10b852-9" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}"
-	 data-event-opts="{{[['^talk',[['talk']]]]}}" bind:talk="__e" bind:__l="__l"></float-buttons>
-	<login vue-id="1a10b852-10" is-show="{{!loginIsSHow}}" data-event-opts="{{[['^cancelLogin',[['e1']]],['^loginSuccess',[['loginSuccess']]]]}}"
+	
+	
+	<!-- <float-buttons class="index_float_right trans2 overhidden" vue-id="1a10b852-9" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}"
+	 data-event-opts="{{[['^talk',[['talk']]]]}}" bind:talk="__e" bind:__l="__l"></float-buttons> -->
+	 
+	 
+	<!-- <login vue-id="1a10b852-10" is-show="{{!loginIsSHow}}" data-event-opts="{{[['^cancelLogin',[['e1']]],['^loginSuccess',[['loginSuccess']]]]}}"
 	 bind:cancelLogin="__e" bind:loginSuccess="__e" bind:__l="__l"></login>
 	<van-overlay vue-id="1a10b852-11" show="{{isEvaluation&&isEllis}}" class-name="delte-demo" data-com-type="wx" bind:__l="__l"
 	 vue-slots="{{['default']}}"> 
@@ -235,6 +252,6 @@
 				 catchtap="__e"></image>
 			</block>
 		</view> 
-	</van-overlay>
+	</van-overlay> -->
 	
 </scroll-view>

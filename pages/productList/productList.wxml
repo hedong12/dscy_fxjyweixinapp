@@ -1,0 +1,79 @@
+<!-- <view class="top-zhanwei" style="height:{{noflTab==1?'403rpx':'403rpx'}}" wx:if="{{category.length>0}}">
+ -->
+ <view class="top-zhanwei" style="height:{{noflTab==1?'403rpx':'403rpx'}}" >
+	<view class="top-opera">
+		<!-- 搜索组件 -->
+		<!-- <view class="search-component">
+			<view class="search-wrap">
+				<view class="search-area flex-wrap">
+					<view class="search-con">
+						<input type="text" placeholder="“百科全书”式家庭教育平台" class="placestyle" bindinput="searchtxtChange" bindconfirm="submibSearch"></input>
+						<image class="search-img" src="https://zhfm.bjxzhjykj.com/html/zh/images/coursePage/search.png"></image>
+					</view>
+				</view>
+			</view>
+		</view> -->
+		<!-- <view class="search-component">
+      <view class="search-wrap" style="background-color:#fff;padding-top:8rpx;padding-bottom:10rpx;margin-top:0rpx;margin-bottom:0rpx;">
+        <view class="search-area flex-wrap" style="width:90%;margin:0 auto;">
+          <view class="flex-con">
+            <view class="search-con" style="height:50rpx;line-height:50rpx;width:100%;font-size:12rpx;background-color:#fff;border-radius:18rpx;color:#999;border-color:#ddd;"
+              bindtap="toSearchpage">
+              <input id="searchinput" style="height: 19rpx; line-height: 19rpx;padding: 0rpx; padding-left: 15rpx;" type="text" confirm-type="search" value="{{searchTxt}}" placeholder="请输入关键词" placeholder-class="placestyle" bindinput="searchtxtChange" bindconfirm="submibSearch"></input>
+              <image src="/images/customIcon/icon_search_black.png" class="icon-search" mode="aspectFit"></image>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view> -->
+		<!--轮播图-->
+		<view class="lb">
+			<swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000' circular='true'>
+				<swiper-item class="lbItem" wx:for="{{swiperData}}" wx:key="index">
+					<image src='{{html_url+item.imgUrl}}' style="width:100%;height:100%" data-url="{{item.linkUrl}}" bindtap="handleToOutPage"></image>
+				</swiper-item>
+			</swiper>
+		</view>
+		<view class="sort-type">
+			<view class="type-item {{curCategory==0?'active':''}}" data-type="0" bindtap="toggleKnowtype">全部</view>
+			<view class="type-item {{curCategory==79?'active':''}}" data-type="79" bindtap="toggleKnowtype">婴儿</view>
+			<view class="type-item {{curCategory==78?'active':''}}" data-type="78" bindtap="toggleKnowtype">幼儿</view>
+			<view class="type-item {{curCategory==77?'active':''}}" data-type="77" bindtap="toggleKnowtype">小学</view>
+			<view class="type-item {{curCategory==76?'active':''}}" data-type="76" bindtap="toggleKnowtype">青少年</view>
+			<view class="type-item {{curCategory==80?'active':''}}" data-type="80" bindtap="toggleKnowtype">孕产期</view>
+			<view class="type-item {{isShowFilter?'show':''}}" data-type="filter" bindtap="toggleKnowtype">筛选<image src="/images/icon_fold_gray.png" mode="aspectFit"></image>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 筛选弹出层 -->
+<view class="modal-mask" wx:if="{{isShowFilter}}" bindtap="hideFiter"></view>
+<view class="modal-content" wx:if="{{isShowFilter}}">
+	<view class="price-modal">
+		<view class="short-price">
+			<view class="price-tag {{curgory==81?'thin-border':''}}" data-type="81" bindtap="toggleSort"><text>学习</text></view>
+			<view class="price-tag {{curgory==82?'thin-border':''}}" data-type="82" bindtap="toggleSort"><text>生活</text></view>
+			<view class="price-tag {{curgory==83?'thin-border':''}}" data-type="83" bindtap="toggleSort"><text>社交</text></view>
+			<view class="price-tag {{curgory==84?'thin-border':''}}" data-type="84" bindtap="toggleSort"><text>健康</text></view>
+			<view class="price-tag {{curgory==85?'thin-border':''}}" data-type="85" bindtap="toggleSort"><text>沟通</text></view>
+			<view class="price-tag {{curgory==86?'thin-border':''}}" data-type="86" bindtap="toggleSort"><text>情绪</text></view>
+		</view>
+	</view>
+</view>
+<view class="list-wrap">
+	<view class="no-data" wx:if="{{productList.length<=0}}">
+		<image src="/images/zw_cnntent.png" mode="aspectFit"></image>
+		<text>暂时还没有更新内容</text>
+	</view>
+	<view wx:if="{{productList.length>0}}">
+		<!-- <list-item good-type="zhuanlan" good-data="{{productList}}" wx:if="{{knowType==1}}"></list-item> -->
+		<list-item good-type="{{goodType}}"  good-data="{{productList}}"></list-item>
+		<!-- <list-item good-type="videolist" good-data="{{productList}}" wx:if="{{knowType==3}}"></list-item> -->
+	</view>
+</view>
+<view class="loading-gif" wx:if="{{showLoading}}">
+	<image src="/images/loading-red.gif" mode="aspectFit"></image>
+	<text>努力加载中...</text>
+</view>
+<view class="nomore-tip" wx:if="{{noMoretip&&productList.length>0}}">没有更多数据啦~</view>

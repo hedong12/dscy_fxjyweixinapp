@@ -358,7 +358,7 @@ button::after {
 
 .lh18 {
 	line-height: 36rpx
-}
+}  
 
 .lh20 {
 	line-height: 40rpx 
@@ -946,6 +946,10 @@ button::after {
 	margin-right: 16rpx
 }
 
+.mr9 {
+	margin-right: 18rpx
+}
+
 .mr10 {
 	margin-right: 20rpx
 }
@@ -1033,6 +1037,10 @@ button::after {
 
 .mb60 {
 	margin-bottom: 120rpx
+}
+
+.ml9 {
+	margin-left: 18rpx
 }
 
 .ml10 {
@@ -1248,6 +1256,10 @@ button::after {
 	width: 36rpx
 }
 
+.w19 {
+	width: 38rpx
+}
+
 
 .w16 {
 	width: 32rpx
@@ -1268,6 +1280,11 @@ button::after {
 .w30 {
 	width: 60rpx
 }
+
+.w31 {
+	width: 62rpx
+}
+
 
 .w22 {
 	width: 44rpx
@@ -1480,6 +1497,11 @@ button::after {
 .h30 {
 	height: 60rpx
 }
+
+.h31 {
+	height: 62rpx
+}
+
 
 .h22 {
 	height: 44rpx
