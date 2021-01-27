@@ -182,6 +182,7 @@
               }))
             },
             delOrder: function(event,o){
+              console.log(event)
               var _this = this
               console.log(_this)
               const { position } = event.detail;

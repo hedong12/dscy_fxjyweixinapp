@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "购物车",
   "enablePullDownRefresh": true,
-  "navigationBarTextStyle": "white",
+  "navigationBarTextStyle": "black",
   "navigationBarBackgroundColor": "#ACDED3",
   "usingComponents": {
     "order-item": "/components/orderItem",

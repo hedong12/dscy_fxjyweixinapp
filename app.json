@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/productList/productList",
     "pages/index/main",
     "pages/login/main",
     "pages/liveList/main",
     "pages/address/main",
-    "pages/seeVideo/main",  
+    "pages/seeVideo/main",
+    "pages/productList/productList",
     "pages/evaluationReport/main",
   "pages/usercenter/main",
     "pages/collect/main",

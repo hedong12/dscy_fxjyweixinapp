@@ -1774,7 +1774,7 @@ button::after {
 .checkBox ._span {
 	width: 40rpx;
 	height: 40rpx;
-	background: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/no_check.png) no-repeat;
+	background: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_noCheck.png) no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 0;
@@ -1786,7 +1786,7 @@ button::after {
 }
 
 .checkBox.active ._span {
-	background: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/check.png) no-repeat;
+	background: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_check.png) no-repeat;
 	background-size: 100%
 }
 
@@ -2228,6 +2228,39 @@ textarea.pha8:-ms-input-placeholder {
 		-webkit-transform: translate3d(100%, 0, 0);
 		transform: translate3d(100%, 0, 0)
 	}
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 
 .fadeOutRight {

@@ -83,3 +83,7 @@
 .prod_float_right>._div {
   bottom: 120rpx
 }
+
+.nav-grid .van-grid-item__text {
+	margin-top: 16rpx
+}

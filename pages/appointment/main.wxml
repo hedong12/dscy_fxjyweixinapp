@@ -17,16 +17,25 @@
       </self-swiper>
     </view>
 
+    <van-grid vue-id="1a10b852-10" column-num="{{2}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
+      bind:__l="__l" vue-slots="{{['default']}}"> 
+      <van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_project.png"
+      text="课程中心" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
+      bind:__l="__l"></van-grid-item>
+      <van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_order.png"
+      text="预约中心" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+    </van-grid>
+<!-- 
     <view class="foot-type _div">
       <view class="_div" data-event-opts="{{[['tap',[['goTo',['$event']]]]]}}" bindtap="__e" >
-        <image src="/static/tabs/appointment_select.png"></image>
+        <image src="/static/images/Snipaste_2021-01-26_23-31-03.png"></image>
         <text>课程中心</text>
       </view>
       <view class="_div">
-        <image src="/static/tabs/computer_select.png"></image>
+        <image src="/static/images/Snipaste_2021-01-26_23-31-39.png"></image>
         <text>预约中心</text>
       </view>
-    </view>
+    </view> -->
 
     <view class="nav_top _div">
       <view class="posre pl15 bgfff _div">

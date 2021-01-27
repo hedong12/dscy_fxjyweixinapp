@@ -11,6 +11,8 @@
     "float-buttons": "/components/FloatButtons",
     "nav-bar-by-user": "/components/NavBarByUser",
     "share-or-save": "/components/shareOrSave",
-    "van-search": "/static/vant/search/index"
+    "van-search": "/static/vant/search/index",
+    "van-grid": "/static/vant/grid/index",
+    "van-grid-item": "/static/vant/grid-item/index"
   }
 }
