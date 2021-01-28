@@ -6,7 +6,7 @@
         <label class="title">{{index+1+"、"+item.title}}</label>
         <view class="content _div">
           <van-tabs vue-id="{{'76129db0-1'+index}}" active="{{active}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-            <van-tab vue-id="{{('76129db0-2-'+index)+','+('76129db0-1'+index)}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+            
               <view class="ceontent-qa _div">
                 <block wx:for="{{item.answer}}" wx:for-item="answer" wx:for-index="i" wx:key="i">
                   <view data-event-opts="{{[['tap',[['setHandInPapers',['$0',i,index],[[['qaDialog','',index,'answer']]]]]]]}}" class="{{['item _div',(answer.active===1)?'active':'']}}" bindtap="__e">
@@ -15,7 +15,6 @@
                   </view>
                 </block>
               </view>
-            </van-tab>
           </van-tabs>
         </view>
       </view>

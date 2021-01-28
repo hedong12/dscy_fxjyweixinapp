@@ -434,7 +434,7 @@
 						  }else{
 						      
 									this.currentTab= e.currentTarget.dataset.current;
-						  }
+						  } 
 						},
 						
 						

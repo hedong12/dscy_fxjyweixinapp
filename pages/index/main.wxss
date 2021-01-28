@@ -225,7 +225,7 @@
 
 
 .product-recommend-item {
-	width: 44%;
+	width: 43.5%;
 	-webkit-box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	display: inline-block;
@@ -237,7 +237,7 @@
 }
 
 .product-recommend-item-else{
-	width: 44%;
+	width: 43.5%;
 	-webkit-box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	box-shadow: 0 6rpx 21rpx 0 rgba(6, 0, 1, .22);
 	display: inline-block;

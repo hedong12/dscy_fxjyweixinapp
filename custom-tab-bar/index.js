@@ -7,14 +7,14 @@ Component({
       {
         pagePath: "/pages/index/main",
         text: "首页",
-        iconPath: "/static/tabs/computer_select.png",
-        selectedIconPath: "/static/tabs/computer_select.png"
+        iconPath: "/static/tabs/computer.png",
+        selectedIconPath: "/static/tabs/computer.png"
       },
       {
         pagePath: "/pages/Product/main",
         text: "教育生活圈",
-        iconPath: "/static/tabs/appointment_select.png",
-        selectedIconPath: "/static/tabs/appointment_select.png"
+        iconPath: "/static/tabs/appointment.png",
+        selectedIconPath: "/static/tabs/appointment.png"
       },
       {
         pagePath: "/pages/video/main",
@@ -28,14 +28,14 @@ Component({
         pagePath: "/pages/Dynamic/main",
         text: "新鲜事",
 		navigationStyle: "custom",
-        iconPath: "/static/tabs/browser_select.png",
-        selectedIconPath: "/static/tabs/browser_select.png"
+        iconPath: "/static/tabs/browser.png",
+        selectedIconPath: "/static/tabs/browser.png"
       },
       {
         pagePath: "/pages/usercenter/main",
         text: " 我的",
-        iconPath: "/static/tabs/user-active.png",
-        selectedIconPath: "/static/tabs/user-active.png"
+        iconPath: "/static/tabs/user.png",
+        selectedIconPath: "/static/tabs/user.png"
       }
     ],
   },

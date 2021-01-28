@@ -40,7 +40,7 @@
 .bulge .image{
   width: 45px;
   position: relative;
-  top: -28rpx;
+  top: -20rpx;
   height: 45px;
 }
 
@@ -48,6 +48,7 @@
   font-size: 10px;
 }
 
-.bulge .tab-bar-view{
-	    
+.tab-bar-bulge + .tab-bar-view{
+	    position: relative;
+	    top: -8rpx;
 }
