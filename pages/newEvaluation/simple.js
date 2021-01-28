@@ -80,7 +80,7 @@
               return d = parseInt(f / 30 + ""), l > 3 && (this.qa = c.default), this.month = d, this.year = l, [2]
             }))
           }))
-        }, e.prototype.setHandInPapers = function (t, e, ind) {
+        }, e.prototype.setHandInPapers = function (te, e, ind) {
           if(this.qaDialog[ind].option == undefined) {
             if(this.active<9) {
               this.active+=1
@@ -89,12 +89,34 @@
               this.qaDialog.push(o.default[ind+1])
             }
           }
-          this.qaDialog[ind].option = this.keys[e]
-            t.map((function (t) {
-              t.active = 0
-            })), t[e].active = 1
+          this.$set(this.qaDialog[ind],'option', this.keys[e])
+          te.map((function (t) {
+            t.active = 0
+          })), te[e].active = 1
+          var t, e, n, a, r, h, c, s, f, l;
+          return t = 0, this.qaDialog[ind].answer.map((function (e) {
+            t < e.active && (t = e.active)
+          })), t ? 9 !== ind ? [3, 2] : (e = this, n = e.birthdays, a = e.name, r = e.sex, h = e.province, c = e.city, s = e.county, f = [0, 0, 0, 0, 0], this.qa.map((function (t) {
+            t.answer.map((function (t) {
+              t.active && (f[t.type] += 1)
+            }))
+          })), [4, u.createPotential({
+            name: a,
+            birthdays: n,
+            sex: r,
+            province: h,
+            city: c,
+            district: s,
+            prefrontalLobe: 0,
+            posteriorFrontalLobe: f[4],
+            temporalLobe: f[2],
+            occipitalLobe: f[1],
+            parietalLobe: f[3]
+          })]) : (wx.showToast({
+            title: "请选择答案",
+            icon: "none"
+          }), [2]);
         }, e.prototype.nextQa = function () {
-          console.log('123')
           return i.__awaiter(this, void 0, void 0, (function () {
             var t, e, n, a, r, o, c, s, f, l;
             return i.__generator(this, (function (i) {
