@@ -68,7 +68,7 @@
       var s = function (t) {
         function e() {
           var e = null !== t && t.apply(this, arguments) || this;
-          return e.active = 0, e.select = "", e.qa = o.default, e.qaDialog = [o.default[0]], e.sex = 0, e.birthdays = "", e.name = "", e.province = "", e.city = "", e.county = "", e.month = 0, e.year = 0, e.keys = ["A", "B", "C", "D"], e
+          return e.active = 0, e.select = "", e.scrollTop = 0, e.qa = o.default, e.qaDialog = [o.default[0]], e.sex = 0, e.birthdays = "", e.name = "", e.province = "", e.city = "", e.county = "", e.month = 0, e.year = 0, e.keys = ["A", "B", "C", "D"], e
         }
         return i.__extends(e, t), e.prototype.onLoad = function (t) {
           
@@ -81,6 +81,7 @@
             }))
           }))
         }, e.prototype.setHandInPapers = function (te, e, ind) {
+          
           if(this.qaDialog[ind].option == undefined) {
             if(this.active<9) {
               this.active+=1
@@ -93,7 +94,7 @@
           te.map((function (t) {
             t.active = 0
           })), te[e].active = 1
-          var t, e, n, a, r, h, c, s, f, l;
+          var t, e, n, a, r, h, c, s, f;
           return t = 0, this.qaDialog[ind].answer.map((function (e) {
             t < e.active && (t = e.active)
           })), t ? 9 !== ind ? [3, 2] : (e = this, n = e.birthdays, a = e.name, r = e.sex, h = e.province, c = e.city, s = e.county, f = [0, 0, 0, 0, 0], this.qa.map((function (t) {
@@ -117,42 +118,9 @@
             icon: "none"
           }), [2]);
         }, e.prototype.nextQa = function () {
-          return i.__awaiter(this, void 0, void 0, (function () {
-            var t, e, n, a, r, o, c, s, f, l;
-            return i.__generator(this, (function (i) {
-              switch (i.label) {
-                case 0:
-                  return t = 0, this.qa[this.active].answer.map((function (e) {
-                    t < e.active && (t = e.active)
-                  })), t ? 9 !== this.active ? [3, 2] : (e = this, n = e.birthdays, a = e.name, r = e.sex, o = e.province, c = e.city, s = e.county, f = [0, 0, 0, 0, 0], this.qa.map((function (t) {
-                    t.answer.map((function (t) {
-                      t.active && (f[t.type] += 1)
-                    }))
-                  })), [4, u.createPotential({
-                    name: a,
-                    birthdays: n,
-                    sex: r,
-                    province: o,
-                    city: c,
-                    district: s,
-                    prefrontalLobe: 0,
-                    posteriorFrontalLobe: f[4],
-                    temporalLobe: f[2],
-                    occipitalLobe: f[1],
-                    parietalLobe: f[3]
-                  })]) : (wx.showToast({
-                    title: "请选择答案",
-                    icon: "none"
-                  }), [2]);
-                case 1:
-                  return l = i.sent(), wx.navigateTo({
-                    url: "./help?id=" + l.resultId
-                  }), [2];
-                case 2:
-                  return this.active < 9 && (this.active += 1), [2]
-              }
-            }))
-          }))
+          wx.navigateTo({
+            url: "./help"
+          })
         }, e = i.__decorate([r.default], e), e
       }(a.default);
       e.default = s

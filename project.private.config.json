@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/shopCart/main",
+          "pathName": "pages/shopCart/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Product/main",
+          "pathName": "pages/Product/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/newEvaluation/simple",
+          "pathName": "pages/newEvaluation/simple",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/appointment/main",
+          "pathName": "pages/appointment/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/prodDetail/main",
+          "pathName": "pages/prodDetail/main",
+          "query": "goodId=1347",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

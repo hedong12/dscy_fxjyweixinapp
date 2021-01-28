@@ -194,17 +194,28 @@
 			</view>
 		</view>
 	</block>
+
+
+
 	<van-popup vue-id="826a5322-12" show="{{isShowPopup}}" position="bottom" data-event-opts="{{[['^close',[['onClose']]]]}}"
 	 data-com-type="wx" bind:close="__e" bind:__l="__l" vue-slots="{{['default']}}">
 		<view class="sku _div">
-			<view class="sku-price _div"><label class="_span">￥</label>{{''+(proData.isKill?killPrice:goodsPrice||goodsMsg.price)+''}}</view>
-			<view class="sku-stock _div">{{"库存 "+types[type_index_1].specNum+" 件"}}</view>
+
+			<image class="sku-avatar" src="{{images[0]}}"></image>
+			<view style="padding-left: 247rpx;">
+				<view class="sku-name">{{goodsMsg.name}}</view>
+				<view class="sku-prices">
+					<view class="sku-price _div"><label class="_span">￥</label>{{''+(proData.isKill?killPrice:goodsPrice||goodsMsg.price)+''}}</view>
+					<view class="sku-stock _div">{{"库存 "+types[type_index_1].specNum}}</view>
+				</view>
+			</view>
+
 			<view class="sku-type _div">
 				<van-row vue-id="{{('826a5322-13')+','+('826a5322-12')}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-					<van-col vue-id="{{('826a5322-14')+','+('826a5322-13')}}" span="2" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+					<van-col vue-id="{{('826a5322-14')+','+('826a5322-13')}}" span="24" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 						<view class="sku-type-label _div">类型</view>
 					</van-col>
-					<van-col vue-id="{{('826a5322-15')+','+('826a5322-13')}}" span="22" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+					<van-col vue-id="{{('826a5322-15')+','+('826a5322-13')}}" span="24" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 						<block wx:for="{{types}}" wx:for-item="item" wx:for-index="index" wx:key="index">
 							<view data-event-opts="{{[['tap',[['type_tap_1',['$0',index],[[['types','',index,'specId']]]]]]]}}" class="{{['sku-type-item _div',(type_id_1==item.specId)?'sku-active':'']}}"
 							 bindtap="__e">{{item.specName}}</view>
@@ -212,12 +223,13 @@
 					</van-col>
 				</van-row>
 			</view>
+
 			<view class="sku-spec _div">
 				<van-row vue-id="{{('826a5322-16')+','+('826a5322-12')}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-					<van-col vue-id="{{('826a5322-17')+','+('826a5322-16')}}" span="2" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+					<van-col vue-id="{{('826a5322-17')+','+('826a5322-16')}}" span="24" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 						<view class="sku-type-label _div">规格</view>
 					</van-col>
-					<van-col vue-id="{{('826a5322-18')+','+('826a5322-16')}}" span="22" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+					<van-col vue-id="{{('826a5322-18')+','+('826a5322-16')}}" span="24" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 						<block wx:for="{{types[type_index_1].goodSpecModelList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
 							<view data-event-opts="{{[['tap',[['type_tap',['$0',index,'$1'],['type_index_1',[['types.'+type_index_1+'.goodSpecModelList','',index,'specId']]]]]]]}}"
 							 class="{{['sku-type-item _div',(types[type_index_1].selectId==item.specId)?'sku-active':'']}}" bindtap="__e">{{item.specAttribute}}</view>
@@ -225,8 +237,8 @@
 					</van-col>
 				</van-row>
 			</view>
-			<van-divider vue-id="{{('826a5322-19')+','+('826a5322-12')}}" data-com-type="wx" bind:__l="__l"></van-divider>
-			<view class="sku-num _div">数量<view class="sku-num-right _div">
+			
+			<view class="sku-num _div">购买数量<view class="sku-num-right _div">
 					<van-stepper vue-id="{{('826a5322-20')+','+('826a5322-12')}}" value="{{num}}" integer data-event-opts="{{[['^change',[['setNum']]]]}}"
 					 data-com-type="wx" bind:change="__e" bind:__l="__l"></van-stepper>
 				</view>

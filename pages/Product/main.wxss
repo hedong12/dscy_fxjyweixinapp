@@ -239,7 +239,7 @@
 
 .product-contents .product-content-title {
   color: #595757;
-  font-size: 32rpx;
+  font-size: 28rpx;
   height: 50rpx;
   font-weight: 600;
   overflow: hidden;
@@ -259,7 +259,7 @@
 
 .product-contents .product-content-price1 {
   color: #F0966E;
-  font-size: 48rpx;
+  font-size: 30rpx;
 }
 
 .product-contents .product-content-small {
@@ -274,7 +274,7 @@
 
 .product-content-title {
   color: #848484;
-  font-size: 32rpx;
+  font-size: 24rpx;
   line-height: 50rpx;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -323,7 +323,7 @@
   text-align: center;
   line-height: 50rpx;
   border-radius: 50rpx;
-  font-size: 24rpx;
+  font-size: 20rpx;
   font-weight: bold;
   color: var(--theme-green);
   float: right
@@ -404,7 +404,7 @@
 .nav-item.active {
   border-bottom: 6rpx solid var(--theme-green);
   color: var(--theme-green);
-  font-weight: 700
+  font-weight: 700;
 }
 
 .prod_float_right>._div {
