@@ -5,145 +5,145 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date: '2016-09-01',
-    currentTab: 0,
-    rankTitle: [{
-        title: '销量榜',
-      },
-      {
-        title: '销售额榜',
-      },
-      {
-        title: '签约榜',
-      }
-    ],
-    rankList: [{
-      subList: [{
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: 'EOS主网启动直播',
-          score: '12131',
-        },
-      ],
-    }, {
-      subList: [{
-          rank: 1,
-          image: '',
-          name: '罗威',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: '罗威',
-          score: '12131',
-        },
-      ],
-    }, {
-      subList: [{
-          rank: 1,
-          image: '',
-          name: '杨峰',
-          score: '12131',
-        },
-        {
-          rank: 1,
-          image: '',
-          name: '杨峰',
-          score: '12131',
-        },
-      ],
-    }]
+   date: '2016-09-01',
+   currentTab: 0,
+   rankTitle: [{
+       title: '销量榜',
+     },
+     {
+       title: '销售额榜',
+     },
+     {
+       title: '签约榜',
+     }
+   ],
+   rankList: [{
+     subList: [{
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: 'EOS主网启动直播',
+         score: '12131',
+       },
+     ],
+   }, {
+     subList: [{
+         rank: 1,
+         image: '',
+         name: '罗威',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: '罗威',
+         score: '12131',
+       },
+     ],
+   }, {
+     subList: [{
+         rank: 1,
+         image: '',
+         name: '杨峰',
+         score: '12131',
+       },
+       {
+         rank: 1,
+         image: '',
+         name: '杨峰',
+         score: '12131',
+       },
+     ],
+   }]
   },
 
 

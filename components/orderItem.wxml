@@ -42,6 +42,7 @@
         </block>
       </block>
       <van-swipe-cell
+	  style="width: 100%;"
         id="{{prod_item.$orig.shopCartId}}"
         right-width="{{ 70 }}"
         async-close

@@ -29,7 +29,8 @@
 		  <van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dh.png"
 			text="拨打电话" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_txl.png"
-		  text="同步通讯录" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		  text="同步通讯录" class="item-two-now" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+				 catchtap="__e"></van-grid-item-two>
 	</van-grid>
 	
 	
@@ -107,8 +108,7 @@
 									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block> -->
 									
 									<block ><label class="product-recommend-item-tags _span">免费</label></block>
-									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block>
-									
+									<block ><label class="product-recommend-item-money _span">￥108</label></block>
 									
 								</view>
 							</view>
@@ -125,11 +125,11 @@
 									<!-- <block wx:for="{{item.$orig.goodlabelRequestList}}" wx:for-item="k" wx:for-index="i" wx:key="i"><label class="product-recommend-item-tags _span">{{k.labelContent}}</label></block>
 									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block> -->
 									<block ><label class="product-recommend-item-tags _span">免费</label></block>
-									<block wx:if="{{!item.$orig.goodlabelRequestList}}"><label class="product-recommend-item-tags bgfff2 _span"></label></block>
+									<block ><label class="product-recommend-item-money _span">￥108</label></block>
 								</view>
 							</view>
 						
-							
+							 
 							<view class="product-view-go">
 								<view class="product-text-go">GO</view>
 							</view>
@@ -147,16 +147,17 @@
 	
 	
 	
+	
 	<view class='ticket-container'>
 	    <scroll-view scroll-y>
 	      <!--Tab布局--> 
 	      <view class='title'>
-	        <view  data-event-opts="{{[['tap',[['titleClick',['0']]]]]}}" bindtap="__e" class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}"  >
+	        <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" data-event-opts="{{[['tap',[['titleClick',['0']]]]]}}"  bindtap="__e">
 	          <text>园所介绍</text>
 	          <hr class="line-style"/>
 	        </view>  
 	         
-	        <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" data-event-opts="{{[['tap',[['titleClick',['1']]]]]}}" bindtap="__e">
+	        <view  class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" data-event-opts="{{[['tap',[['titleClick',['1']]]]]}}" bindtap="__e">
 	          <text>园所图片</text>
 	          <hr class="line-style"/>
 	        </view>
@@ -167,19 +168,23 @@
 	      </view>
 	 
 	      <!--内容布局-->
-	      <swiper class='swiper' bindchange='pagechange'  current='{{currentIndex}}'>
+	      <swiper class='swiper' data-event-opts="{{[['change',[['pagechange',['$event','date']]]]]}}"
+			bindchange="__e"  current='{{currentIndex}}'>
 	        <swiper-item class='swiper'>
 	          <view class='record-item'>
 	            <view class='name'>
-	              <view>随着80、80后新一代符文教育程度及消费升级，更加注重教育的品质和便捷性，让孩子从小接受良好的教育，使孩子赢在起跑线上，为高品质婴幼儿教育带来全新的发展机遇千亿市场规模，掘金教育财富</view>
-				  <view></view>
+					
+	              <view><text decode="{{true}}">&ensp;&ensp;&ensp;&ensp;随着80、80后新一代符文教育程度及消费升级，更加注重教育的品质和便捷性，让孩子从小接受良好的教育，使孩子赢在起跑线上，为高品质婴幼儿教育带来全新的发展机遇千亿市场规模，掘金教育财富。</text></view>
+
 				  <view>
-					  4+2+1的家庭结构，教育支出占家庭支出比重增大，普通家庭平均每年教育支出费用达3.6万元。
+					  <text decode="{{true}}">
+					  &ensp;&ensp;&ensp;&ensp;4+2+1的家庭结构，教育支出占家庭支出比重增大，普通家庭平均每年教育支出费用达3.6万元。
+					  </text>
 				  </view>
 	            </view>
 	          </view>
 	        </swiper-item>
-	        <swiper-item class='swiper'  >
+	        <swiper-item class='swiper'>
 	          <view wx:for="{{secondList}}" wx:for-item="item" class='record-item'>
 				<rich-text  nodes="{{companyInfo.companyIntroduce}}"></rich-text>
 	          </view>
@@ -235,7 +240,7 @@
 	 data-event-opts="{{[['^talk',[['talk']]]]}}" bind:talk="__e" bind:__l="__l"></float-buttons> -->
 	 
 	 
-	<!-- <login vue-id="1a10b852-10" is-show="{{!loginIsSHow}}" data-event-opts="{{[['^cancelLogin',[['e1']]],['^loginSuccess',[['loginSuccess']]]]}}"
+	<login vue-id="1a10b852-10" is-show="{{!loginIsSHow}}" data-event-opts="{{[['^cancelLogin',[['e1']]],['^loginSuccess',[['loginSuccess']]]]}}"
 	 bind:cancelLogin="__e" bind:loginSuccess="__e" bind:__l="__l"></login>
 	<van-overlay vue-id="1a10b852-11" show="{{isEvaluation&&isEllis}}" class-name="delte-demo" data-com-type="wx" bind:__l="__l"
 	 vue-slots="{{['default']}}"> 
@@ -250,8 +255,8 @@
 			<block wx:else>
 				<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/card/isEvaluation.gif" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
 				 catchtap="__e"></image>
-			</block>
-		</view> 
-	</van-overlay> -->
+			</block> 
+		</view>  
+	</van-overlay>
 	
 </scroll-view>

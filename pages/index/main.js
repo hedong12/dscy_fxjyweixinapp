@@ -377,22 +377,7 @@
   									t[0].photo) : (e.bookImg = t[0].photo, e.testImg = t[1].photo)
   							}))
   						},
-						// if ("touch" === e.detail.source) {
-						//     let currentPageIndex = this.data.currentIndex
-						//     currentPageIndex = (currentPageIndex + 1) % 3
-						//     this.setData({
-						//       currentIndex: currentPageIndex
-						//     })
-						//   }
-						// },
-						// //用户点击tab时调用
-						// titleClick: function (e) {
-						//   let currentPageIndex =
-						//     this.setData({
-						//       //拿到当前索引并动态改变
-						//       currentIndex: e.currentTarget.dataset.idx
-						//     })
-						// },
+						
   						goToProductInfo: function(e) {
   							var t = e.goodsId;
   							i.default.isLogin({
@@ -430,6 +415,44 @@
   							}
   							return t
   						}(),
+						
+						
+						//滑动切换
+						swiperTab: function(e) {
+							console.log("活动");
+							var that = this;
+							console.log(e);
+						  this.currentTab = e.detail.current;
+						},
+						//点击切换模式
+						clickTab: function(e) {
+							console.log("点击");
+							console.log(e);
+						  var that = this;
+						  if (this.currentTab == e.currentTarget.dataset.current){
+						    return false;
+						  }else{
+						      
+									this.currentTab= e.currentTarget.dataset.current;
+						  }
+						},
+						
+						
+						//swiper切换时会调用
+						pagechange: function (e) {
+						  if ("touch" === e.detail.source) {
+						    this.currentIndex = e.detail.current
+						  }
+						},
+						//用户点击tab时调用
+						titleClick: function (e) {
+							
+							  let currentPageIndex = e.currentTarget.dataset.idx;
+							
+						},
+						
+						
+						
   						getSwiper: function() {
   							var e = this;
   							wx.getStorageSync("COMPANYID") ? this.getPlateAds(4).then((function(t) {
