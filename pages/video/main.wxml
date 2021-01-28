@@ -56,5 +56,5 @@
 	</van-dialog><canvas style="width:533px;height:932px;position:absolute;top:-9999999999px;" canvas-id="myCanvas"></canvas>
 	<get-user-phone vue-id="44865f80-7" bind:__l="__l"></get-user-phone>
 	
-
+	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
 </view>

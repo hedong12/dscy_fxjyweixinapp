@@ -389,4 +389,5 @@
 		<view data-event-opts="{{[['tap',[['toCrmAPP',['$event']]]]]}}"  class="toCRMBtn textc _div" bindtap="__e">前往管理系统</view>
 	</block>
 	<view class="bottom-text"></view>
+	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
 </view>

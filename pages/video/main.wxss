@@ -164,7 +164,7 @@ button.user-icon {
 	position: absolute;
 	top: 40rpx;
 	padding-left: 40rpx;
-	height: 156rpx;
+	height: 196rpx;
 	line-height: 83rpx;
 	color: #fff;
 	font-size: 32rpx;
@@ -175,7 +175,7 @@ button.user-icon {
 }
 
 .pisition-bottom {
-	bottom: 0rpx  !important;
+	bottom: env(safe-area-inset-bottom) !important;
 	top: auto
 }
 

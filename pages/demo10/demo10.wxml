@@ -23,3 +23,5 @@
     </swiper>
   </view>
 </view>
+
+<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>

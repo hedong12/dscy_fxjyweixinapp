@@ -654,6 +654,7 @@ video {
 
 .ticket-container{
 	background-color: #F5F7F6;
+	margin-bottom:30px;
 }
  
 .title-sel-selected{

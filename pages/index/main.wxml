@@ -226,7 +226,7 @@
 			</view>
 		</view> 
 	</block> --> 
-	<view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view> 
+	<!-- <view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view>  -->
 	<view class="bottom-text"></view>
 	<block wx:if="{{isShowCourse}}">
 		<view class="_div">
@@ -234,6 +234,7 @@
 			 bind:close="__e" bind:__l="__l"></add-wx-course>
 		</view>
 	</block>
+	
 	
 	
 	<!-- <float-buttons class="index_float_right trans2 overhidden" vue-id="1a10b852-9" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}"
@@ -258,5 +259,5 @@
 			</block> 
 		</view>  
 	</van-overlay>
-	
+	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
 </scroll-view>

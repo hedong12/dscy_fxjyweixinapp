@@ -63,8 +63,7 @@
 	"pages/demo04/demo04",
     "pages/demo03/demo03",
   	"pages/demo02/demo02",
-   "pages/demo10/demo10",
-  
+	"pages/demo10/demo10", 
     "pages/demo01/demo01"
    
 
@@ -184,6 +183,8 @@
   "navigateToMiniProgramAppIdList": [
     "wx1c06c4e49bf6040e"
   ],
-  "usingComponents": {},
+  "usingComponents": {
+     "rwj-tabbar": "components/rwj-tabbar/index"
+  },
   "sitemapLocation": "sitemap.json"
 }
