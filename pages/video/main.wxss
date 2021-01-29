@@ -151,6 +151,7 @@ button.user-icon {
 	bottom: 100rpx;
 	right: 25rpx;
 	color: #fff;
+	padding-bottom: env(safe-area-inset-bottom);
 	text-align: center
 }
 

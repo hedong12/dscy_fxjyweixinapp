@@ -10,7 +10,7 @@
     "van-cell-group": "/static/vant/cell-group/index",
     "van-count-down": "/static/vant/count-down/index",
     "van-skeleton": "/static/vant/skeleton/index",
-    "self-swiper": "/components/swiper",
+    "self-swiper": "/components/swiper-prod",
     "right-float": "/components/rightFloat",
     "share-or-save": "/components/shareOrSave"
   }

@@ -31,6 +31,7 @@
 				<image mode="widthFix" src="{{IconUrl+'share.png'}}"></image>
 				<view class="_br"></view>分享
 			</view>
+			
 		</get-phone-number>
 		<view data-event-opts="{{[['tap',[['showQC',['$event']]]]]}}" class="user-icon big-user-icon _div" bindtap="__e">
 			<image mode="widthFix" src="{{IconUrl+'showQC.png'}}"></image>

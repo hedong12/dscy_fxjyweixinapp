@@ -165,9 +165,15 @@
 	margin-top: 43rpx;
 }
 
+
+
 .item-ctr{
-	width: 60%;
+	width: 65%;
 	margin: 0 auto;
+}
+
+.mlctr{
+	margin-left: 22%;
 }
 
 .zuofudong{

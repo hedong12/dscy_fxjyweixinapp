@@ -1,0 +1,10 @@
+<view class="textc outer _div data-v-6500b036">
+	<image mode="widthFix" width="340rpx" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_grey_book.png"
+	 alt class="_img data-v-6500b036"></image>
+	<view class="desc _p data-v-6500b036">
+		<block wx:if="{{$slots.default}}">
+			<slot></slot>
+		</block>
+		<block wx:else>您还没有相关的数据</block>
+	</view>
+</view>

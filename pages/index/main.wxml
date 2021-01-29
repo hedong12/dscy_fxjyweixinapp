@@ -1,6 +1,6 @@
 <scroll-view class="main" scroll-y="{{true}}" scroll-anchoring="{{true}}">
 	<van-nav-bar vue-id="1a10b852-1" fixed placeholder data-com-type="wx" bind:__l="__l" vue-slots="{{['left','right']}}">
-		<view class="nav-bar-left _div" slot="left">入园盒子</view>
+		<view class="nav-bar-left _div" slot="left">{{''+card_msg.company+''}}</view>
 	</van-nav-bar>
 	
 	
@@ -25,29 +25,30 @@
 		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_fmxy.png"
 		 text="父母学院" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_xyhb.png"
-		  text="校园海报" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		  text="校园海报" class="item-two-now" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 		  <van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dh.png"
-			text="拨打电话" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+			text="拨打电话" class="item-two-now" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_txl.png"
-		  text="同步通讯录" class="item-two-now" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
-				 catchtap="__e"></van-grid-item-two>
+		  text="同步通讯录" class="item-two-now" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}"
+				data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 	</van-grid>
 	
 	
 	<view class="seen_peo disflex pl15 pr26 fs10 ca8 jsbet bgfff _div">
 		<view class="_div">
 			<view class="disflex _div">
-				<image class="lovepng" src="../../static/images/love.png"></image>
+				<view class="thumbs _div" style="{{'background-size: 42rpx;padding-right:60rpx;'+('background-image:'+('url('+(isThumbs?'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_red_heart.png':'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_grey_heart.png')+')')+';')}}"
+				 data-event-opts="{{[['tap',[['doThumbs',['$event']]]]]}}" bindtap="__e"></view>
 				<block wx:for="{{card_msg.browsePhoto}}" wx:for-item="v" wx:for-index="k" wx:key="k">
 					<!-- 36 33  -->
 					<image class="w19 h20 yuanjiao mr3 _img" src="{{v}}" alt mode="aspectFill"></image>
 				</block> 
-				<view class="lh25 ml9 _p shenglue" space="ensp">·    ·     ·</view>
+				<view class="lh25 ml9 _p shenglue" space="ensp">· · ·</view>
 			</view>
 			<!-- <view class="lh20 _p">{{"已有"+card_msg.browseNum+"人浏览"}}</view> -->
 		</view>
 		<view data-event-opts="{{[['tap',[['goTo',['cardCase/main']]]]]}}" class="switch-card _div" bindtap="__e">
-			<image src="{{card_msg.logo}}" alt class="_img"></image>
+			<image src="{{card_msg.logo}}" alt class="teacher-img _img"></image>
 			<image class="switch-logo _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-switch.png"
 			 alt></image>
 			 {{''+card_msg.username+''}}

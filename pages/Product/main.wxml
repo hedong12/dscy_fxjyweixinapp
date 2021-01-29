@@ -172,7 +172,7 @@
       </block>
     </view>
     <view class="textc lh42 fs12 ca8 bgf5f6 _div" style="margin-bottom: 130rpx">- 到底了，看看其他的吧 -</view>
-
+	<view class="bottom-text"></view>
   <!-- <float-buttons class="index_float_right trans2 overhidden" vue-id="06c73858-7" isShowTalk="{{isShowTalk}}"
     avatarUrl="{{targetAvatarUrl}}" data-event-opts="{{[['^talk',[['talk']]],['^loginGuide',[['loginGuide']]]]}}"
     bind:talk="__e" bind:loginGuide="__e" bind:__l="__l"></float-buttons> -->

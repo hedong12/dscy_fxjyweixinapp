@@ -1,5 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([
-	["components/swiper"], {
+	["components/swiper-prod"], {
 		"00c5": function(t, n, e) {
 			"use strict";
 			var u = e("58ec"),
@@ -109,13 +109,13 @@
 	}
 ]);;
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([
-	'components/swiper-create-component',
+	'components/swiper-prod-create-component',
 	{
-		'components/swiper-create-component': (function(module, exports, __webpack_require__) {
+		'components/swiper-prod-create-component': (function(module, exports, __webpack_require__) {
 			__webpack_require__('543d')['createComponent'](__webpack_require__("91b0"))
 		})
 	},
 	[
-		['components/swiper-create-component']
+		['components/swiper-prod-create-component']
 	]
 ]);

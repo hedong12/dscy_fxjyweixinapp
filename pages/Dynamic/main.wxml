@@ -1,1 +1,52 @@
-<view data-event-opts="{{[['tap',[['tap_all',['$event']]]]]}}" class="posre borderbox dynamic _div" style="{{'height:'+(mainHeight+'px')+';'}}" bindtap="__e"><nav-bar-by-user vue-id="37101324-1" isLogin="{{isLogin}}" isShowLoginGuide="{{isShowLoginGuide}}" isShowCardCase="{{true}}" avatarUrl="{{avatarUrl}}" data-event-opts="{{[['^cancelLoginGuide',[['cancelLoginGuide']]],['^loginSuccess',[['loginSuccess']]],['^loginFailed',[['loginFailed']]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]]]}}" bind:cancelLoginGuide="__e" bind:loginSuccess="__e" bind:loginFailed="__e" bind:updateAvatarUrl="__e" bind:__l="__l"></nav-bar-by-user><scroll-view class="dynamic-content" style="{{'height:'+(scrollContentHeight+'px')+';'}}" scroll-y="{{true}}" enable-back-to-top="{{true}}" scroll-anchoring="{{true}}" data-event-opts="{{[['scrolltoupper',[['scrolltoupper',['$event']]]],['scrolltolower',[['scrolltolower',['$event']]]]]}}" bindscrolltoupper="__e" bindscrolltolower="__e"><view class="w100p _div"><self-swiper vue-id="37101324-2" imgUrls="{{banners}}" self_class="h211" isShowMask="{{true}}" isShowDots="{{false}}" data-event-opts="{{[['^swipclick',[['preview']]]]}}" bind:swipclick="__e" bind:__l="__l"></self-swiper></view><view class="bgfff _div" style="position:relative;z-index:2;padding-top:80rpx;"><view class="fs18 cfff disflex pl15 pr16 row-reverse dynamic-title _div"><image class="w60 h60 bradius5 ml10 bgfff _img" src="{{company_msg.admin_logo}}" alt mode="aspectFill" data-event-opts="{{[['tap',[['authSubscribeComment',['$event']]]]]}}" bindtap="__e"></image><view class="row-reverse _div"><view class="fbold company_name _b">{{company_msg.company_name}}</view></view></view><block wx:if="{{dynamic_lists.length}}"><block wx:for="{{dynamic_lists}}" wx:for-item="dynamic_item" wx:for-index="k1" wx:key="k1"><view style="position:relative;" class="_div"><dynamic-item vue-id="{{'37101324-3-'+k1}}" dynamic_item="{{dynamic_item}}" index1="{{k1}}" data-event-opts="{{[['^operate_tap',[['operate_tap']]],['^addComment',[['addComment']]],['^zan',[['zan']]],['^getMoreComment',[['getMoreComment']]]]}}" bind:operate_tap="__e" bind:addComment="__e" bind:zan="__e" bind:getMoreComment="__e" bind:__l="__l"></dynamic-item><login-intercept vue-id="{{'37101324-4-'+k1}}" bind:__l="__l"></login-intercept></view></block><block wx:if="{{nodata}}"><view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view></block></block><block wx:else><view class="_div"><no-data vue-id="37101324-5" bind:__l="__l" vue-slots="{{['default']}}">暂无数据</no-data></view></block></view></scroll-view><view class="{{['fix_bottom bgfff edit_input trans2 _div',input_show?'':'hide']}}"><view class="bgfff pt3 pb5 pl10 disflex jsbet pr11 borderbox align-cen _div"><input class=" borderbox lh30 pr11 bgf5f6 bradius5 flex1 mr11 comment_input ca8 fs12 pl15" style="{{'height:'+(text_height+'px')+';'}}" fixed="true" focus="{{comment_focus}}" placeholder="{{replayComment.commentId?'回复 '+replayComment.userName+'：':'评论'}}" cursor-spacing="4" data-event-opts="{{[['focus',[['inputgetFocus',[this,'$event']]]],['confirm',[['inputConfirm',['$event']]]],['input',[['__set_model',['','comments','$event',[]]]]]]}}" value="{{comments}}" bindfocus="__e" bindconfirm="__e" bindinput="__e"/><label data-event-opts="{{[['tap',[['inputConfirm',['$event']]]]]}}" class="bgblue cfff w50 textc lh30 fs16 bradius5 disblock ml10 _span" catchtap="__e">发送</label></view></view><float-buttons class="float-buttons" vue-id="37101324-6" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}" data-event-opts="{{[['^talk',[['talk',['$event']]]],['^loginGuide',[['loginGuide',['$event']]]]]}}" catch:talk="__e" catch:loginGuide="__e" bind:__l="__l"></float-buttons><get-user-phone vue-id="37101324-7" bind:__l="__l"></get-user-phone><rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar></view>
+<view data-event-opts="{{[['tap',[['tap_all',['$event']]]]]}}" class="posre borderbox dynamic _div" style="{{'height:'+(mainHeight+'px')+';'}}"
+ bindtap="__e">
+	<nav-bar-by-user vue-id="37101324-1" isLogin="{{isLogin}}" isShowLoginGuide="{{isShowLoginGuide}}" isShowCardCase="{{true}}"
+	 avatarUrl="{{avatarUrl}}" data-event-opts="{{[['^cancelLoginGuide',[['cancelLoginGuide']]],['^loginSuccess',[['loginSuccess']]],['^loginFailed',[['loginFailed']]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]]]}}"
+	 bind:cancelLoginGuide="__e" bind:loginSuccess="__e" bind:loginFailed="__e" bind:updateAvatarUrl="__e" bind:__l="__l"></nav-bar-by-user>
+	<scroll-view class="dynamic-content" style="{{'height:'+(scrollContentHeight+'px')+';'}}" scroll-y="{{true}}"
+	 enable-back-to-top="{{true}}" scroll-anchoring="{{true}}" data-event-opts="{{[['scrolltoupper',[['scrolltoupper',['$event']]]],['scrolltolower',[['scrolltolower',['$event']]]]]}}"
+	 bindscrolltoupper="__e" bindscrolltolower="__e">
+		<view class="w100p _div">
+			<self-swiper vue-id="37101324-2" imgUrls="{{banners}}" self_class="h211" isShowMask="{{true}}" isShowDots="{{false}}"
+			 data-event-opts="{{[['^swipclick',[['preview']]]]}}" bind:swipclick="__e" bind:__l="__l"></self-swiper>
+		</view>
+		<view class="bgfff _div" style="position:relative;z-index:2;padding-top:80rpx;">
+			<view class="fs18 cfff disflex pl15 pr16 row-reverse dynamic-title _div">
+				<image class="w60 h60 bradius5 ml10 bgfff _img" src="{{company_msg.admin_logo}}" alt mode="aspectFill"
+				 data-event-opts="{{[['tap',[['authSubscribeComment',['$event']]]]]}}" bindtap="__e"></image>
+				<view class="row-reverse _div">
+					<view class="fbold company_name _b">{{company_msg.company_name}}</view>
+				</view>
+			</view>
+			<block wx:if="{{dynamic_lists.length}}">
+				<block wx:for="{{dynamic_lists}}" wx:for-item="dynamic_item" wx:for-index="k1" wx:key="k1">
+					<view style="position:relative;" class="_div">
+						<dynamic-item vue-id="{{'37101324-3-'+k1}}" dynamic_item="{{dynamic_item}}" index1="{{k1}}" data-event-opts="{{[['^operate_tap',[['operate_tap']]],['^addComment',[['addComment']]],['^zan',[['zan']]],['^getMoreComment',[['getMoreComment']]]]}}"
+						 bind:operate_tap="__e" bind:addComment="__e" bind:zan="__e" bind:getMoreComment="__e" bind:__l="__l"></dynamic-item>
+						<login-intercept vue-id="{{'37101324-4-'+k1}}" bind:__l="__l"></login-intercept>
+					</view>
+				</block>
+				<block wx:if="{{nodata}}">
+					<view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view>
+				</block>
+			</block>
+			<block wx:else>
+				<view class="_div">
+					<no-data vue-id="37101324-5" bind:__l="__l" vue-slots="{{['default']}}">暂无数据</no-data>
+				</view>
+			</block>
+		</view>
+	</scroll-view>
+	<view class="{{['fix_bottom bgfff edit_input trans2 _div',input_show?'':'hide']}}">
+		<view class="bgfff pt3 pb5 pl10 disflex jsbet pr11 borderbox align-cen _div"><input class=" borderbox lh30 pr11 bgf5f6 bradius5 flex1 mr11 comment_input ca8 fs12 pl15"
+			 style="{{'height:'+(text_height+'px')+';'}}" fixed="true" focus="{{comment_focus}}" placeholder="{{replayComment.commentId?'回复 '+replayComment.userName+'：':'评论'}}"
+			 cursor-spacing="4" data-event-opts="{{[['focus',[['inputgetFocus',[this,'$event']]]],['confirm',[['inputConfirm',['$event']]]],['input',[['__set_model',['','comments','$event',[]]]]]]}}"
+			 value="{{comments}}" bindfocus="__e" bindconfirm="__e" bindinput="__e" /><label data-event-opts="{{[['tap',[['inputConfirm',['$event']]]]]}}"
+			 class="bgblue cfff w50 textc lh30 fs16 bradius5 disblock ml10 _span" catchtap="__e">发送</label></view>
+	</view>
+	<float-buttons class="float-buttons" vue-id="37101324-6" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}"
+	 data-event-opts="{{[['^talk',[['talk',['$event']]]],['^loginGuide',[['loginGuide',['$event']]]]]}}" catch:talk="__e"
+	 catch:loginGuide="__e" bind:__l="__l"></float-buttons>
+	<get-user-phone vue-id="37101324-7" bind:__l="__l"></get-user-phone>
+	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
+</view>

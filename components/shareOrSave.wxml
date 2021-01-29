@@ -1,26 +1,8 @@
-<view class="{{['swiper-wrap-self ',self_class]}}">
-  <swiper class="swiper-inner" indicator-dots="{{true}}" current="{{cur}}" circular="{{circular}}"
-    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
-    data-event-opts="{{[['change',[['swiperChange',['$event']]]]]}}" bindchange="__e">
-    <block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-      <block index="{{index}}">
-        <swiper-item>
-          <image class="banner-img" src="{{item}}" mode="aspectFill"
-            data-event-opts="{{[['tap',[['swipclick',[index]]]]]}}" bindtap="__e"></image>
-        </swiper-item>
-      </block>
-    </block>
-  </swiper>
-  <block wx:if="{{imgUrls.length>1&&isShowDots}}">
-    <view class="dots">
-      <block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-        <block index="{{index}}">
-          <view class="{{['dot',(index==cur)?'active':'']}}"></view>
-        </block>
-      </block>
-    </view>
-  </block>
-  <!-- <block wx:if="{{isShowMask}}">
-    <view class="mask _div"></view>
-  </block> -->
+<view data-event-opts="{{[['tap',[['closeModal',['$event']]]]]}}" class="{{['shareOrSave w100p h100p prod_choose_class borderbox disflex column-reverse _div',status?'show':'']}}"
+ bindtap="__e">
+	<view class="share-clone _div">取消</view>
+	<view class="inner textc lh44 orsave-share-parent _div">
+		<view data-event-opts="{{[['tap',[['save',['$event']]]]]}}" class="orsave-share _div" catchtap="__e">生成海报</view><button
+		 class="orsave-share" open-type="share" hover-class="other-button-hover">分享给微信好友</button>
+	</view>
 </view>

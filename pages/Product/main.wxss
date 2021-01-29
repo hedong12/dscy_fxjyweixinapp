@@ -420,3 +420,8 @@
 .nav-grid .van-grid-item__text {
 	margin-top: 16rpx
 }
+
+.bottom-text{
+   padding-bottom: env(safe-area-inset-bottom);  
+}
+

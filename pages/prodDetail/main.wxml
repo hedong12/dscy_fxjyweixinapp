@@ -12,8 +12,9 @@
 		<view class="jsbet _div">
 			<view class="over_2 fs14 c38 fbold flex1 _p">{{''+goodsMsg.name+''}}</view>
 			<view class="remark _div">{{'库存 '+types[type_index_1].specNum+''}}
-			
+			 
 			</view>
+			
 			<block wx:if="{{goodlabelRequestList}}">
 				<view class="tags _div">
 					<block wx:for="{{goodlabelRequestList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
@@ -26,7 +27,7 @@
 	<view data-event-opts="{{[['tap',[['e1',['$event']]]]]}}" bindtap="__e" class="_div">
 		<van-skeleton vue-id="826a5322-3" title row="3" loading="{{!types}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 			<van-cell-group vue-id="{{('826a5322-4')+','+('826a5322-3')}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
-				<van-cell vue-id="{{('826a5322-5')+','+('826a5322-4')}}" style="color: #181818;" label="{{'类型　      '+vantitle}}"  is-link
+				<van-cell vue-id="{{('826a5322-5')+','+('826a5322-4')}}" style="color: #181818;" label="{{'选择　      '+vantitle}}"  is-link
 				 border="{{false}}" data-com-type="wx" bind:__l="__l">
 						
 				 </van-cell>
@@ -134,11 +135,11 @@
 	</block>
 	<block wx:if="{{goodsMsg.name}}">
 		<view class="disflex fix_bottom bte8 _div">
-			<view class="disflex flex1 bgfff textc posre _div">
-				<view data-event-opts="{{[['tap',[['toProductList',['$event']]]]]}}" class="w33p pt7 _div" bindtap="__e">
-					<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/prod_select.png"
+			<view class="disflex flex1 bgfff pl8 textc posre _div">
+				<view data-event-opts="{{[['tap',[['toProductList',['$event']]]]]}}" class="pl8 w33p pt7 _div" bindtap="__e">
+					<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_folder.png"
 					 alt></image>
-					<view class="cblue fs12 textc mt-4 _b">课程中心</view>
+					<view class="chuise fs12 textc mt-4 _b">课程中心</view>
 				</view>
 				<view data-event-opts="{{[['tap',[['makePhone',['$event']]]]]}}" class="w33p pt7 _div" bindtap="__e">
 					<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/tel_gray.png"
@@ -150,11 +151,12 @@
 						<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/like_gray.png"
 						 alt></image>
 					</block>
-					<block wx:else>
-						<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/20190418161144.png"
+					<block wx:else>  	
+					<!--  -->
+						<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_stars.png"
 						 alt></image>
 					</block>
-					<view class="{{['fs12 textc mt-4 _b',isCollect?'cblue':'ca8']}}">收藏</view>
+					<view class="{{['fs12 textc mt-4 _b',isCollect?'chuise':'ca8']}}">收藏</view>
 				</view>
 				<login-intercept vue-id="826a5322-9" bind:__l="__l"></login-intercept>
 			</view>

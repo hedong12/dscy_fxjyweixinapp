@@ -1,1 +1,31 @@
-<view class="_div"><view class="disflex jsaround pl16 pr16 lh49 ca8 fs16 ordertype bgfff _div"><block wx:for="{{menus}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><label data-event-opts="{{[['tap',[['order_type_tap',['$0'],[[['menus','id',item.id,'id']]]]]]]}}" class="{{['_span',order_type==item.id?'active':'']}}" bindtap="__e">{{item.label}}</label></block></view><view class="pl15 pr15 _div"><block wx:if="{{cart_lists.length}}"><block wx:for="{{cart_lists}}" wx:for-item="cart_item" wx:for-index="k" wx:key="k"><order-item vue-id="{{'4806b84c-1-'+k}}" orderInfo="{{cart_item}}" data-event-opts="{{[['^showOrder',[['showDetail',['$0'],[[['cart_lists','',k]]]]]],['^toPage',[['toAppointMentPage',['$0'],[[['cart_lists','',k]]]]]],['^confirmUse',[['showTips',['$0','use'],[[['cart_lists','',k]]]]]],['^cancelOrder',[['showTips',['$0','cancel'],[[['cart_lists','',k]]]]]]]}}" bind:showOrder="__e" bind:toPage="__e" bind:confirmUse="__e" bind:cancelOrder="__e" bind:__l="__l"></order-item></block><block wx:if="{{nodata}}"><view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view></block></block><block wx:else><view class="_div"><no-data vue-id="4806b84c-2" bind:__l="__l" vue-slots="{{['default']}}">暂无订单</no-data></view></block></view><view data-event-opts="{{[['tap',[['page_turn',['usercenter']]]]]}}" class="textc disflex w60 h60 bradius50p bgblue disinblock goToUserCenter _div" bindtap="__e"><image class="w30 h30 mt15 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user_add.png" alt></image></view><view hidden="{{!(isShowCancelOrderBox)}}" class="_div"><dialog-box vue-id="4806b84c-3" dialog_title="提示" dialog_ph="{{tipsTitle}}" type="{{dialogType}}" left="取消" right="确定" data-event-opts="{{[['^btn_tap',[['dialogTap']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box></view></view>
+<view class="_div">
+	<view class="disflex jsaround pl16 pr16 lh49 ca8 fs16 ordertype bgfff _div">
+		<block wx:for="{{menus}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><label data-event-opts="{{[['tap',[['order_type_tap',['$0'],[[['menus','id',item.id,'id']]]]]]]}}"
+			 class="{{['_span',order_type==item.id?'active':'']}}" bindtap="__e">{{item.label}}</label></block>
+	</view>
+	<view class="pl15 pr15 _div">
+		<block wx:if="{{cart_lists.length}}">
+			<block wx:for="{{cart_lists}}" wx:for-item="cart_item" wx:for-index="k" wx:key="k">
+				<order-item vue-id="{{'4806b84c-1-'+k}}" orderInfo="{{cart_item}}" data-event-opts="{{[['^showOrder',[['showDetail',['$0'],[[['cart_lists','',k]]]]]],['^toPage',[['toAppointMentPage',['$0'],[[['cart_lists','',k]]]]]],['^confirmUse',[['showTips',['$0','use'],[[['cart_lists','',k]]]]]],['^cancelOrder',[['showTips',['$0','cancel'],[[['cart_lists','',k]]]]]]]}}"
+				 bind:showOrder="__e" bind:toPage="__e" bind:confirmUse="__e" bind:cancelOrder="__e" bind:__l="__l"></order-item>
+			</block>
+			<block wx:if="{{nodata}}">
+				<view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view>
+			</block>
+		</block>
+		<block wx:else>
+			<view class="_div">
+				<no-data-yu-yue vue-id="4806b84c-2" bind:__l="__l" vue-slots="{{['default']}}">您还没有相关的数据</no-data-yu-yue>
+			</view>
+		</block>
+	</view>
+	<view data-event-opts="{{[['tap',[['page_turn',['usercenter']]]]]}}" class="textc disflex w60 h60 bradius50p bgqianlv disinblock goToUserCenter _div"
+	 bindtap="__e">
+		<image class="w30 h30 mt15 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user_add.png"
+		 alt></image>
+	</view>
+	<view hidden="{{!(isShowCancelOrderBox)}}" class="_div">
+		<dialog-box vue-id="4806b84c-3" dialog_title="提示" dialog_ph="{{tipsTitle}}" type="{{dialogType}}" left="取消" right="确定"
+		 data-event-opts="{{[['^btn_tap',[['dialogTap']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box>
+	</view>
+</view>

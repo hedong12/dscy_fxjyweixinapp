@@ -1,1 +1,17 @@
-.ordertype .active{color:var(--theme-purple);border-bottom:6rpx solid var(--theme-purple)}.goToUserCenter{position:fixed;right:20rpx;bottom:90rpx;z-index:99;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center}
+.ordertype .active {
+	color: black;
+	border-bottom: 6rpx solid #42ABA0
+}
+
+.goToUserCenter {
+	position: fixed;
+	right: 20rpx;
+	bottom: 90rpx;
+	z-index: 99;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center
+}
+.bgqianlv{
+	    background: #ACDED3;
+}

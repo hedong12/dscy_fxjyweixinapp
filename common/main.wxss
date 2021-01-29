@@ -1078,7 +1078,7 @@ button::after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 8rpx;
+  /* margin-right: 8rpx; */
 }
 
 .disblock {

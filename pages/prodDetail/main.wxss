@@ -118,8 +118,9 @@ page {
 	padding-right: 28rpx;
 	border-top-left-radius: 10rpx;
 	border-bottom-left-radius: 10rpx;
-	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/goods-info-share-icon.png);
+	/* background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/goods-info-share-icon.png); */
 	
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_share.png);
 
 	background-size: 23rpx 28rpx;
 	background-position-y: center;
@@ -351,3 +352,6 @@ page {
 	width: 17%;
 }
 
+.chuise{
+	color: #a8a8a8;
+}

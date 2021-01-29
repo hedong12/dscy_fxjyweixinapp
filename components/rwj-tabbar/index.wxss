@@ -1,28 +1,24 @@
 /* components/rwj-tabbar/index.wxss */
-
 .tabbar-container{
   width: 100%;
-  height: 85rpx;
+  height: 74rpx;
   background-color: #ACDED3;
   position: fixed;
   bottom: 0;
-   padding-bottom: env(safe-area-inset-bottom);  
   left: 0;
   z-index: 9999999;
   display: flex;
   align-items: flex-end;
-  border-top: 1rpx solid #e6e6e6;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 .tabbar-container .tabbar-select{
   color: black;
 }
 .tabbar-item{
   width: 20%;
-  height: 85rpx;
   color: black;
-  padding: 14rpx 0rpx 10rpx 0;
+  padding: 6rpx 0rpx;
   background-color: #ACDED3;
-  border-top: 1rpx solid #e6e6e6;
 }
 .tabbar-item .tabbar-image{
   width: 100%;
@@ -32,8 +28,9 @@
   position: relative;
 }
 .tabbar-item .tabbar-image image{
-  width: 40rpx;
-  height: 40rpx;
+      width: 40rpx;
+      height: 40rpx;
+      margin-top: 5rpx;
 }
 .tabbar-item .tabbar-text{
   width: 100%;
@@ -51,15 +48,14 @@
   position: relative;
 }
 .tabbar-center .mask-item{
-  width: 100%;
-  height: 42rpx;
+  width: 100%; 
+  height: 60rpx;
   overflow: hidden;
   position: relative;
 }
 .tabbar-center .mask-item .mask-border{
-  width: 10rpx; 
-  height: 0rpx; 
-  border: 1rpx solid #e6e6e6;
+  width: 120rpx;
+  height: 120rpx;
   border-radius: 50%;
   background-color: #ACDED3;
   position: absolute;
@@ -68,26 +64,26 @@
 }
 .tabbar-center .item-center{
   width: 100%;
-  height: 50rpx;
+  height: 74rpx;
   background-color: #ACDED3;
 }
 .tabbar-center .item-center .tabbar-image{
-        position: absolute;
-        top: 15rpx;
-        left: calc(50% - 58rpx);
-        width: 98rpx;
-        height: 98rpx;
-        padding: 10rpx 5px 5px 5px;
-        background-color: #ACDED3;
-        border-radius: 50%; 
+      position: absolute;
+      top: 26rpx;
+      left: calc(50% - 58rpx);
+      width: 110rpx;
+      height: 110rpx;
+      padding: 5rpx 2rpx 5rpx 2rpx;
+      background-color: #ACDED3;
+      border-radius: 50%;
 }
 .tabbar-center .item-center .tabbar-text{
   position: absolute;
-  bottom: 12rpx;
+  bottom: 7rpx;
   left: 0rpx;
   width: 100%;
 }
 .tabbar-center .item-center .tabbar-image image{
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 70%;
 }

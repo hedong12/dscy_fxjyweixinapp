@@ -1,18 +1,22 @@
 <!--components/rwj-tabbar/index.wxml-->
 <view class="tabbar-container">
-  <view class="tabbar-item {{active==0? 'tabbar-select':''}}" bindtap="switchJump" data-url="../index/main">
+	
+  <view class="tabbar-item {{active==0? 'tabbar-select':''}}" bindtap="switchJump" data-url="../../pages/index/main">
     <view class="tabbar-image" data-active="0">
-      <image src="{{active==0? '../../static/tabs/computer.png':'../../images/label_home_02.png'}}"></image>
+      <image src="{{active==0? '../../static/tabs/computer.png':'../../static/tabs/computer.png'}}"></image>
     </view>
     <view class="tabbar-text">首页</view>
   </view>
-  <view class="tabbar-item {{active==1? 'tabbar-select':''}}" bindtap="switchJump" data-url="../Product/main" data-active="1">
+  
+  <view class="tabbar-item {{active==1? 'tabbar-select':''}}" bindtap="switchJump" data-url="../../pages/Product/main" data-active="1">
     <view class="tabbar-image">
-      <image src="{{active==1? '../../static/tabs/appointment.png':'../../static/tabs/appointment.png'}}"></image>
-    </view>
+      <image style="width: 55rpx;height: 28rpx;margin-top: 14rpx;" src="{{active==1? '../../static/tabs/appointment.png':'../../static/tabs/appointment.png'}}"></image>
+    </view> 
     <view class="tabbar-text">教育生活圈</view>
   </view>
-  <view class="tabbar-item tabbar-center {{active==2? 'tabbar-select':''}}" bindtap="switchJump" data-url="../address/disMap" data-active="2">
+  
+  
+  <view class="tabbar-item tabbar-center {{active==2? 'tabbar-select':''}}" bindtap="switchJump" data-url="../../pages/video/main" data-active="2">
     <view class="mask-item"> 
       
     </view>
@@ -23,13 +27,13 @@
       <view class="tabbar-text">短视频</view>
     </view>
   </view>
-  <view class="tabbar-item {{active==3? 'tabbar-select':''}}" bindtap="switchJump" data-url="../Dynamic/main" data-active="4">
+  <view class="tabbar-item {{active==3? 'tabbar-select':''}}" bindtap="switchJump" data-url="../../pages/Dynamic/main" data-active="4">
     <view class="tabbar-image">
       <image  src="{{active==3? '../../static/tabs/browser.png':'../../static/tabs/browser.png'}}"></image>
     </view>
     <view class="tabbar-text">新鲜事</view>
   </view>
-  <view class="tabbar-item {{active==4? 'tabbar-select':''}}" bindtap="switchJump" data-url="../usercenter/main" data-active="5">
+  <view class="tabbar-item {{active==4? 'tabbar-select':''}}" bindtap="switchJump" data-url="../../pages/usercenter/main" data-active="5">
     <view class="tabbar-image">
       <image  src="{{active==4? '../../static/tabs/user.png':'../../static/tabs/user.png'}}"></image>
     </view>
