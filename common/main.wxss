@@ -184,7 +184,7 @@ button::after {
 }
 
 .cblue {
-	color: var(--theme-purple)
+	color: var(--theme-light-green)
 }
 
 .cyellow {

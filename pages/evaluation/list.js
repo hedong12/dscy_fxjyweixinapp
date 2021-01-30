@@ -629,7 +629,9 @@
               count: 0,
               title: "静态"
             }],
-            wechatQrCode: ""
+            wechatQrCode: "",
+            scrollTop: 0,
+            scrollIntoView: ''
           }
         },
         onLoad: function (e) {
@@ -646,26 +648,22 @@
             o = 0;
           while (c - 365 > 0) c -= 365, o += 1;
           var r = parseInt(c / 30);
-          o > 3 ? this.age4_6.map((function (e) {
-            var n = JSON.parse(JSON.stringify(e));
-            n.checked = 3, t.list.push(n)
-          })) : this.age0_3.map((function (e) {
-            var n = JSON.parse(JSON.stringify(e));
-            n.checked = 3, t.list.push(n)
-          })), this.month = r, this.year = o, console.log(n, i, a, d, p, m)
+          o > 3 ? t.list.push({checked:3,...this.age4_6[0]})
+           : t.list.push({...this.age0_3[0],checked:3}), this.month = r, this.year = o, console.log(n, i, a, d, p, m)
         },
         methods: {
           setChecked: function (e, t, n) {
-            var i = n - 1;
-            3 === e.checked && (this.count += 1), e.checked = t, i >= 0 && this.gotoNext(i)
+            if(3 === e.checked){
+              this.count += 1
+              if(n+1<this.age4_6.length || n+1<this.age0_3.length){
+                this.year > 3 ? this.list.push({checked:3,...this.age4_6[n+1]})
+                : this.list.push({...this.age0_3[n+1],checked:3})
+              }
+            } 
+            e.checked = t, t==1?e.option='是':e.option='否',  this.gotoNext(n)
           },
           gotoNext: function (e) {
-            var t = wx.createSelectorQuery();
-            t.select("#item-" + e).boundingClientRect(), t.selectViewport().scrollOffset(), t.exec((function (e) {
-              wx.pageScrollTo({
-                scrollTop: e[0].top + e[1].scrollTop
-              })
-            }))
+            this.scrollIntoView = 'item-'+e
           },
           submit: function () {
             var e, t = this;

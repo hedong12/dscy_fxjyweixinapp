@@ -6,7 +6,7 @@
 }
 
 .product-card .thumbnail.data-v-3dbec60d {
-  height: 247rpx;
+  height: 138rpx;
   width: 100%;
 }
 
@@ -22,7 +22,7 @@
 
 .synopsis .title.data-v-3dbec60d {
   color: #848484;
-  font-size: 32rpx;
+  font-size: 30rpx;
   height: 50rpx;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -48,7 +48,7 @@
 }
 
 .price-type .price ._span.data-v-3dbec60d {
-  font-size: 36rpx;
+  font-size: 32rpx;
   font-weight: 700
 }
 

@@ -68,7 +68,7 @@
       var s = function (t) {
         function e() {
           var e = null !== t && t.apply(this, arguments) || this;
-          return e.active = 0, e.select = "", e.scrollTop = 0, e.qa = o.default, e.qaDialog = [o.default[0]], e.sex = 0, e.birthdays = "", e.name = "", e.province = "", e.city = "", e.county = "", e.month = 0, e.year = 0, e.keys = ["A", "B", "C", "D"], e
+          return e.active = 0, e.select = "", e.scrollIntoView = '', e.qa = o.default, e.qaDialog = [o.default[0]], e.sex = 0, e.birthdays = "", e.name = "", e.province = "", e.city = "", e.county = "", e.month = 0, e.year = 0, e.keys = ["A", "B", "C", "D"], e
         }
         return i.__extends(e, t), e.prototype.onLoad = function (t) {
           
@@ -90,6 +90,7 @@
               this.qaDialog.push(o.default[ind+1])
             }
           }
+          this.scrollIntoView = 'item-'+(ind+1)
           this.$set(this.qaDialog[ind],'option', this.keys[e])
           te.map((function (t) {
             t.active = 0

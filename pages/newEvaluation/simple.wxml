@@ -1,5 +1,5 @@
-<view class="alice _div">
-  <view wx:for="{{qaDialog}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+<scroll-view class="alice _div" scroll-y scroll-into-view="{{scrollIntoView}}">
+  <view wx:for="{{qaDialog}}" wx:for-item="item" wx:for-index="index" wx:key="index" id="{{'item-'+index}}">
     <view class="question animated fadeInLeft" wx:if="{{qaDialog.length>0}}">
       <image class="avatar" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_questionAvatar.png"></image>
       <view class="question-dialog">
@@ -24,17 +24,7 @@
     </view>
   </view>
 
-  <view id="test"></view>
-
-  <view wx:if="{{active == 9}}" data-event-opts="{{[['tap',[['nextQa']]]]}}" class="submit _div" bindtap="__e">
+  <view wx:if="{{active == qaDialog.length-1 && qaDialog[qaDialog.length-1].option != undefined}}" data-event-opts="{{[['tap',[['nextQa']]]]}}" class="submit _div" bindtap="__e">
     提交
   </view>
-
-  <!-- <view class="ceontent-button _div">
-    <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}"
-      class="{{['left-butto button _div',(active===0)?'disabled':'']}}" bindtap="__e">上一题</view>
-    <view data-event-opts="{{[['tap',[['nextQa']]]]}}" class="right-butto button _div" bindtap="__e">
-      {{active>=9?'提 交':'下一题'}}</view>
-    <view class="ceontent-count _div">10/<label class="_span">{{active+1}}</label></view>
-  </view> -->
-</view>
+</scroll-view>

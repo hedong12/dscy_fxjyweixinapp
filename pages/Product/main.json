@@ -14,6 +14,7 @@
     "product-recommend": "/components/productRecommend",
     "van-search": "/static/vant/search/index",
     "van-grid": "/static/vant/grid/index",
-    "van-grid-item": "/static/vant/grid-item/index"
+    "van-grid-item": "/static/vant/index-grid-item/index",
+	  "van-grid-item-two": "/static/vant/index-grid-item-two/index"
   }
 }

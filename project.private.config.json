@@ -41,6 +41,11 @@
           "pathName": "pages/prodDetail/main",
           "query": "goodId=1347",
           "scene": null
+        },
+        {
+          "name": "pages/evaluation/list",
+          "pathName": "pages/evaluation/list",
+          "scene": null
         }
       ]
     }

@@ -76,6 +76,7 @@
 
 .item .answer-content {
   flex: 1;
+  font-size: 28rpx;
 }
 
 .active ._span {
@@ -192,7 +193,7 @@ web-view {
 }
 
 .question-dialog .title{
-  font-size: 32rpx;
+  font-size: 28rpx;
   font-weight: 600;
   line-height: 50rpx;
 }
@@ -207,7 +208,7 @@ web-view {
 }
 
 .answer-dialog{
-  width: 200rpx;
+  width: 100rpx;
   height: auto;
   line-height: 40rpx;
   background: var(--theme-green);
@@ -218,7 +219,6 @@ web-view {
   position: relative;
   filter: drop-shadow(0 0 1px var(--theme-light-green));
   color: #fff;
-  font-weight: 600;
   text-align: center;
 }
 

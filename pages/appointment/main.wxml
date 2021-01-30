@@ -1,12 +1,6 @@
 <view class="posre borderbox wrapper h100p appointment _div" style="{{'height:'+('calc('+mainHeight+'px - 98rpx)')+';'}}">
-  <!-- <nav-bar-by-user vue-id="5d681f24-1" isLogin="{{isLogin}}" isShowLoginGuide="{{isShowLoginGuide}}"
-    isShowCardCase="{{true}}" avatarUrl="{{avatarUrl}}"
-    data-event-opts="{{[['^cancelLoginGuide',[['cancelLoginGuide']]],['^loginSuccess',[['loginSuccess']]],['^loginFailed',[['loginFailed']]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]],['^updateAvatarUrl',[['__set_sync',['$0','avatarUrl','$event'],['']]]]]}}"
-    bind:cancelLoginGuide="__e" bind:loginSuccess="__e" bind:loginFailed="__e" bind:updateAvatarUrl="__e"
-    bind:__l="__l"></nav-bar-by-user> -->
-
     <view class="search _div">
-      <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索" shape="round"
+      <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索"
       data-event-opts="{{[['tap',[['toSearchGoods',['$event']]]]]}}" bindtap="__e">
       </van-search>
     </view>
@@ -17,13 +11,15 @@
       </self-swiper>
     </view>
 
-    <van-grid vue-id="1a10b852-10" column-num="{{2}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
+    <van-grid vue-id="1a10b852-10" column-num="{{3}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
       bind:__l="__l" vue-slots="{{['default']}}"> 
       <van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_project.png"
       text="课程中心" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
       bind:__l="__l"></van-grid-item>
       <van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_order.png"
-      text="预约中心" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+      text="预约中心"></van-grid-item>
+      <van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_toy.png"
+      text="育儿玩具"></van-grid-item>
     </van-grid>
 <!-- 
     <view class="foot-type _div">

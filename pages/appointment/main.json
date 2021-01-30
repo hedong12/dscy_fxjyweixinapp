@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "预约中心",
-  "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#ACDED3",
   "usingComponents": {
     "right-float": "/components/rightFloat",

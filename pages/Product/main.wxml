@@ -7,9 +7,8 @@
     bind:__l="__l"></nav-bar-by-user> -->
 
   <view class="search _div">
-    <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索" shape="round"
-      data-event-opts="{{[['tap',[['goToList']]]]}}" bindtap="__e" use-action-slot>
-      <view slot="action" style="color:#41AB9F;">关注</view>
+    <van-search vue-id="36971996-1" placeholder="请输入关键词进行搜索"
+      data-event-opts="{{[['tap',[['goToList']]]]}}" bindtap="__e">
     </van-search>
   </view>
 
@@ -37,23 +36,24 @@
 
   <van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
 	 bind:__l="__l" vue-slots="{{['default']}}"> 
-		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_son.png"
+		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" class="van-grid-item" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_son.png"
 		 text="亲子课堂" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
 		 bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_questions.png"
 		 text="育儿百问" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_health.png"
 		 text="健康保健" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-     <van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_school.png"
-		 text="父母学院" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-     <van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_book.png"
-		 text="百科全书" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_video.png"
-		  text="直播课程" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-		  <van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_camp.png"
-		    text="线上训练营" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
-			<van-grid-item vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_toy.png"
-			  text="育儿玩具" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_school.png"
+		 text="父母学院" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_sonBook.png"
+		 text="百科全书" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_video.png"
+		  text="直播课程" class="item-two-now" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		  <van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_camp.png"
+			text="线上训练营" class="item-two-now" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_toy.png"
+		  text="育儿玩具" class="item-two-now" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}"
+				data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 	</van-grid>
 
   <image class="order-center" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_orderCenter.png" data-event-opts="{{[['tap',[['goTo']]]]}}" bindtap="__e"></image>
@@ -73,8 +73,9 @@
     </view> -->
     <view class="_div">
       <block wx:if="{{goodsModellist.length}}">
-        <view class="product-title _div"><label class="_span">活动推荐</label><label
-            data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多</label>
+        <view class="product-title _div">
+          <label class="_span">活动推荐</label>
+          <!-- <label data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多</label> -->
         </view>
       </block>
       <block wx:if="{{goodsModellist.length}}">
@@ -99,7 +100,7 @@
           <image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_jingXuan.png"></image>
           <label class="_span">精选推荐</label>
         </view>
-        <label data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多></label>
+        <!-- <label data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多></label> -->
       </view>
       <block wx:if="{{list.length}}">
         <scroll-view scroll-x>
@@ -141,7 +142,7 @@
           <image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_jingXuan.png"></image>
           <label class="_span">精选推荐</label>
         </view>
-        <label data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多></label>
+        <!-- <label data-event-opts="{{[['tap',[['goToList']]]]}}" class="product-title-all _span" bindtap="__e">更多></label> -->
       </view>
       <block wx:if="{{list.length}}">
         <view class="product-parent _div">
