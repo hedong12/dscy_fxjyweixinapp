@@ -20,11 +20,11 @@
 		 text="育儿百问" data-event-opts="{{[['tap',[['showDevelopingTips']]]]}}" data-com-type="wx"  bindtap="__e"
 		 bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bj.png"
-		 text="健康保健" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		 text="健康保健" data-event-opts="{{[['^click',[['showDevelopingTips']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kczx.png"
-		 text="课程中心" data-event-opts="{{[['^click',[['makePhone']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		 text="课程中心" decode="{{true}}"   data-event-opts="{{[['tap',[['switchJump',['$event']]]]]}}"  bindtap="__e" data-url="../../pages/Product/main"></van-grid-item>
 		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_fmxy.png"
-		 text="父母学院" class="item-two-now" data-event-opts="{{[['^click',[['addWx']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
+		 text="父母学院" class="item-two-now" data-event-opts="{{[['^click',[['showDevelopingTips']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 		<van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_xyhb.png"
 		  text="校园海报" class="item-two-now" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item-two>
 		  <van-grid-item-two vue-id="{{('1a10b852-7')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dh.png"
@@ -82,7 +82,8 @@
 					</view>
 				</view>
 				<view class="evaluation-card-zise">
-					<image  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dq2.png" alt data-event-opts="{{[['tap',[['goToEvaluation',['$event']]]]]}}" bindtap="__e"
+					<image  src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dq2.png" alt data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+				 catchtap="__e"
 					 class="_img"></image> 
 					<view class="card-view-zise">
 						入园测评

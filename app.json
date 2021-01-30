@@ -1,6 +1,6 @@
 {
   "pages": [
-	  "pages/index/main",
+    "pages/index/main",
     "pages/login/main",
     "pages/liveList/main",
     "pages/address/main",
@@ -31,10 +31,10 @@
     "pages/appointment/main",
     "pages/evaluation/main",
     "pages/newEvaluation/simple",
-    "pages/newEvaluation/end",
-    "pages/newEvaluation/index",
     "pages/newEvaluation/help",
 	  "pages/newEvaluation/home",
+    "pages/newEvaluation/end",
+    "pages/newEvaluation/index",
     "pages/evaluation/info",
     "pages/evaluation/help",
     "pages/evaluation/introduce",

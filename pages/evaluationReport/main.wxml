@@ -1,7 +1,7 @@
 <view class="container"><canvas class="canvas" style="width:800px;height:800px;position:absolute;top:-999999999px;"
 	 canvas-id="radarCanvas"></canvas>
 	<view class="header">
-		<image class="header-bg" mode="bottom" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-top.png"></image>
+		<image class="header-bg" mode="bottom" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-top-02.png"></image>
 		<view class="header-main">
 			<view class="info">
 				<view class="item">{{"姓名: "+name}}</view>

@@ -133,7 +133,7 @@
 		</view>
 		<van-grid vue-id="34081c72-11" column-num="5" border="{{false}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
 			<van-grid-item vue-id="{{('34081c72-12')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dfk.jpg"
-			 text="待付款" data-event-opts="{{[['^click',[['goTo',['shopCart/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 text="待付款" data-event-opts="{{[['^click',[['goTo',['orderLists/main']]]]]}}" data-com-type="wx" bind:click="__e"
 			 bind:__l="__l"></van-grid-item>
 			<van-grid-item vue-id="{{('34081c72-13')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dfh.jpg"
 			 text="待发货" data-event-opts="{{[['^click',[['goTo',['address/main']]]]]}}" data-com-type="wx" bind:click="__e"
@@ -177,6 +177,22 @@
 	</view>
 	
 	<!-- 开始 -->
+	<view class="bgfff fs12 c78 mb10 _div">
+		<view data-event-opts="{{[['tap',[['goTo',['shopCart/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
+		 bindtap="__e" bind:__l="__l">
+			 <label class="fs14 c38 _span">
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_icon_gouwuche.jpg"></image>
+				<label class="fs14 c38 _span">
+							购物车	
+				</label>
+			 </label>
+			<view class="_div">
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+		</view>
+	</view>
+
 	<view class="bgfff fs12 c78 mb10 _div">
 		<view data-event-opts="{{[['tap',[['goTo',['appointmentPack/orderList/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
 		 bindtap="__e" bind:__l="__l">

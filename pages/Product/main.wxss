@@ -150,7 +150,7 @@
 }
 
 .product-title-left image {
-  width: 40rpx;
+  width: 32rpx;
   height: 40rpx;
   margin-right: 10rpx;
 }
@@ -312,6 +312,7 @@
   color: #595757;
   font-size: 28rpx;
   height: 50rpx;
+  line-height: 50rpx;
   font-weight: 600;
   overflow: hidden;
   -o-text-overflow: ellipsis;
