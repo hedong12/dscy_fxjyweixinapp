@@ -85,7 +85,7 @@
                       </image>
                     </label><label class="bte8 bbe8 fs12 c68 w40 lh25 textc _span">{{prod_item.$orig.num}}</label><label
                       data-event-opts="{{[['tap',[['prodChangeNum',['$0',k,1],['index1']]]]]}}"
-                      class="textc be8 lh25 w25 add ca8 _span" catchtap="__e">
+                      class="textc be8 lh25 w25 add ca8 _span right_span" catchtap="__e">
                       <image class="w10 h10 _img"
                         src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/product-index/20190505113647.png">
                       </image>

@@ -127,9 +127,7 @@
 
 .isEvaluationimage1 {
 	    width: 669rpx;
-	    height: 450rpx;
 		    margin-top: 100rpx;
-		
 	    margin-bottom: 20rpx;
 }
 .isEvaluationimage2{

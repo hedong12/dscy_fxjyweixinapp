@@ -3,15 +3,23 @@
   border-radius: 12rpx;
   overflow: hidden;
   margin-top: 10rpx;
+  padding: 12rpx;
+       -webkit-box-shadow: 0 0.5px 5px 0 rgba(1, 0, 1, .2); 
+    box-shadow: 0 0rpx 10rpx 0 rgba(1, 0, 1, .2); 
+    
 }
 
 .product-card .thumbnail.data-v-3dbec60d {
   height: 138rpx;
   width: 100%;
+  border-radius: 12rpx;
+  border: 1px solid var(--theme-light-green);
 }
 
 .synopsis.data-v-3dbec60d {
+  width: 100%;
   padding-left: 20rpx;
+  padding-right: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,12 +32,9 @@
   color: #848484;
   font-size: 30rpx;
   height: 50rpx;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical
+  white-space:nowrap;    
+  overflow:hidden;     
+  text-overflow:ellipsis;  
 }
 
 .synopsis .desc.data-v-3dbec60d {

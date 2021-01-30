@@ -19,11 +19,11 @@ Component({
   },
  
   // 在组件实例进入页面节点树时执行
-  attached: function () {
-    this.setData({
-      active: this.data.pageActive
-    })
-  },
+  // attached: function () {
+  //   this.setData({
+  //     active: this.data.pageActive
+  //   })
+  // },
   // 在组件实例被从页面节点树移除时执行
   detached: function () {
     
@@ -34,6 +34,7 @@ Component({
   methods: {
     //页面跳转
     switchJump: function(e){
+      
       let url = e.currentTarget.dataset.url;
       wx.switchTab({
         url: url,

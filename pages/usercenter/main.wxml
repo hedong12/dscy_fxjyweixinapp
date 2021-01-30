@@ -136,16 +136,16 @@
 			 text="待付款" data-event-opts="{{[['^click',[['goTo',['orderLists/main']]]]]}}" data-com-type="wx" bind:click="__e"
 			 bind:__l="__l"></van-grid-item>
 			<van-grid-item vue-id="{{('34081c72-13')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dfh.jpg"
-			 text="待发货" data-event-opts="{{[['^click',[['goTo',['address/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 text="待发货" data-event-opts="{{[['^click',[['goTo',['orderLists/main'],[[['order_type_tap',[3]]]]]]]]}}" data-com-type="wx" bind:click="__e"
 			 bind:__l="__l"></van-grid-item>
 			<van-grid-item vue-id="{{('34081c72-14')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_dsh.jpg"
-			 text="待收货" data-event-opts="{{[['^click',[['goTo',['appointmentPack/orderList/main']]]]]}}" data-com-type="wx"
+			 text="待收货" data-event-opts="{{[['^click',[['goTo',['orderLists/main']]]]]}}" data-com-type="wx"
 			 bind:click="__e" bind:__l="__l"></van-grid-item>
 			<van-grid-item vue-id="{{('34081c72-15')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_ywc.jpg"
-			 text="已完成" data-event-opts="{{[['^click',[['goTo',['activity/order/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 text="已完成" data-event-opts="{{[['^click',[['goTo',['orderLists/main']]]]]}}" data-com-type="wx" bind:click="__e"
 			 bind:__l="__l"></van-grid-item>
 			<van-grid-item vue-id="{{('34081c72-16')+','+('34081c72-11')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_tksh.jpg"
-			 text="退款/售后" data-event-opts="{{[['^click',[['goTo',['collect/main']]]]]}}" data-com-type="wx" bind:click="__e"
+			 text="退款/售后" data-event-opts="{{[['^click',[['goTo',['orderLists/main']]]]]}}" data-com-type="wx" bind:click="__e"
 			 bind:__l="__l"></van-grid-item>
 		</van-grid>
 	</view>
@@ -211,12 +211,12 @@
 	
 	
 	<view class="bgfff fs12 c78 mb10 _div" >
-		<view data-event-opts="{{[['tap',[['goTo',['activity/order/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div" data-com-type="wx"  bindtap="__e"
+		<view data-event-opts="{{[['tap',[['goTo',['cardCase/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div" data-com-type="wx"  bindtap="__e"
 			 bind:__l="__l">
 			 <label class="fs14 c38 _span">
 				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_wdhd.jpg"></image>
 				<label class="fs14 c38 _span">
-							我的活动	
+							切换园所	
 				</label>
 			 </label>
 			<view class="_div">

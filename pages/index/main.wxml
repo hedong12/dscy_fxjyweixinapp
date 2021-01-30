@@ -96,7 +96,8 @@
 	<block wx:if="{{productRecommend.length}}">
 		<view class="product-recommend _div">
 			<view class="product-recommend-title _div">课程推荐
-				<text class="text-nav" decode="{{true}}"   data-event-opts="{{[['tap',[['switchJump',['$event']]]]]}}"  bindtap="__e" data-url="../../pages/Product/main">更多推荐&gt;</text>
+				<view class="text-nav" decode="{{true}}"   data-event-opts="{{[['tap',[['switchJump',['$event']]]]]}}"  bindtap="__e" data-url="../../pages/Product/main">更多推荐 <image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image></view>
 			</view>
 			<view style="width:100%;" class="_div">
 				<view class="product-recommend-list _div" style="{{''+('padding-bottom:'+('31rpx')+';')}}">
@@ -256,15 +257,15 @@
 			<block wx:if="{{!phone}}">
 				<button class="no-button" open-type="getPhoneNumber" data-event-opts="{{[['tap',[['',['$event']]]],['getphonenumber',[['getPhone',['$event']]]]]}}"
 				 catchtap="__e" bindgetphonenumber="__e">
-					<image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image>
-					<image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image>
+					<view style="width:100%"><image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image></view>
+					<view style="width:100%"><image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image></view>
 				</button>
 				</block>
 			<block wx:else>
-				<image class="isEvaluationimage1" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+				<!-- <image class="isEvaluationimage1" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
 				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image>
 				<image class="isEvaluationimage2" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
-				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image>
+				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image> -->
 			
 			</block> 
 		</view>  

@@ -283,7 +283,8 @@
 .product-content-price-mianfei{
 	color: white;
 	font-size: 16rpx;
-	margin-right: 11rpx;
+  margin-right: 11rpx;
+  border-radius: 4px;
 	background-color: #F0966e;
 	padding: 2rpx 16rpx;
 }

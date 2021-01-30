@@ -81,7 +81,7 @@ button::after {
 }
 
 .bg_line_orange {
-	background: var(--theme-purple)
+	background: var(--theme-green)
 }
 
 .bg_line_yellow {
@@ -224,11 +224,11 @@ button::after {
 }
 
 .bblue {
-	border: 1rpx solid var(--theme-purple)
+	border: 1rpx solid var(--theme-light-green)
 }
 
 .blblue {
-	border-left: 8rpx solid var(--theme-purple)
+	border-left: 8rpx solid var(--theme-light-green)
 }
 
 .be8 {

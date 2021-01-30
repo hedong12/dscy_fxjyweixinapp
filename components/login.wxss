@@ -26,7 +26,7 @@
 	width: 580rpx;
 	height: 671rpx;
 	position: absolute;
-	bottom: 20%;
+	bottom: 30%;
 	left: 50%;
 	-webkit-transform: translate(-50%);
 	-ms-transform: translate(-50%);
