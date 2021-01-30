@@ -615,7 +615,7 @@ video {
 	    font-size: 24rpx;
 	    line-height: 42rpx;
 	    font-weight: 400;
-			color: black;
+			color: #a8a8a8;
 			padding-right: 20rpx;
 }
 
