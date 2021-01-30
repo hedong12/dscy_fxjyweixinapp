@@ -86,15 +86,15 @@
                         prodChangeNum: function (n, t, e) {
                             this.$emit("prodChangeNum", n, t, e)
                         },
-                        delOrder: function (event,t) {
-                            this.$emit("delOrder",event,t)
-                        },
                         choose_order: function (n, t) {
                             "company" == n && (this.company_check = !this.company_check), this.$emit("choose_order", n, this.index1, t)
                         },
                         order_tap: function (n, t) {
                             this.$emit("order_tap", n, t)
-                        }
+                        },
+                        delOrder: function (ev,t) {
+                            this.$emit("delOrder",ev,t)
+                        },
                     }
                 };
             t.default = r
@@ -118,3 +118,4 @@
         ['components/orderItem-create-component']
     ]
 ]);
+

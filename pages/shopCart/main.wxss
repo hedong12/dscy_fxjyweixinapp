@@ -8,3 +8,7 @@
   top: 0;
   z-index: -1
 }
+
+.cart-setting {
+  background: var(--theme-light-green);
+}

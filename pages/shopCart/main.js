@@ -181,11 +181,11 @@
                 o.cart_lists = []
               }))
             },
-            delOrder: function(event,o){
-              console.log(event)
+            delOrder: function(ev,o){
+              console.log(ev)
               var _this = this
               console.log(_this)
-              const { position } = event.detail;
+              const { position } = ev.detail;
               switch (position) {
                 case 'left':
                 case 'cell':

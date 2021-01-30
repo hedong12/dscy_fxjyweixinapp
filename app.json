@@ -1,16 +1,13 @@
 {
   "pages": [
-	  
-	  "pages/newEvaluation/help",
-	  "pages/newEvaluation/home",
-    "pages/index/main",
+	  "pages/index/main",
     "pages/login/main",
     "pages/liveList/main",
     "pages/address/main",
     "pages/seeVideo/main",
     "pages/productList/productList",
     "pages/evaluationReport/main",
-  "pages/usercenter/main",
+    "pages/usercenter/main",
     "pages/collect/main",
     "pages/shopCart/main",
     "pages/orderConfirm/main",
@@ -34,12 +31,10 @@
     "pages/appointment/main",
     "pages/evaluation/main",
     "pages/newEvaluation/simple",
-	
-	
     "pages/newEvaluation/end",
     "pages/newEvaluation/index",
-	
-	
+    "pages/newEvaluation/help",
+	  "pages/newEvaluation/home",
     "pages/evaluation/info",
     "pages/evaluation/help",
     "pages/evaluation/introduce",
@@ -57,15 +52,13 @@
     "pages/cardCode/main",
     "pages/orderLists/main",
     "pages/WebSite/main",
-	"pages/Dynamic/main",
+	  "pages/Dynamic/main",
     "pages/searchGoods/main",
     "pages/campus/main",
     "pages/curriculum/main",
     "pages/recruit/main",
     "pages/about/main",
     "pages/analysis/main"
-   
-
   ],
   "subPackages": [
     {
