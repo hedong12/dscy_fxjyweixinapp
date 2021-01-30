@@ -121,8 +121,14 @@
                 <view class="product-content-left">
                   <view class="product-content-title _div">{{''+item.$orig.goodsName+''}}</view>
                 <view class="product-content-price _div">
-                  <block wx:if="{{item.$orig.new_price}}"><label class="product-content-price1 _span"><label
-                        class="product-content-small _span">￥</label>{{''+item.m0+''}}</label></block>
+                  <block wx:if="{{item.$orig.new_price}}">
+					<label class="product-content-price-mianfei _span">
+					<!--  <label class="product-content-small _span">￥</label>
+					  {{''+item.m0+''}} -->
+					  免费
+				  </label>
+						
+						</block>
                   <block wx:if="{{item.$orig.price}}"><label
                       class="product-content-price2 _span">{{'￥'+item.m1+''}}</label></block>
                 </view>
@@ -159,7 +165,7 @@
                   </block>
                   <block wx:else><label class="bgfff2 _span">i</label></block>
                 </view> -->
-                <view class="product-content-left">
+                <view class="product-content-left  pl5">
                   <view class="product-content-title _div">{{''+item.$orig.goodsName+''}}</view>
                 <view class="product-content-price _div">
                   <block wx:if="{{item.$orig.new_price}}"><label class="product-content-price1 _span"><label

@@ -600,6 +600,10 @@ button::after {
 	padding-left: 6rpx
 }
 
+.pl5 {
+	padding-left: 10rpx
+}
+
 .pl6 {
 	padding-left: 24rpx
 }

@@ -219,7 +219,7 @@
 
 .product-good-photo {
   height: 138rpx;
-  width: 324rpx;
+  width: 258rpx;
   border-radius: 10rpx;
   border: 1px solid var(--theme-light-green);
 }
@@ -239,9 +239,9 @@
 }
 
 .product-content-title {
-  color: #333;
-  font-size: 26rpx;
-  line-height: 50rpx;
+  color: #747272;
+  font-size: 24rpx;
+  line-height: 30rpx;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -270,26 +270,39 @@
   font-size: 24rpx
 }
 
+.product-content-price{
+	line-height: 30rpx;
+}
+
 .product-content-price1 {
   color: #F0966E;
   font-size: 28rpx;
   margin-right: 11rpx
 }
 
+.product-content-price-mianfei{
+	color: white;
+	font-size: 16rpx;
+	margin-right: 11rpx;
+	background-color: #F0966e;
+	padding: 2rpx 16rpx;
+}
+ 
+
 .product-content-price2 {
   color: #888;
-  font-size: 20rpx;
+  font-size: 18rpx;
   text-decoration: line-through
 }
 
 .product-content-button {
   background-color: var(--theme-light-green);
-  height: 50rpx;
-  width: 50rpx;
+  height: 38rpx;
+  width: 38rpx;
   text-align: center;
-  line-height: 50rpx;
+  line-height: 38rpx;
   border-radius: 50rpx;
-  font-size: 20rpx;
+  font-size: 18rpx;
   font-weight: bold;
   color: var(--theme-green);
   float: right
@@ -392,7 +405,7 @@
   height: 90rpx;
   width: 100%;
   line-height: 88rpx;
-  font-size: 28rpx;
+  font-size: 32rpx;
   white-space: nowrap
 }
 
@@ -417,8 +430,14 @@
   height: 110rpx;
   margin: 20rpx;
 }
+.nav-grid .van-grid-item__icon,
+.nav-grid .van-icon.van-icon--image {
+	width: 62rpx !important;
+	height: 62rpx !important
+}
 
 .nav-grid .van-grid-item__text {
+
 	color: #555;
 	font-size: 21rpx;
 	margin-top: 14rpx
@@ -428,6 +447,7 @@
 	width: 25%;
 } 
 
+
 .nav-grid {
 	padding-left: 24rpx;
   padding-right: 30rpx;
@@ -436,6 +456,12 @@
   box-sizing: border-box;
 }
 
-.bottom-text{
-   padding-bottom: env(safe-area-inset-bottom);  
+.grid-text {
+	color: #555;
+	font-size: 21rpx
+}
+
+.grid-image {
+	height: 102rpx;
+	width: 104rpx
 }
