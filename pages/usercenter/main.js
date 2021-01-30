@@ -46,7 +46,8 @@
 				}, e.prototype.init = function() {
 					this.getEvaluationList(), this.getIsMember()
 				}, e.prototype.getIsMember = function() {
-					s.isMember()
+					// 接口错误信息提示: NO message ...  
+					// s.isMember()
 				}, e.prototype.goTo = function(t) {
 					wx.navigateTo({
 						url: "/pages/" + t

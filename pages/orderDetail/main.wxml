@@ -50,7 +50,7 @@
 				 class="textc be8 ca8 bradius20 w90 lh30 fs14 _span" bindtap="__e">申请退款</label></view>
 		</block> 
 	</view>
-	<view class="disflex pt9 pb11 lh30 bgfff plctr fs14 _div">
+	<view class="disflex pt9 pb11 lh30 bgfff weizhi plctr fs14 _div">
 		<block wx:if="{{orderState==1}}"><label data-event-opts="{{[['tap',[['toPay',['$0','$1'],['cart_lists.__$n0.ordersId','k']]]]]}}"
 			 class="fukuan textc cfff bradius20 w90 mr15 _span" bindtap="__e">去付款</label></block>
 		<block wx:if="{{orderState==1}}"><label data-event-opts="{{[['tap',[['changeOrder',['cancel','$0'],['cart_lists.__$n0.ordersId']]]]]}}"
@@ -65,5 +65,5 @@
 		 data-event-opts="{{[['^btn_tap',[['btn_tap']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box>
 
 	</view>
-	<view hidden="{{!(dialog_show)}}" class="bottom-text"></view>
+	<view class="bottom-text"></view>
 </view>

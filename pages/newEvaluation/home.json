@@ -1,6 +1,6 @@
 {
-  "navigationBarBackgroundColor": "#6336CF",
-  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#ACDED3",
+  "navigationBarTextStyle": "black",
   "navigationBarTitleText": "儿童感觉综合评量",
   "usingComponents": {}
 }

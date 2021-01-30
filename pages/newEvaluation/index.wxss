@@ -7,16 +7,17 @@ web-view {
 }
 
 .button {
-	font-size: 36rpx;
-	color: #5CB7AD;
+	font-size: 30rpx;
+	color: #41AB9F;
 	background-color: #ACDED3;
-	border-radius: 100rpx;
+	border-radius: 50rpx;
 	text-align: center;
 	height: 60rpx;
 	line-height: 60rpx;
 	margin: 0 auto;
-	width: calc(100% - 95rpx);
-	margin-top: 96rpx;
+	width: 92%;
+	margin-top: 140rpx;
+	border-radius: 50rpx;
 }
 
 .card-constrole {
@@ -39,14 +40,14 @@ web-view {
 	font-weight: 700
 }
 
-.checked-boy.active { 
-	background-color: #3FA598;
+.checked-boy.active {
+	background-color: #3C9C91;
 	color: #fff !important
 }
 
 .checked-boy {
 	border-radius: 29rpx 0 0 29rpx;
-	color: #5eadfe
+	color: #3C9C91
 }
 
 .checked-girl.active {
@@ -65,12 +66,17 @@ web-view {
 }
 
 .alice {
-	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/card/newEvaluation-index.bg.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-color: #ddbeee;
-	padding-top: 292rpx
-}
+	/* background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/Evaluation/images/index.jpg); */
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_cpbg_top.png);
+	    background-repeat: no-repeat;
+	    background-size: 150%;
+	    background-color: #f9f9f9;
+	    padding-top: 316rpx;
+	    overflow: hidden;
+	    /* margin: 0 auto; */
+	    background-position-y: -70px;
+	    background-position-x: -170rpx;
+} 
 
 .card {
 	width: calc(100% - 95rpx);
@@ -90,4 +96,3 @@ web-view {
 	font-weight: 700;
 	text-align: center
 }
-

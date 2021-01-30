@@ -377,7 +377,14 @@
   									t[0].photo) : (e.bookImg = t[0].photo, e.testImg = t[1].photo)
   							}))
   						},
-						
+						//页面跳转
+						switchJump: function(e){
+							console.log(e);
+						  let url = e.currentTarget.dataset.url;
+						  wx.switchTab({
+						    url: url,
+						  })
+						},
   						goToProductInfo: function(e) {
   							var t = e.goodsId;
   							i.default.isLogin({

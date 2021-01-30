@@ -1,6 +1,6 @@
 {
-  "navigationBarBackgroundColor": "#8063C4",
-  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#B5E2D8",
+  "navigationBarTextStyle": "black",
   "navigationBarTitleText": "开始测评",
   "usingComponents": {}
 }

@@ -180,7 +180,7 @@
 
 .product .product-good-photo {
   height: 138rpx;
-  width: 350rpx;
+  width: 258rpx;
   border-radius: 10rpx;
   border: 1px solid var(--theme-light-green);
 }

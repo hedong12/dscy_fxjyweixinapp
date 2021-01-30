@@ -1,6 +1,6 @@
 {
-  "navigationBarBackgroundColor": "#8063C4",
-  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#ACDED3",
+  "navigationBarTextStyle": "black",
   "navigationBarTitleText": "绘本",
   "usingComponents": {
     "van-search": "/static/vant/search/index",

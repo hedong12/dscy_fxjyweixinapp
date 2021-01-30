@@ -1,1 +1,67 @@
-<view class="container"><canvas class="canvas" style="width:800px;height:800px;position:absolute;top:-999999999px;" canvas-id="radarCanvas"></canvas><view class="header"><image class="header-bg" mode="bottom" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-top.png"></image><view class="header-main"><view class="info"><view class="item">{{"姓名: "+name}}</view><view class="item">{{"月龄: "+(month?month:1)+"个月"}}</view><view class="item">{{"生日："+birthday}}</view><view class="item">{{"测评时间："+time}}</view></view></view></view><view class="main"><van-tabs vue-id="003e3e92-1" tab-class="tab-class" tab-active-class="tab-active-class" custom-class="custom-class" line-width="0" border="{{false}}" sticky swipeable animated data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><van-tab vue-id="{{('003e3e92-2')+','+('003e3e92-1')}}" title="基本信息" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><view class="content"><view class="content-wrapper base-info"><image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-ent-top.png" mode="widthFix"></image></view></view></van-tab><van-tab vue-id="{{('003e3e92-3')+','+('003e3e92-1')}}" title="潜能优势" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><view class="content"><view class="content-wrapper potential"><block wx:for="{{brain}}" wx:for-item="item" wx:for-index="__i0__" wx:key="*this"><view class="section"><text class="title">{{item.title+" \n"}}</text><block wx:for="{{item.features}}" wx:for-item="v" wx:for-index="i" wx:key="*this"><text class="list">{{i+1+"."+v.name+" \n"}}</text></block></view></block></view></view></van-tab><van-tab vue-id="{{('003e3e92-4')+','+('003e3e92-1')}}" title="雷达分析" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><view class="content"><view class="content-wrapper base-info"><image src="{{radarchart}}" alt mode="widthFix" class="_img"></image></view></view></van-tab><van-tab vue-id="{{('003e3e92-5')+','+('003e3e92-1')}}" title="学习特质" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><view class="content"><view class="content-wrapper potential"><view class="section"><text class="title">{{state.title+" \n"}}</text><block wx:for="{{state.features}}" wx:for-item="item" wx:for-index="index" wx:key="*this"><text class="list">{{index+1+"."+item.name+" \n"}}</text></block></view></view></view></van-tab></van-tabs></view><view class="bottom-ribbon"><button class="share" open-type="share"><image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-share.png"></image></button><view class="suggest"><image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-hand.gif"></image><text>查看教育建议</text></view><view data-event-opts="{{[['tap',[['changeQcShow']]]]}}" class="advisory" bindtap="__e">咨询老师</view></view><van-dialog vue-id="003e3e92-6" use-slot title="老师微信二维码" show="{{qcShow}}" confirm-button-text="下载" show-cancel-button data-event-opts="{{[['^close',[['e0']]],['^confirm',[['download']]]]}}" data-com-type="wx" bind:close="__e" bind:confirm="__e" bind:__l="__l" vue-slots="{{['default']}}"><image mode="aspectFit" src="{{qc}}" class="_img"></image></van-dialog></view>
+<view class="container"><canvas class="canvas" style="width:800px;height:800px;position:absolute;top:-999999999px;"
+	 canvas-id="radarCanvas"></canvas>
+	<view class="header">
+		<image class="header-bg" mode="bottom" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-top.png"></image>
+		<view class="header-main">
+			<view class="info">
+				<view class="item">{{"姓名: "+name}}</view>
+				<view class="item">{{"月龄: "+(month?month:1)+"个月"}}</view>
+				<view class="item">{{"生日："+birthday}}</view>
+				<view class="item">{{"测评时间："+time}}</view>
+			</view>
+		</view>
+	</view>
+	<view class="main">
+		<van-tabs vue-id="003e3e92-1" tab-class="tab-class" tab-active-class="tab-active-class" custom-class="custom-class"
+		 line-width="0" border="{{false}}" sticky swipeable animated data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+			<van-tab vue-id="{{('003e3e92-2')+','+('003e3e92-1')}}" title="基本信息" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+				<view class="content">
+					<view class="content-wrapper base-info">
+						<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-ent-top.png"
+						 mode="widthFix"></image>
+					</view>
+				</view>
+			</van-tab>
+			<van-tab vue-id="{{('003e3e92-3')+','+('003e3e92-1')}}" title="潜能优势" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+				<view class="content">
+					<view class="content-wrapper potential">
+						<block wx:for="{{brain}}" wx:for-item="item" wx:for-index="__i0__" wx:key="*this">
+							<view class="section"><text class="title">{{item.title+" \n"}}</text>
+								<block wx:for="{{item.features}}" wx:for-item="v" wx:for-index="i" wx:key="*this"><text class="list">{{i+1+"."+v.name+" \n"}}</text></block>
+							</view>
+						</block>
+					</view>
+				</view>
+			</van-tab>
+			<van-tab vue-id="{{('003e3e92-4')+','+('003e3e92-1')}}" title="雷达分析" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+				<view class="content">
+					<view class="content-wrapper base-info">
+						<image src="{{radarchart}}" alt mode="widthFix" class="_img"></image>
+					</view>
+				</view>
+			</van-tab>
+			<van-tab vue-id="{{('003e3e92-5')+','+('003e3e92-1')}}" title="学习特质" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+				<view class="content">
+					<view class="content-wrapper potential">
+						<view class="section"><text class="title">{{state.title+" \n"}}</text>
+							<block wx:for="{{state.features}}" wx:for-item="item" wx:for-index="index" wx:key="*this"><text class="list">{{index+1+"."+item.name+" \n"}}</text></block>
+						</view>
+					</view>
+				</view>
+			</van-tab>
+		</van-tabs>
+	</view>
+	<view class="bottom-ribbon"><button class="share" open-type="share">
+			<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-share.png"></image>
+		</button>
+		<view class="suggest">
+			<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-hand.gif"></image><text>查看教育建议</text>
+		</view>
+		<view data-event-opts="{{[['tap',[['changeQcShow']]]]}}" class="advisory" bindtap="__e">咨询老师</view>
+	</view>
+	<van-dialog vue-id="003e3e92-6" use-slot title="老师微信二维码" show="{{qcShow}}" confirm-button-text="下载" show-cancel-button
+	 data-event-opts="{{[['^close',[['e0']]],['^confirm',[['download']]]]}}" data-com-type="wx" bind:close="__e"
+	 bind:confirm="__e" bind:__l="__l" vue-slots="{{['default']}}">
+		<image mode="aspectFit" src="{{qc}}" class="_img"></image>
+	</van-dialog>
+</view>

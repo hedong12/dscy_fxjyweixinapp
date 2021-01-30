@@ -1,1 +1,67 @@
-.ml5{margin-left:5rpx}.ml5{margin-left:5rpx}.getUserInfo{background-image:url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/login-button.png);background-size:100% 100%;height:260rpx}.login-dialog{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.5)}.login-content{width:580rpx;height:671rpx;position:absolute;bottom:20%;left:50%;-webkit-transform:translate(-50%);-ms-transform:translate(-50%);transform:translate(-50%)}.login-top{width:580rpx;height:262rpx}.login-top-img{width:580rpx;height:262rpx}.login-bottom{width:580rpx;height:330rpx;padding:40rpx 0;background:#fff;border-bottom-left-radius:10rpx;border-bottom-right-radius:10rpx}.login-bottom .login-title{font-weight:700;text-align:center}.login-bottom .login-button{display:inline-block;width:374rpx;height:88rpx;background:var(--theme-purple);border-radius:10rpx;line-height:88rpx}
+.ml5 {
+	margin-left: 5rpx
+}
+
+.ml5 {
+	margin-left: 5rpx
+}
+
+.getUserInfo {
+	/* background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/login-button.png); */
+	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_login_01.png);
+	background-size: 100% 100%;
+	height: 260rpx
+}
+
+.login-dialog {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5)
+}
+
+.login-content {
+	width: 580rpx;
+	height: 671rpx;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	transform: translate(-50%)
+}
+
+.login-top {
+	width: 580rpx;
+	height: 262rpx
+}
+
+.login-top-img {
+	width: 580rpx;
+	height: 262rpx
+}
+
+.login-bottom {
+	width: 580rpx;
+	height: 330rpx;
+	padding: 40rpx 0;
+	background: #fff;
+	border-bottom-left-radius: 10rpx;
+	border-bottom-right-radius: 10rpx
+}
+
+.login-bottom .login-title {
+	font-weight: 700;
+	text-align: center
+}
+
+.login-bottom .login-button {
+	display: inline-block;
+	width: 374rpx;
+	height: 88rpx;
+	background: var(--theme-purple);
+	border-radius: 10rpx;
+	line-height: 88rpx
+}

@@ -14,10 +14,11 @@
 	<van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
 	 bind:__l="__l" vue-slots="{{['default']}}"> 
 		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" class="van-grid-item" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_qzkt.png"
-		 text="亲子课堂" data-event-opts="{{[['^click',[['goTo',['card/myCard']]]]]}}" data-com-type="wx" bind:click="__e"
+		 text="亲子课堂" data-event-opts="{{[['tap',[['showDevelopingTips']]]]}}" data-com-type="wx"  bindtap="__e"
 		 bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bw.png"
-		 text="育儿百问" data-event-opts="{{[['^click',[['toShowBill']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
+		 text="育儿百问" data-event-opts="{{[['tap',[['showDevelopingTips']]]]}}" data-com-type="wx"  bindtap="__e"
+		 bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bj.png"
 		 text="健康保健" data-event-opts="{{[['^click',[['addToAddressBook']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kczx.png"
@@ -94,7 +95,7 @@
 	<block wx:if="{{productRecommend.length}}">
 		<view class="product-recommend _div">
 			<view class="product-recommend-title _div">课程推荐
-				<text class="text-nav" decode="{{true}}">更多推荐&gt;</text>
+				<text class="text-nav" decode="{{true}}"   data-event-opts="{{[['tap',[['switchJump',['$event']]]]]}}"  bindtap="__e" data-url="../../pages/Product/main">更多推荐&gt;</text>
 			</view>
 			<view style="width:100%;" class="_div">
 				<view class="product-recommend-list _div" style="{{''+('padding-bottom:'+('31rpx')+';')}}">
@@ -146,7 +147,7 @@
 	
 	
 	
-	
+	 
 	
 	
 	<view class='ticket-container'>
@@ -241,7 +242,7 @@
 	<!-- <float-buttons class="index_float_right trans2 overhidden" vue-id="1a10b852-9" isShowTalk="{{isShowTalk}}" avatarUrl="{{targetAvatarUrl}}"
 	 data-event-opts="{{[['^talk',[['talk']]]]}}" bind:talk="__e" bind:__l="__l"></float-buttons> -->
 	 
-	 
+	
 	<login vue-id="1a10b852-10" is-show="{{!loginIsSHow}}" data-event-opts="{{[['^cancelLogin',[['e1']]],['^loginSuccess',[['loginSuccess']]]]}}"
 	 bind:cancelLogin="__e" bind:loginSuccess="__e" bind:__l="__l"></login>
 	<van-overlay vue-id="1a10b852-11" show="{{isEvaluation&&isEllis}}" class-name="delte-demo" data-com-type="wx" bind:__l="__l"
@@ -249,16 +250,25 @@
 		<view class="isEvaluation _div">
 			<block wx:if="{{!phone}}"><button class="isEvaluation-close no-button" open-type="getPhoneNumber" data-close="true"
 				 data-event-opts="{{[['getphonenumber',[['getPhone',['$event']]]]]}}" bindgetphonenumber="__e">×</button></block>
-			<block wx:else><label data-event-opts="{{[['tap',[['e2',['$event']]]]]}}" class="isEvaluation-close _span" bindtap="__e">×</label></block>
-			<block wx:if="{{!phone}}"><button class="no-button" open-type="getPhoneNumber" data-event-opts="{{[['tap',[['',['$event']]]],['getphonenumber',[['getPhone',['$event']]]]]}}"
-				 catchtap="__e" bindgetphonenumber="__e">
-					<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/card/isEvaluation.gif"></image>
-				</button></block>
 			<block wx:else>
-				<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/one-stand/card/isEvaluation.gif" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
-				 catchtap="__e"></image>
+				<label data-event-opts="{{[['tap',[['e2',['$event']]]]]}}" class="isEvaluation-close _span" bindtap="__e">×</label></block>
+			<block wx:if="{{!phone}}">
+				<button class="no-button" open-type="getPhoneNumber" data-event-opts="{{[['tap',[['',['$event']]]],['getphonenumber',[['getPhone',['$event']]]]]}}"
+				 catchtap="__e" bindgetphonenumber="__e">
+					<image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image>
+					<image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image>
+				</button>
+				</block>
+			<block wx:else>
+				<image class="isEvaluationimage1" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image>
+				<image class="isEvaluationimage2" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image>
+			
 			</block> 
 		</view>  
-	</van-overlay>
+	</van-overlay> 
+	
+	 
 	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
 </scroll-view>

@@ -1,1 +1,87 @@
-<view class="_div"><block wx:if="{{false}}"><view class="disflex jsbet pl16 pr16 lh30 ca8 fs16 ordertype bgfff _div"><block wx:for="{{productType}}" wx:for-item="item" wx:for-index="index" wx:key="index"><label data-event-opts="{{[['tap',[['setProductKey',['$0'],[[['productType','',index]]]]]]]}}" class="{{['border-none _span',(item.id===productKey)?'active':'']}}" bindtap="__e">{{item.text}}</label></block></view></block><view class="disflex jsbet pl16 pr16 lh30 ca8 fs16 ordertype bgfff _div"><label data-event-opts="{{[['tap',[['order_type_tap',[1]]]]]}}" class="{{['_span',order_type==1?'active':'']}}" bindtap="__e">待付款</label><label data-event-opts="{{[['tap',[['order_type_tap',[2]]]]]}}" class="{{['_span',order_type==2?'active':'']}}" bindtap="__e">待发货</label><label data-event-opts="{{[['tap',[['order_type_tap',[3]]]]]}}" class="{{['_span',order_type==3?'active':'']}}" bindtap="__e">待收货</label><label data-event-opts="{{[['tap',[['order_type_tap',[4]]]]]}}" class="{{['_span',order_type==4?'active':'']}}" bindtap="__e">已完成</label><label data-event-opts="{{[['tap',[['order_type_tap',[5]]]]]}}" class="{{['_span',order_type==5?'active':'']}}" bindtap="__e">退款/售后</label></view><view class="pl15 pr15 _div"><block wx:if="{{cart_lists.length}}"><block wx:for="{{cart_lists}}" wx:for-item="cart_item" wx:for-index="k" wx:key="k"><view class="mt11 bradius10 overhidden _div"><block wx:if="{{cart_item.shopcartModelList.length===1}}"><order-item vue-id="{{'222f23e4-1-'+k}}" orderData="{{cart_item}}" orderIndex="{{k}}" index1="{{k}}" isOrder="{{true}}" order_type="{{cart_item.refundState==2?7:order_type}}" data-event-opts="{{[['^order_tap',[['order_tap']]]]}}" bind:order_tap="__e" bind:__l="__l"></order-item></block><block wx:else><order-item-row vue-id="{{'222f23e4-2-'+k}}" orderData="{{cart_item}}" order_type="{{refundState==2?7:order_type}}" data-event-opts="{{[['^order_tap',[['order_tap']]]]}}" bind:order_tap="__e" bind:__l="__l"></order-item-row></block><block wx:if="{{order_type==1}}"><view class="textr lh44 bgfff pr20 _div"><label class="fs14 c333 _span">{{'共'+cart_item.allNum+'件商品 待付款:'}}</label><label class="fs18 c333 pl10 fbold _span">{{"¥"+cart_item.orderPrice}}</label></view></block><block wx:else><block wx:if="{{order_type==2}}"><view class="textr lh44 bgfff pr20 _div"><label class="fs14 c333 _span">{{'共'+cart_item.allNum+'件商品 实付款:'}}</label><label class="fs18 c333 pl10 fbold _span">{{"¥"+cart_item.orderPrice}}</label></view></block><block wx:else><view class="textr lh44 bgfff pr20 _div"><label class="fs14 c333 _span">{{'共'+cart_item.allNum+'件商品 实付款:'}}</label><label class="fs18 c333 pl10 fbold _span">{{"¥"+cart_item.payPrice}}</label></view></block></block><block wx:if="{{cart_item.refundState==2}}"><view class="lh44 pl20 bgfff fs14 c38 disflex align-cen _div"><image class="w16 h16 mr7 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/refund.png" alt></image>{{'退款原因：'+cart_item.refundRemark+''}}</view></block><view class="textr lh30 pt10 pb10 fs14 bgfff pr21 _div"><form report-submit data-event-opts="{{[['submit',[['submitOrder',['$event']]]]]}}" bindsubmit="__e"><input hidden name="deliverGood" value="{{cart_item.ordersId}}"/><block wx:if="{{order_type==1}}"><label data-event-opts="{{[['tap',[['showTips',['$0',1],[[['cart_lists','',k]]]]]]]}}" class="disinblock textc be8 ca8 bradius20 w90 mr10 _span" bindtap="__e">撤销订单</label></block><block wx:if="{{order_type==1}}"><label data-event-opts="{{[['tap',[['toPay',['$0',k],[[['cart_lists','',k,'ordersId']]]]]]]}}" class="disinblock bgblue textc cfff bradius20 w90 _span" bindtap="__e">立即支付</label></block><block wx:if="{{cart_item.assembleId?cart_item.assembleSuccess&&order_type==2:order_type==2}}"><label class="disinblock textc be8 ca8 bradius20 w90">提醒发货<button style="display:none;" form-type="submit"></button></label></block><block wx:if="{{order_type==3}}"><label data-event-opts="{{[['tap',[['showTips',['$0',4],[[['cart_lists','',k]]]]]]]}}" class="disinblock bgblue textc cfff bradius20 w90 _span" bindtap="__e">确认收货</label></block><block wx:if="{{order_type==4}}"><label data-event-opts="{{[['tap',[['changeOrder',['oneMoreOrder','$0'],[[['cart_lists','',k,'ordersId']]]]]]]}}" class="disinblock textc cblue bradius20 w90 bblue _span" bindtap="__e">再来一单</label></block><block wx:if="{{cart_item.refundState==2}}"><label data-event-opts="{{[['tap',[['changeOrder',['cancelRefund','$0',5],[[['cart_lists','',k,'ordersId']]]]]]]}}" class="disinblock textc be8 ca8 bradius20 w90 ml10 _span" bindtap="__e">撤销退款</label></block><block wx:if="{{!cart_item.assembleSuccess&&order_type==2&&cart_item.assembleId}}"><label data-event-opts="{{[['tap',[['invite',['$0'],[[['cart_lists','',k,'assembleId']]]]]]]}}" class="disinblock textc be8 ca8 bradius20 w90 ml10 bgblue cfff _span" bindtap="__e">邀请拼团</label></block></form></view></view></block><view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view></block><block wx:else><view class="_div"><no-data vue-id="222f23e4-3" bind:__l="__l" vue-slots="{{['default']}}">暂无订单</no-data></view></block></view><view data-event-opts="{{[['tap',[['page_turn',['usercenter']]]]]}}" class="textc disflex w60 h60 bradius50p bgblue disinblock goToUserCenter _div" bindtap="__e"><image class="w30 h30 mt15 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user_add.png" alt></image></view><block wx:if="{{isShowCancelOrderBox}}"><view class="_div"><dialog-box vue-id="222f23e4-4" dialog_title="提示" dialog_ph="{{tipsTitle}}" type="hint2" left="取消" right="确定" data-event-opts="{{[['^btn_tap',[['cancelOrder']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box></view></block></view>
+<view class="_div">
+	<block wx:if="{{false}}">
+		<view class="disflex jsbet pl16 pr16 lh30 ca8 fs16 ordertype bgfff _div">
+			<block wx:for="{{productType}}" wx:for-item="item" wx:for-index="index" wx:key="index"><label data-event-opts="{{[['tap',[['setProductKey',['$0'],[[['productType','',index]]]]]]]}}"
+				 class="{{['border-none _span',(item.id===productKey)?'active':'']}}" bindtap="__e">{{item.text}}</label></block>
+		</view>
+	</block>
+	<view class="disflex jsbet pl16 pr16 lh30 ca8 fs16 ordertype bgfff _div"><label data-event-opts="{{[['tap',[['order_type_tap',[1]]]]]}}"
+		 class="{{['_span',order_type==1?'active':'']}}" bindtap="__e">待付款</label><label data-event-opts="{{[['tap',[['order_type_tap',[2]]]]]}}"
+		 class="{{['_span',order_type==2?'active':'']}}" bindtap="__e">待发货</label><label data-event-opts="{{[['tap',[['order_type_tap',[3]]]]]}}"
+		 class="{{['_span',order_type==3?'active':'']}}" bindtap="__e">待收货</label><label data-event-opts="{{[['tap',[['order_type_tap',[4]]]]]}}"
+		 class="{{['_span',order_type==4?'active':'']}}" bindtap="__e">已完成</label><label data-event-opts="{{[['tap',[['order_type_tap',[5]]]]]}}"
+		 class="{{['_span',order_type==5?'active':'']}}" bindtap="__e">退款/售后</label></view>
+	<view class="pl15 pr15 _div">
+		<block wx:if="{{cart_lists.length}}">
+			<block wx:for="{{cart_lists}}" wx:for-item="cart_item" wx:for-index="k" wx:key="k">
+				<view class="mt11 bradius10 overhidden _div">
+					<block wx:if="{{cart_item.shopcartModelList.length===1}}">
+						<order-item vue-id="{{'222f23e4-1-'+k}}" orderData="{{cart_item}}" orderIndex="{{k}}" index1="{{k}}" isOrder="{{true}}"
+						 order_type="{{cart_item.refundState==2?7:order_type}}" data-event-opts="{{[['^order_tap',[['order_tap']]]]}}"
+						 bind:order_tap="__e" bind:__l="__l"></order-item>
+					</block>
+					<block wx:else>
+						<order-item-row vue-id="{{'222f23e4-2-'+k}}" orderData="{{cart_item}}" order_type="{{refundState==2?7:order_type}}"
+						 data-event-opts="{{[['^order_tap',[['order_tap']]]]}}" bind:order_tap="__e" bind:__l="__l"></order-item-row>
+					</block>
+					<block wx:if="{{order_type==1}}">
+						<view class="textr lh44 bgfff pr20 _div"><label class="fs14 c333 _span">{{'共'+cart_item.allNum+'件商品 待付款:'}}</label><label
+							 class="fs18 c333 pl10 fbold _span">{{"¥"+cart_item.orderPrice}}</label></view>
+					</block>
+					<block wx:else>
+						<block wx:if="{{order_type==2}}">
+							<view class="textr lh44 bgfff pr20 _div"><label class="fs14 c333 _span">{{'共'+cart_item.allNum+'件商品 实付款:'}}</label><label
+								 class="fs18 c333 pl10 fbold _span">{{"¥"+cart_item.orderPrice}}</label></view>
+						</block>
+						<block wx:else>
+							<view class="textr lh44 bgfff pr20 _div"><label class="fs14 c333 _span">{{'共'+cart_item.allNum+'件商品 实付款:'}}</label><label
+								 class="fs18 c333 pl10 fbold _span">{{"¥"+cart_item.payPrice}}</label></view>
+						</block>
+					</block>
+					<block wx:if="{{cart_item.refundState==2}}">
+						<view class="lh44 pl20 bgfff fs14 c38 disflex align-cen _div">
+							<image class="w16 h16 mr7 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/refund.png"
+							 alt></image>{{'退款原因：'+cart_item.refundRemark+''}}
+						</view>
+					</block>
+					<view class="textr lh30 pt10 pb10 fs14 bgfff pr21 _div">
+						<form report-submit data-event-opts="{{[['submit',[['submitOrder',['$event']]]]]}}" bindsubmit="__e"><input
+							 hidden name="deliverGood" value="{{cart_item.ordersId}}" />
+							<block wx:if="{{order_type==1}}"><label data-event-opts="{{[['tap',[['showTips',['$0',1],[[['cart_lists','',k]]]]]]]}}"
+								 class="disinblock textc be8 ca8 bradius20 w90 mr10 _span" bindtap="__e">取消订单</label></block>
+							<block wx:if="{{order_type==1}}"><label data-event-opts="{{[['tap',[['toPay',['$0',k],[[['cart_lists','',k,'ordersId']]]]]]]}}"
+								 class="disinblock zhifusty textc  bradius20 w90 _span" bindtap="__e">立即付款</label></block>
+							<block wx:if="{{cart_item.assembleId?cart_item.assembleSuccess&&order_type==2:order_type==2}}"><label class="disinblock textc be8 ca8 bradius20 w90">提醒发货<button
+									 style="display:none;" form-type="submit"></button></label></block>
+							<block wx:if="{{order_type==3}}"><label data-event-opts="{{[['tap',[['showTips',['$0',4],[[['cart_lists','',k]]]]]]]}}"
+								 class="disinblock bgblue textc cfff bradius20 w90 _span" bindtap="__e">确认收货</label></block>
+							<block wx:if="{{order_type==4}}"><label data-event-opts="{{[['tap',[['changeOrder',['oneMoreOrder','$0'],[[['cart_lists','',k,'ordersId']]]]]]]}}"
+								 class="disinblock textc cblue bradius20 w90 bblue _span" bindtap="__e">再来一单</label></block>
+							<block wx:if="{{cart_item.refundState==2}}"><label data-event-opts="{{[['tap',[['changeOrder',['cancelRefund','$0',5],[[['cart_lists','',k,'ordersId']]]]]]]}}"
+								 class="disinblock textc be8 ca8 bradius20 w90 ml10 _span" bindtap="__e">撤销退款</label></block>
+							<block wx:if="{{!cart_item.assembleSuccess&&order_type==2&&cart_item.assembleId}}"><label data-event-opts="{{[['tap',[['invite',['$0'],[[['cart_lists','',k,'assembleId']]]]]]]}}"
+								 class="disinblock textc be8 ca8 bradius20 w90 ml10 bgblue cfff _span" bindtap="__e">邀请拼团</label></block>
+						</form>
+					</view>
+				</view>
+			</block>
+			<view class="textc lh42 fs12 ca8 bgf5f6 _div">- 到底了，看看其他的吧 -</view>
+		</block>
+		<block wx:else>
+			<view class="_div">
+				<no-data vue-id="222f23e4-3" bind:__l="__l" vue-slots="{{['default']}}">您还没有相关的订单</no-data>
+			</view>
+		</block>
+	</view>
+	<view data-event-opts="{{[['tap',[['page_turn',['usercenter']]]]]}}" class="textc disflex w60 h60 bradius50p bglvse disinblock goToUserCenter _div"
+	 bindtap="__e">
+		<image class="w30 h30 mt15 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user_add.png"
+		 alt></image>
+	</view>
+	<block wx:if="{{isShowCancelOrderBox}}">
+		<view class="_div">
+			<dialog-box vue-id="222f23e4-4" dialog_title="提示" dialog_ph="{{tipsTitle}}" type="hint2" left="取消" right="确定"
+			 data-event-opts="{{[['^btn_tap',[['cancelOrder']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box>
+		</view>
+	</block>
+</view>

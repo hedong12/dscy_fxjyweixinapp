@@ -63,6 +63,12 @@
 .plctr{
 	padding-left: 44%;
 }
+
+.weizhi{
+	position: fixed;
+	bottom: 0;
+}
+
 .fukuan{
 	    background-color: #ACDED3;
 	    color: #46ADA2;

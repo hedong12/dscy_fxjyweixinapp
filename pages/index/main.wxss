@@ -125,10 +125,20 @@
 	z-index: 1e+21
 }
 
-.isEvaluation image {
-	width: 669rpx;
-	height: 775rpx
+.isEvaluationimage1 {
+	    width: 669rpx;
+	    height: 450rpx;
+		    margin-top: 100rpx;
+		
+	    margin-bottom: 20rpx;
 }
+.isEvaluationimage2{
+	    width: 489rpx;
+	    height: 140rpx;
+	}
+	
+	
+
 
 .card {
 	border: 3px solid #fff;
@@ -607,7 +617,8 @@ video {
 	    font-size: 24rpx;
 	    line-height: 42rpx;
 	    font-weight: 400;
-	    color: #BCBCBC;
+			color: black;
+			padding-right: 20rpx;
 }
 
 .yuanjiao{

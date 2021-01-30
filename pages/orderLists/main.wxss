@@ -1,1 +1,28 @@
-.ordertype .active{color:var(--theme-purple);border-bottom:6rpx solid var(--theme-purple)}.border-none{border:none!important}.goToUserCenter{position:fixed;right:20rpx;bottom:90rpx;z-index:99;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center}
+.ordertype .active {
+	color: black;
+	border-bottom: 6rpx solid #ACDED3
+}
+
+.border-none {
+	border: none !important
+}
+
+
+.zhifusty{
+	color: #50B1A6;
+	background-color: #ACDED3;
+}
+
+.bglvse{
+	background-color: #ACDED3;
+}
+
+.goToUserCenter {
+	position: fixed;
+	right: 20rpx;
+	bottom: 90rpx;
+	z-index: 99;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center
+}

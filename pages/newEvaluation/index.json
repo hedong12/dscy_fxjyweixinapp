@@ -1,7 +1,7 @@
 {
-  "navigationBarBackgroundColor": "#ACDED3",
+  "navigationBarBackgroundColor": "#B5E2D8",
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "测评信息",
+  "navigationBarTitleText": "开始测评",
   "usingComponents": {
     "van-field": "/static/vant/field/index",
     "van-cell": "/static/vant/cell/index",

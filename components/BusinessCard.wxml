@@ -1,1 +1,30 @@
-<view class="out shadow_gray mb10 _div data-v-352c2881"><block wx:if="{{type=='plus'}}"><view class="top_card fs12  shadow_gray posre _div data-v-352c2881"><image class="w116 h105 bg-img _img data-v-352c2881" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card-case-card-bg2.png" alt></image><view class="zIndex100 pl34 pt25 cblue fs12 flex-sb-c _div data-v-352c2881"><label class="before_line_3 _span data-v-352c2881">{{card_msg.company||'公司名称'}}</label><label data-event-opts="{{[['tap',[['moreTap',['$event']]]]]}}" class="w60 textc disinblock _span data-v-352c2881" style="z-index:1000;" catchtap="__e"><image class="w16 h16 pl3 pr3 _img data-v-352c2881" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/crm/edit_card.png" alt></image></label></view><view data-event-opts="{{[['tap',[['page_turn',['index']]]]]}}" class="top_msg zIndex100 disflex pt15 _div data-v-352c2881" bindtap="__e"><image class="w60 h60 bradius5 _img data-v-352c2881" src="{{card_msg.picchecked||card1_logo}}" mode="aspectFill" alt></image><view class="pl10 info-content pt10 _div data-v-352c2881"><view class="fbold c38 fs18 _p data-v-352c2881">{{card_msg.username||'姓名'}}</view><view class="fs14 ca8 pt10 pb25 _p data-v-352c2881">{{card_msg.post||'职位'}}</view></view></view><view class="flex-sa-c btf5f6 operate-bottom _div data-v-352c2881"><view data-event-opts="{{[['tap',[['makePhone',['$event']]]]]}}" class="phone flex-c-c _div data-v-352c2881" bindtap="__e"><image class="w16 h16 mr11 pl3 pr3 _img data-v-352c2881" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/tel.png" alt></image><label class="fs14 ca8 _span data-v-352c2881">拨打电话3</label></view></view></view></block></view>
+<view class="out shadow_gray mb10 _div data-v-352c2881">
+	<block wx:if="{{type=='plus'}}">
+		<view class="top_card fs12  shadow_gray posre _div data-v-352c2881">
+			<image class="w116 h105 bg-img _img data-v-352c2881" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card-case-card-bg2.png"
+			 alt></image>
+			<view class="zIndex100 pl34 pt25 cblue fs12 flex-sb-c _div data-v-352c2881"><label class="before_line_3 fontsty _span data-v-352c2881">{{card_msg.company||'公司名称'}}</label><label
+				 data-event-opts="{{[['tap',[['moreTap',['$event']]]]]}}" class="w60 textc disinblock _span data-v-352c2881" style="z-index:1000;"
+				 catchtap="__e">
+					<image class="w16 h16 pl3 pr3 _img data-v-352c2881" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/crm/edit_card.png"
+					 alt></image>
+				</label></view>
+			<view data-event-opts="{{[['tap',[['page_turn',['index']]]]]}}" class="top_msg zIndex100 disflex pt15 _div data-v-352c2881"
+			 bindtap="__e">
+				<image class="w60 h60 bradius5 _img data-v-352c2881" src="{{card_msg.picchecked||card1_logo}}" mode="aspectFill"
+				 alt></image>
+				<view class="pl10 info-content pt10 _div data-v-352c2881">
+					<view class="fbold c38 fs18 _p data-v-352c2881">{{card_msg.username||'姓名'}}</view>
+					<view class="fs14 ca8 pt10 pb25 _p data-v-352c2881">{{card_msg.post||'职位'}}</view>
+				</view>
+			</view>
+			<view class="flex-sa-c btf5f6 operate-bottom _div data-v-352c2881">
+				<view data-event-opts="{{[['tap',[['makePhone',['$event']]]]]}}" class="phone flex-c-c _div data-v-352c2881"
+				 bindtap="__e">
+					<image class="w16 h16 mr11 pl3 pr3 _img data-v-352c2881" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/tel.png"
+					 alt></image><label class="fs14 ca8 _span data-v-352c2881">拨打电话3</label>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>

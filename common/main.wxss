@@ -1366,6 +1366,11 @@ button::after {
 	width: 232rpx
 }
 
+.w120 {
+	width: 240rpx
+}
+
+
 .w146 {
 	width: 292rpx
 }
@@ -1803,7 +1808,7 @@ button::after {
 	content: "";
 	width: 6rpx;
 	height: 20rpx;
-	background: var(--theme-purple);
+	background: #ACDED3;
 	left: -9px;
 	top: 0;
 	bottom: 0;

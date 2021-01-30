@@ -1,1 +1,70 @@
-.out.data-v-352c2881{line-height:1;border-radius:20rpx}button.data-v-352c2881{border-radius:0}.info-content.data-v-352c2881{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.phone.data-v-352c2881{height:100%;width:100%;background:#fff}.operate-bottom.data-v-352c2881{width:100%;height:88rpx;overflow:hidden;background:#fff;border-bottom-right-radius:20rpx;border-bottom-left-radius:20rpx}.share-button.data-v-352c2881{width:100%}.separator.data-v-352c2881{display:inline-block;width:2rpx;height:32rpx;background:#f5f5f6}.bg-img.data-v-352c2881{position:absolute;right:0;top:0}.zIndex100.data-v-352c2881{position:relative;z-index:100}
+.out.data-v-352c2881 {
+	line-height: 1;
+	border-radius: 20rpx
+}
+
+button.data-v-352c2881 {
+	border-radius: 0
+}
+
+.info-content.data-v-352c2881 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.fontsty{
+	font-size: 26rpx;
+	font-weight: bold;
+}
+
+.phone.data-v-352c2881 {
+	height: 100%;
+	width: 100%;
+	background: #fff
+}
+
+.operate-bottom.data-v-352c2881 {
+	width: 100%;
+	height: 88rpx;
+	overflow: hidden;
+	background: #fff;
+	border-bottom-right-radius: 20rpx;
+	border-bottom-left-radius: 20rpx
+}
+
+.share-button.data-v-352c2881 {
+	width: 100%
+}
+
+.separator.data-v-352c2881 {
+	display: inline-block;
+	width: 2rpx;
+	height: 32rpx;
+	background: #f5f5f6
+}
+
+.bg-img.data-v-352c2881 {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.zIndex100.data-v-352c2881 {
+	position: relative;
+	z-index: 100
+}

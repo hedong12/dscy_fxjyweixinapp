@@ -2,9 +2,9 @@
   "navigationBarTitleText": "订单",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "order-item": "/components/orderItem",
+    "order-item": "/components/orderDetialItem",
     "order-item-row": "/components/orderItemRow",
-    "no-data": "/components/noData",
+    "no-data": "/components/noDataDingDan",
     "dialog-box": "/components/dialogBox"
   }
 }

@@ -1,1 +1,14 @@
 /* pages/collect/main.wxss */
+.bbbcolor{
+
+	border-bottom: 4rpx solid #42ABA0
+}
+
+
+
+.color-font{
+		color: black;
+}
+.chanpin-item{
+	padding: 16rpx;
+}
