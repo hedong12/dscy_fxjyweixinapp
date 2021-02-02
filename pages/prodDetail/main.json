@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "入园盒子",
+  "navigationBarTitleText": "商品详情",
   "usingComponents": {
     "van-popup": "/static/vant/popup/index",
     "van-stepper": "/static/vant/stepper/index",

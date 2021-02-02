@@ -58,3 +58,7 @@
 .market-title.data-v-4eba315d {
 	width: 62rpx
 }
+
+.bgcolor{
+	background-color: #41AB9F;
+}

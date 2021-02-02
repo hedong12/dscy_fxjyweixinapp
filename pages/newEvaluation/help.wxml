@@ -4,4 +4,5 @@
 			<view data-event-opts="{{[['tap',[['goTo',['newEvaluation/end?id='+id]]]]]}}" class="left-button button _div"
 			 catchtap="__e"></view><view class="right-button button"></view>
 		</view>
-	</button></view> 
+	</button>
+</view> 

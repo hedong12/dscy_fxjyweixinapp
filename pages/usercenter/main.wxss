@@ -128,12 +128,11 @@
 	padding-right: 30rpx;
 }
 
-.nav-grid{
-	
-}
+
+
 
 .dscyss{
-	padding-top: 58rpx;
+	padding-top: 70rpx;
 	background-color: #fff;
 }
 
@@ -170,10 +169,11 @@
 .item-ctr{
 	width: 65%;
 	margin: 0 auto;
+	padding-right: 20%;
 }
 
 .mlctr{
-	margin-left: 22%;
+	margin-left: 30%;
 }
 
 .zuofudong{
@@ -275,12 +275,48 @@
 	background-color: #ACDED3 !important
 }
 
+.nav-grid .van-grid-item__icon,
+.nav-grid .van-icon.van-icon--image {
+	width: 62rpx !important;
+	height: 62rpx !important
+}
+
+.nav-grid .van-grid-item__text {
+	color: #555;
+	font-size: 26rpx;
+	margin-top: 14rpx
+}
+
+.van-grid-item{
+	width: 25%;
+} 
+
+
+.nav-grid {
+	padding-left: 24rpx;
+	padding-right: 30rpx;
+}
+
+
+.grid-text {
+	color: #555;
+	font-size: 21rpx
+}
+
+.grid-image {
+	height: 102rpx;
+	width: 104rpx
+}
+
+
+
 .nav-bar .van-nav-bar__title {
 	color: black !important
 }
 
 .van-grid-item__text {
-	margin-top: 30rpx
+	font-size: 26rpx;
+	margin-top: 18rpx
 }
 
 .visitor-count {
@@ -386,13 +422,13 @@ button.textc {
 	margin: 0 auto;
 	margin-top: 80rpx;
 	margin-bottom: 88rpx;
-	height: 59rpx;
-	line-height: 59rpx;
+	height: 64rpx;
+	line-height: 64rpx;
 	background: #41AB9F;
 	border-radius: 25rpx;
 	color: #fff;
-	width: 270rpx;
-	font-size: 24rpx;
+	width: 420rpx;
+	font-size: 34rpx;
 	font-weight: 400
 }
 
@@ -411,3 +447,4 @@ button.textc {
    padding-bottom: env(safe-area-inset-bottom);  
    height: 48px;
 }
+

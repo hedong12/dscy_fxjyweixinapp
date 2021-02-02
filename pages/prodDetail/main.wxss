@@ -40,12 +40,11 @@ page {
 }
 
 .notice {
-	border: 10rpx solid #8163c5;
+	border: 10rpx solid #63A9A4;
 	border-radius: 10rpx;
 	padding: 26rpx 16rpx;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	margin-top: 34rpx;
 	margin-bottom: 34rpx
 }
 
@@ -144,9 +143,9 @@ page {
 }
 
 .sku-active {
-	color: var(--theme-light-green);
+	color: #3EA99D;
 	background-color: #fff !important;
-	border: 2rpx solid var(--theme-light-green) !important
+	border: 2rpx solid #3EA99D !important
 }
 
 .sku-type ._div,
@@ -351,7 +350,7 @@ page {
 	border-top: 0;
 	border-left: 0;
 	border-right: 0;
-	width: 17%;
+	width: 20%;
 }
 
 .chuise{

@@ -1,1 +1,80 @@
-<view class="disflex jsbet bgfff pt20 pl15 pr16 pb15 bbf5f6 _div data-v-01c41e11"><image class="w50 h50 bradius5 mr8 _img data-v-01c41e11" src="{{dynamic_item.companyLogo||'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card1_logo.png'}}" alt mode="aspectFill"></image><view class="flex1 _div data-v-01c41e11"><view class="disflex cdeepblue fs16 jsbet lh27 _p data-v-01c41e11"><label class="fbold w250 over_1 _span data-v-01c41e11">{{dynamic_item.companyName}}</label></view><block wx:if="{{dynamic_item.type==4}}"><view class="_div data-v-01c41e11"><view class="fs16 c38 _p data-v-01c41e11">{{dynamic_item.title}}</view><view class="disflex pt15 picture-list _div data-v-01c41e11"><view class="w93 h93 _div data-v-01c41e11"><image src="{{dynamic_item.photos}}" mode="aspectFill" lazy-load="{{true}}" data-event-opts="{{[['tap',[['goToVideo',['$0'],['dynamic_item']]]]]}}" catchtap="__e" class="_img data-v-01c41e11"></image></view></view></view></block><block wx:if="{{dynamic_item.type==2}}"><view class="_div data-v-01c41e11"><view class="fs16 c38 _p data-v-01c41e11">{{dynamic_item.title}}</view><view class="disflex pt15 picture-list _div data-v-01c41e11"><block wx:for="{{dynamic_item.photos}}" wx:for-item="v" wx:for-index="k" wx:key="k"><view class="w93 h93 _div data-v-01c41e11"><image src="{{v}}" mode="aspectFill" lazy-load="{{true}}" data-event-opts="{{[['tap',[['previewImage',['$0'],[[['dynamic_item.photos','',k]]]]]]]}}" catchtap="__e" class="_img data-v-01c41e11"></image></view></block></view></view></block><block wx:if="{{dynamic_item.type==1||dynamic_item.type==3}}"><view data-event-opts="{{[['tap',[['toDetail',['$event']]]]]}}" class="bgf5f6 pt10 pb10 pl10 pr15 disflex jsbet align-cen _div data-v-01c41e11" bindtap="__e"><image class="w50 h50 mr8 _img data-v-01c41e11" lazy-load="{{true}}" mode="aspectFill" src="{{dynamic_item.photos[0]}}" alt></image><view class="fs14 c38 w200 over_1 _p data-v-01c41e11">{{(dynamic_item.type==3?'(转载) ':'')+(dynamic_item.title||'标题')}}</view></view></block><view class="disflex jsbet pt15 pb15 posre _div data-v-01c41e11"><label class="ca8 fs12 _span data-v-01c41e11">{{dynamic_item.createTime}}</label><label data-event-opts="{{[['tap',[['operate_tap',['$0'],['index1']]]]]}}" class="w34 h22 bradius5 textc point_two bgf5f6 _span data-v-01c41e11" catchtap="__e"></label><view class="{{['posab  dynamic_operate _div data-v-01c41e11',dynamic_item.operate_show?'':'w0']}}"><view class="bg38 pl25 pr28 disflex jsbet comment _div data-v-01c41e11"><view data-event-opts="{{[['tap',[['zan',['$0','$1'],['index1','dynamic_item.isThumbs']]]]]}}" class=" disflex align-cen _div data-v-01c41e11" catchtap="__e"><image class="w20 h20 _img data-v-01c41e11" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/zan_fff.png" alt></image><label class="fs14 cfff pl8 _span data-v-01c41e11">{{dynamic_item.isThumbs==1?'已赞':'赞'}}</label></view></view><label class="triangle_border_right _span data-v-01c41e11"></label></view></view><block wx:if="{{dynamic_item.doThumbsNum>0||dynamic_item.commentModelList&&dynamic_item.commentModelList.length}}"><view class="bgf5f6 pl10 pr10 fbold pt9 pb9 cdeepblue fs16 _div data-v-01c41e11"><block wx:if="{{dynamic_item.doThumbsNum>0}}"><view class="dynamic_likes  _div data-v-01c41e11"><image class="w20 h20 mr8 posre top4 _img data-v-01c41e11" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/zan.png" alt></image><block wx:for="{{dynamic_item.doThumbsName}}" wx:for-item="like_item" wx:for-index="k2" wx:key="k2"><label class="like_name  posre _span data-v-01c41e11">{{like_item}}</label></block></view></block><block wx:for="{{dynamic_item.commentModelList}}" wx:for-item="comment_item" wx:for-index="k3" wx:key="k3"><view data-event-opts="{{[['tap',[['addComment',['$0','$1'],['index1',[['dynamic_item.commentModelList','',k3]]]]]]]}}" class="cdeepblue pt9 _p data-v-01c41e11" catchtap="__e"><block wx:if="{{comment_item.text}}"><label class="_span data-v-01c41e11"><label class="fbold _span data-v-01c41e11">{{''+(comment_item.userName?comment_item.userName:"陌生人")+''}}<block wx:if="{{comment_item.replyName}}"><label class="c38 _span data-v-01c41e11">回复</label>{{''+(comment_item.replyName?comment_item.replyName:"陌生人")+''}}</block></label><label class="c38 _span data-v-01c41e11">{{"："+(comment_item.text||'')}}</label></label></block></view></block><block wx:if="{{dynamic_item.commentModelList&&dynamic_item.commentNum>dynamic_item.commentModelList.length}}"><view data-event-opts="{{[['tap',[['getMore',['$event']]]]]}}" class="textc pt10 _p data-v-01c41e11" bindtap="__e">查看更多</view></block></view></block></view><block wx:if="{{showShareOrSave}}"><view class="_div data-v-01c41e11"><share-or-save vue-id="24ade8df-1" status="{{showShareOrSave}}" saveId="{{4}}" typeId="{{4}}" data-event-opts="{{[['^closeModal',[['e0']]],['^save',[['GeneratePoster']]]]}}" bind:closeModal="__e" bind:save="__e" class="data-v-01c41e11" bind:__l="__l"></share-or-save></view></block></view>
+<view class="disflex jsbet bgfff pt20 pl15 pr16 pb15 bbf5f6 _div data-v-01c41e11">
+	<image class="w50 h50 bradius5 mr8 _img data-v-01c41e11" src="{{dynamic_item.companyLogo||'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/card1_logo.png'}}"
+	 alt mode="aspectFill"></image>
+	<view class="flex1 _div data-v-01c41e11">
+		<view class="disflex cdeepblue fs16 jsbet lh27 _p data-v-01c41e11"><label class="fbold w250 over_1 _span data-v-01c41e11">{{dynamic_item.companyName}}</label></view>
+		<block wx:if="{{dynamic_item.type==4}}">
+			<view class="_div data-v-01c41e11">
+				<view class="fs16 c38 _p data-v-01c41e11">{{dynamic_item.title}}</view>
+				<view class="disflex pt15 picture-list _div data-v-01c41e11">
+					<view class="w130 h130 _div data-v-01c41e11">
+						<image src="{{dynamic_item.photos}}" mode="aspectFill" lazy-load="{{true}}" data-event-opts="{{[['tap',[['goToVideo',['$0'],['dynamic_item']]]]]}}"
+						 catchtap="__e" class="_img data-v-01c41e11"></image>
+					</view>
+				</view>
+			</view>
+		</block>
+		<block wx:if="{{dynamic_item.type==2}}">
+			<view class="_div data-v-01c41e11">
+				<view class="fs16 c38 _p data-v-01c41e11">{{dynamic_item.title}}</view>
+				<view class="disflex pt15 picture-list _div data-v-01c41e11">
+					<block wx:for="{{dynamic_item.photos}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+						<view class="w93 h93 _div data-v-01c41e11">
+							<image src="{{v}}" mode="aspectFill" lazy-load="{{true}}" data-event-opts="{{[['tap',[['previewImage',['$0'],[[['dynamic_item.photos','',k]]]]]]]}}"
+							 catchtap="__e" class="_img data-v-01c41e11"></image>
+						</view>
+					</block>
+				</view>
+			</view>
+		</block>
+		<block wx:if="{{dynamic_item.type==1||dynamic_item.type==3}}">
+			<view data-event-opts="{{[['tap',[['toDetail',['$event']]]]]}}" class="bgf5f6 pt10 pb10 pl10 pr15 disflex jsbet align-cen _div data-v-01c41e11"
+			 bindtap="__e">
+				<image class="w50 h50 mr8 _img data-v-01c41e11" lazy-load="{{true}}" mode="aspectFill" src="{{dynamic_item.photos[0]}}"
+				 alt></image>
+				<view class="fs14 c38 w200 over_1 _p data-v-01c41e11">{{(dynamic_item.type==3?'(转载) ':'')+(dynamic_item.title||'标题')}}</view>
+			</view>
+		</block>
+		<view class="disflex jsbet pt15 pb15 posre _div data-v-01c41e11"><label class="ca8 fs12 _span data-v-01c41e11">{{dynamic_item.createTime}}</label><label
+			 data-event-opts="{{[['tap',[['operate_tap',['$0'],['index1']]]]]}}" class="w34 h22 bradius5 textc point_two bgf5f6 _span data-v-01c41e11"
+			 catchtap="__e"></label>
+			<view class="{{['posab  dynamic_operate _div data-v-01c41e11',dynamic_item.operate_show?'':'w0']}}">
+				<view class="bg38 pl25 pr28 disflex jsbet comment _div data-v-01c41e11">
+					<view data-event-opts="{{[['tap',[['zan',['$0','$1'],['index1','dynamic_item.isThumbs']]]]]}}" class=" disflex align-cen _div data-v-01c41e11"
+					 catchtap="__e">
+						<image class="w20 h20 _img data-v-01c41e11" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/zan_fff.png"
+						 alt></image><label class="fs14 cfff pl8 _span data-v-01c41e11">{{dynamic_item.isThumbs==1?'已赞':'赞'}}</label>
+					</view>
+				</view><label class="triangle_border_right _span data-v-01c41e11"></label>
+			</view>
+		</view>
+		<block wx:if="{{dynamic_item.doThumbsNum>0||dynamic_item.commentModelList&&dynamic_item.commentModelList.length}}">
+			<view class="bgf5f6 padctr fbold cdeepblue fs16 _div data-v-01c41e11">
+				<block wx:if="{{dynamic_item.doThumbsNum>0}}">
+					<view class="dynamic_likes  _div data-v-01c41e11">
+						<image class="w15 h15 mr8 posre top4 _img data-v-01c41e11" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/zan.png"
+						 alt></image>
+						<block wx:for="{{dynamic_item.doThumbsName}}" wx:for-item="like_item" wx:for-index="k2" wx:key="k2"><label class="like_name  posre _span data-v-01c41e11">{{like_item}}</label></block>
+					</view>
+				</block>
+				<block wx:for="{{dynamic_item.commentModelList}}" wx:for-item="comment_item" wx:for-index="k3" wx:key="k3">
+					<view data-event-opts="{{[['tap',[['addComment',['$0','$1'],['index1',[['dynamic_item.commentModelList','',k3]]]]]]]}}"
+					 class="cdeepblue pt9 _p data-v-01c41e11" catchtap="__e">
+						<block wx:if="{{comment_item.text}}"><label class="_span data-v-01c41e11"><label class="fbold _span data-v-01c41e11">{{''+(comment_item.userName?comment_item.userName:"陌生人")+''}}
+									<block wx:if="{{comment_item.replyName}}"><label class="c38 _span data-v-01c41e11">回复</label>{{''+(comment_item.replyName?comment_item.replyName:"陌生人")+''}}</block>
+								</label><label class="c38 _span data-v-01c41e11">{{"："+(comment_item.text||'')}}</label></label></block>
+					</view>
+				</block>
+				<block wx:if="{{dynamic_item.commentModelList&&dynamic_item.commentNum>dynamic_item.commentModelList.length}}">
+					<view data-event-opts="{{[['tap',[['getMore',['$event']]]]]}}" class="textc pt10 _p data-v-01c41e11" bindtap="__e">查看更多</view>
+				</block>
+			</view>
+		</block>
+	</view>
+	<block wx:if="{{showShareOrSave}}">
+		<view class="_div data-v-01c41e11">
+			<share-or-save vue-id="24ade8df-1" status="{{showShareOrSave}}" saveId="{{4}}" typeId="{{4}}" data-event-opts="{{[['^closeModal',[['e0']]],['^save',[['GeneratePoster']]]]}}"
+			 bind:closeModal="__e" bind:save="__e" class="data-v-01c41e11" bind:__l="__l"></share-or-save>
+		</view>
+	</block>
+</view>

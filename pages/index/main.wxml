@@ -38,19 +38,19 @@
 	<view class="seen_peo disflex pl15 pr26 fs10 ca8 jsbet bgfff _div">
 		<view class="_div">
 			<view class="disflex _div">
-				<view class="thumbs _div" style="{{'background-size: 42rpx;padding-right:60rpx;'+('background-image:'+('url('+(isThumbs?'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_red_heart.png':'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_grey_heart.png')+')')+';')}}"
+				<view class="thumbs _div" style="{{'background-size: 42rpx;'+('background-image:'+('url('+(isThumbs?'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_red_heart.png':'https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_grey_heart.png')+')')+';')}}"
 				 data-event-opts="{{[['tap',[['doThumbs',['$event']]]]]}}" bindtap="__e"></view>
-				<block wx:for="{{card_msg.browsePhoto}}" wx:for-item="v" wx:for-index="k" wx:key="k">
-					<!-- 36 33  -->
+				<!-- <block wx:for="{{card_msg.browsePhoto}}" wx:for-item="v" wx:for-index="k" wx:key="k">
+					 36 33  
 					<image class="w19 h20 yuanjiao mr3 _img" src="{{v}}" alt mode="aspectFill"></image>
-				</block> 
-				<view class="lh25 ml9 _p shenglue" space="ensp">· · ·</view>
+				</block> -->
+				<view class="lh25 ml9 _p shenglue">已有{{''+card_msg.thumbsNum+''}}人浏览...</view>
 			</view>
 			<!-- <view class="lh20 _p">{{"已有"+card_msg.browseNum+"人浏览"}}</view> -->
 		</view>
 		<view data-event-opts="{{[['tap',[['goTo',['cardCase/main']]]]]}}" class="switch-card _div" bindtap="__e">
 			<image src="{{card_msg.logo}}" alt class="teacher-img _img"></image>
-			<image class="switch-logo _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/index-switch.png"
+			<image class="switch-logo _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_qhmp.jpg"
 			 alt></image>
 			 {{''+card_msg.username+''}}
 		</view>
@@ -178,11 +178,14 @@
 	          <view class='record-item'>
 	            <view class='name'>
 					
-	              <view><text decode="{{true}}">&ensp;&ensp;&ensp;&ensp;随着80、80后新一代符文教育程度及消费升级，更加注重教育的品质和便捷性，让孩子从小接受良好的教育，使孩子赢在起跑线上，为高品质婴幼儿教育带来全新的发展机遇千亿市场规模，掘金教育财富。</text></view>
+	              <view>
+					  	
+					  <text decode="{{true}}">&ensp;&ensp;&ensp;&ensp;随着80、80后新一代符文教育程度及消费升级，更加注重教育的品质和便捷性，让孩子从小接受良好的教育，使孩子赢在起跑线上，为高品质婴幼儿教育带来全新的发展机遇千亿市场规模，掘金教育财富。</text></view>
 
-				  <view>
+				  <view> 
 					  <text decode="{{true}}">
-					  &ensp;&ensp;&ensp;&ensp;4+2+1的家庭结构，教育支出占家庭支出比重增大，普通家庭平均每年教育支出费用达3.6万元。
+						   &ensp;&ensp;&ensp;&ensp;<rich-text nodes="{{companyInfo.companyIntroduce}}"></rich-text>
+					 
 					  </text>
 				  </view>
 	            </view>
@@ -260,13 +263,12 @@
 					<view style="width:100%"><image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image></view>
 					<view style="width:100%"><image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image></view>
 				</button>
-				</block>
+			</block>
 			<block wx:else>
-				<!-- <image class="isEvaluationimage1" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
-				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image>
-				<image class="isEvaluationimage2" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
-				 catchtap="__e" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image> -->
-			
+				<button class="no-button">
+					<view style="width:100%"><image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image></view>
+					<view style="width:100%"><image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image></view>
+				</button>
 			</block> 
 		</view>  
 	</van-overlay> 

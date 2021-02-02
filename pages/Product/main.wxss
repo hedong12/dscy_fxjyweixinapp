@@ -430,7 +430,9 @@
 .order-center {
   width: 712rpx;
   height: 110rpx;
-  margin: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
 }
 .nav-grid .van-grid-item__icon,
 .nav-grid .van-icon.van-icon--image {
@@ -441,7 +443,7 @@
 .nav-grid .van-grid-item__text {
 
 	color: #555;
-	font-size: 21rpx;
+	font-size: 26rpx;
 	margin-top: 14rpx
 }
 

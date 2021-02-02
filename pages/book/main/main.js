@@ -1,11 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([
 	["pages/book/main/main"], {
 		1948: function(t, e, o) {},
-		data: function() {
-			return {
-				ccnum: 0
-			}
-		},
 		"48b5": function(t, e, o) {
 			"use strict";
 			o.r(e);
@@ -54,6 +49,7 @@
 				t(e.default)
 			}).call(this, o("543d")["createPage"])
 		},
+		
 		e238: function(t, e, o) {
 			"use strict";
 			Object.defineProperty(e, "__esModule", {
@@ -70,7 +66,7 @@
 				function e() {
 					var e = null !== t && t.apply(this, arguments) || this;
 					return e.overlayShow = !1, e.type1 = [], e.type2 = [], e.list = [], e.nounlocked = 0, e.unlocked = "0", e.recordId =
-						3, e.twoType = "", e.oneType = "", e.pictureBooksTitle = "", e.pageNum = 1, e
+						3, e.twoType = "",this.ccnum = 0, e.oneType = "", e.pictureBooksTitle = "", e.pageNum = 1, e
 				}
 				return n.__extends(e, t), e.prototype.onShow = function() {
 					this.changeList(this.twoType)
@@ -104,6 +100,7 @@
 				}, e.prototype.onSearch = function(t) {
 					this.pictureBooksTitle = t.detail, this.changeList(this.twoType)
 				}, e.prototype.changeList = function(t) {
+					
 					this.twoType = t, this.pageNum = 1, this.list = [], this.getData()
 				}, e.prototype.getData = function() {
 					return n.__awaiter(this, void 0, void 0, (function() {
@@ -129,8 +126,8 @@
 						}))
 					}))
 				}, e.prototype.getClassify = function(t, e) {
-					console.log(t);
-					
+					this.ccnum = parseInt(String(t).charAt(0) - 1);
+					console.log("默认值:"+this.ccnum);
 					return void 0 === t && (t = "0"), void 0 === e && (e = !1), n.__awaiter(this, void 0, void 0, (function() {
 						var o;
 						return n.__generator(this, (function(n) {

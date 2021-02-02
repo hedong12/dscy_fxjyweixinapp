@@ -38,7 +38,7 @@
 	 bind:__l="__l" vue-slots="{{['default']}}"> 
 		<van-grid-item vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" class="van-grid-item" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_qzkt.png"
 		 text="亲子课堂" data-event-opts="{{[['tap',[['showDevelopingTips']]]]}}" data-com-type="wx" bind:click="__e"
-		 bind:__l="__l"></van-grid-item>
+		 bind:__l="__l"></van-grid-item> 
 		<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bw.png"
 		 text="育儿百问" data-event-opts="{{[['tap',[['showDevelopingTips']]]]}}" data-com-type="wx" bind:click="__e" bind:__l="__l"></van-grid-item>
 		<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_bj.png"

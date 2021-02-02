@@ -43,11 +43,12 @@
 			</van-cell-group>
 		</van-skeleton>
 	</view>
-	<view class="pl15 pr15 mt10 bgfff _div">
+	<view class="lh30 lwzs fs14 pb17 bgfff ca8 _p">
+		<view class="ppq">图文详情</view>
+	</view>
+	<view class="pl15 pr15 bgfff _div">
 		<!-- <view class="lh43 textc fs14 ca8 notice-parent _p">- 宝贝详情 -</view> -->
-		<view class="lh30 lwzs fs14 ca8  _p">
-			<view class="ppq">图文详情</view>
-		</view>
+		
 		<view class="notice _div">
 			<view class="notice-title _div"><label class="_span">购前须知</label></view>
 			<view class="text-center _div">
@@ -135,8 +136,8 @@
 	</block>
 	<block wx:if="{{goodsMsg.name}}">
 		<view class="disflex fix_bottom bte8 _div">
-			<view class="disflex flex1 bgfff pl8 textc posre _div">
-				<view data-event-opts="{{[['tap',[['toProductList',['$event']]]]]}}" class="pl8 w33p pt7 _div" bindtap="__e">
+			<view class="disflex flex1 bgfff textc posre _div">
+				<view data-event-opts="{{[['tap',[['toProductList',['$event']]]]]}}" class="w33p pt7 _div" bindtap="__e">
 					<image class="w20 h20 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_folder.png"
 					 alt></image>
 					<view class="chuise fs12 textc mt-4 _b">课程中心</view>

@@ -7,7 +7,7 @@ web-view {
 }
 
 .button {
-	font-size: 30rpx;
+	font-size: 36rpx;
 	color: #41AB9F;
 	background-color: #ACDED3;
 	border-radius: 50rpx;
@@ -36,7 +36,7 @@ web-view {
 	width: 254rpx;
 	text-align: center;
 	display: inline-block;
-	font-size: 28rpx;
+	font-size: 34rpx;
 	font-weight: 700
 }
 

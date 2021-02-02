@@ -48,7 +48,7 @@
         data-event-opts="{{[['^close',[['delOrder',['$event',prod_item.$orig.shopCartId]]]]]}}"
         bind:close="__e"
       > -->
-        <view class="{{['_div pb21 bgfff bradius10 mt10',iscart?'pl45':'pl15']}}">
+        <view class="{{['_div pb21 w100p bgfff bradius10 mt10',iscart?'pl45':'pl15']}}">
           <block wx:if="{{iscart}}">
             <label data-event-opts="{{[['tap',[['choose_order',['prod',k]]]]]}}" class="{{['checkBox',label_prod[k]?'active':'']}}" catchtap="__e">
               <input class="checkBox" type="checkbox" />
@@ -93,7 +93,7 @@
                 </view>
               </block>
               <block wx:if="{{isorder}}">
-                <view class="textr fs14 c38 _div">{{'￥'+prod_item.$orig.allPrice+''}}</view>
+                <view class="textr fs14 pr30 c38 _div">{{'￥'+prod_item.$orig.allPrice+''}}</view>
               </block>
             </view>
           </view>

@@ -45,7 +45,7 @@
 
 .nav-grid .van-grid-item__text {
 	color: #555;
-	font-size: 22rpx;
+	font-size: 26rpx;
 	margin-top: 14rpx
 }
 
@@ -218,7 +218,7 @@
 	line-height: 34rpx;
 	background: #EE8B5D;
 	border-radius: 4rpx;
-	font-size: 14rpx;
+	font-size: 16rpx;
 	color: #fff;
 	padding: 3rpx 16rpx;
 }
@@ -273,7 +273,7 @@
 }
 
 .product-recommend-item-title {
-	    font-size: 22rpx;
+	    font-size: 26rpx;
 	    color: #545253;
 	white-space: nowrap;
 	-o-text-overflow: ellipsis;
@@ -697,17 +697,16 @@ video {
  
 .record-item {
   background-color: white;
-  padding-bottom: 5rpx;
   font-size: 30rpx;
   margin-top: 20rpx;
   height: 240px;
-   overflow: auto !important;
+  padding: 2vh;
+  overflow: auto !important;
 }
  
 .name{
   justify-content: space-between;
   border: 1px solid #fff;
-  padding: 2vh;
   font-size: 12.5px;
   font-weight: 200;
   border-radius: 10rpx

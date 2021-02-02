@@ -162,6 +162,7 @@ page,
 
 .item ._img {
 	float: left;
+	margin-right: 20rpx;
 	width: 258rpx;
 	height: 138rpx
 }
@@ -201,11 +202,11 @@ page,
 	display: inline-block;
 	border-radius: 17rpx;
 	height: 39rpx;
-	line-height: 39rpx;
+	line-height: 39rpx; 
 	padding-left: 28rpx;
 	padding-right: 28rpx;
 	color: #3BA89C;
-	font-size: 22rpx;
+	font-size: 28rpx;
 	margin: 0 7rpx
 }
 

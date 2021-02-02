@@ -821,6 +821,10 @@ button::after {
 	padding-bottom: 30rpx
 }
 
+.pb17 {
+	padding-bottom: 34rpx
+}
+
 .pb19 {
 	padding-bottom: 38rpx
 }
@@ -1370,6 +1374,9 @@ button::after {
 	width: 240rpx
 }
 
+.w130 {
+	width: 260rpx
+}
 
 .w146 {
 	width: 292rpx
@@ -1598,6 +1605,10 @@ button::after {
 
 .h119 {
 	height: 119px
+}
+
+.h130 {
+	height: 130px
 }
 
 .h148 {

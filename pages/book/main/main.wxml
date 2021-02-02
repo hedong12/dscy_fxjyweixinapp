@@ -14,7 +14,6 @@
 			 data-com-type="wx" bind:search="__e" bind:clear="__e" bind:__l="__l"></van-search>
 		</view>
 		
-		
 		<view class="type1 _div">
 			<block wx:for="{{type1}}" wx:for-item="item" wx:for-index="index" wx:key="index">
 				<view data-event-opts="{{[['tap',[['getClassify',['$0',true],[[['type1','',index,'pictureTypeId']]]]]]]}}" class="type1-item {{ccnum == index?'activenav':''}} _div"

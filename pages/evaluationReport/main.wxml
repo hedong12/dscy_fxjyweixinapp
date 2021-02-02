@@ -51,12 +51,16 @@
 			</van-tab>
 		</van-tabs>
 	</view>
-	<view class="bottom-ribbon"><button class="share" open-type="share">
-			<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-share.png"></image>
+	<view class="bottom-ribbon">
+		<button class="share" open-type="share">
+			<view class="fximgctr">
+				<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-share.png"></image>
+				<view class="fenxiang _div">分享</view>
+			</view>
 		</button>
-		<view class="suggest">
+	<!-- 	<view class="suggest">
 			<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/evaluationReport-hand.gif"></image><text>查看教育建议</text>
-		</view>
+		</view> -->
 		<view data-event-opts="{{[['tap',[['changeQcShow']]]]}}" class="advisory" bindtap="__e">咨询老师</view>
 	</view>
 	<van-dialog vue-id="003e3e92-6" use-slot title="老师微信二维码" show="{{qcShow}}" confirm-button-text="下载" show-cancel-button

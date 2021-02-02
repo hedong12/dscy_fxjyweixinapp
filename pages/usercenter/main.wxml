@@ -55,22 +55,20 @@
 		</view>
 	</view> -->
 	
-	
-	<view class="dscyss _div"> 
-		<view class=""></view>
-		<van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
-		 bind:__l="__l" vue-slots="{{['default']}}"> 
-			<van-grid-item  vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kj.jpg"
-			 text="卡券"  data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>
-			<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_jf.jpg"
-			 text="积分" data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>              
-			<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yg.jpg"
-			 text="已购" data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>        
-			<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yt.jpg"
-			 text="已听" data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>
-		</van-grid>
-	</view>
-	
+		
+		<view class="dscyss _div"> 
+			<van-grid vue-id="1a10b852-2" column-num="{{4}}" custom-class="nav-grid" border="{{false}}" data-com-type="wx"
+			 bind:__l="__l" vue-slots="{{['default']}}"> 
+				<van-grid-item class="van-grid-item"  vue-id="{{('1a10b852-3')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_kj.jpg"
+				 text="卡券"  data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>
+				<van-grid-item vue-id="{{('1a10b852-4')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_jf.jpg"
+				 text="积分" data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>              
+				<van-grid-item vue-id="{{('1a10b852-5')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yg.jpg"
+				 text="已购" data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>        
+				<van-grid-item vue-id="{{('1a10b852-6')+','+('1a10b852-2')}}" icon="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_yt.jpg"
+				 text="已听" data-event-opts="{{[['tap',[['showDevelopingTips',['$event']]]]]}}" bindtap="__e"></van-grid-item>
+			</van-grid>
+		</view>
 	
 	
 	<view class="bgfff h93 fs12 c78 mt10 mb10 _div">
@@ -181,7 +179,7 @@
 		<view data-event-opts="{{[['tap',[['goTo',['shopCart/main']]]]]}}" class="lh18 pl15 pr15 h44 align-cen disflex jsbet bbe8 _div"
 		 bindtap="__e" bind:__l="__l">
 			 <label class="fs14 c38 _span">
-				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_icon_gouwuche.jpg"></image>
+				<image class="w18 mr10 h18 fudong _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_icon_gouache.jpg"></image>
 				<label class="fs14 c38 _span">
 							购物车	
 				</label>
