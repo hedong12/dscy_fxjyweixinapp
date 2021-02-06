@@ -14,8 +14,8 @@
 			<view class="fs18 cfff disflex pl15 pr16 row-reverse dynamic-title _div">
 				<!-- <image class="w60 h60 bradius5 ml10 bgfff _img" src="{{company_msg.admin_logo}}" alt mode="aspectFill"
 				 data-event-opts="{{[['tap',[['authSubscribeComment',['$event']]]]]}}" bindtap="__e"></image> -->
-				<view class="row-reverse _div">
-					<view class="fbold company_name _b">{{company_msg.company_name}}</view>
+				<view class="row-reverse _div"> 
+				<!--	<view class="fbold company_name _b">{{company_msg.company_name}}</view> -->
 				</view>
 			</view>
 			<block wx:if="{{dynamic_lists.length}}">
@@ -32,7 +32,7 @@
 			</block>
 			<block wx:else>
 				<view class="_div">
-					<no-data vue-id="37101324-5" bind:__l="__l" vue-slots="{{['default']}}">暂无数据</no-data>
+					<no-data vue-id="37101324-5" bind:__l="__l" vue-slots="{{['default']}}">您还没有相关的数据</no-data>
 				</view>
 			</block>
 		</view>
@@ -48,5 +48,5 @@
 	 data-event-opts="{{[['^talk',[['talk',['$event']]]],['^loginGuide',[['loginGuide',['$event']]]]]}}" catch:talk="__e"
 	 catch:loginGuide="__e" bind:__l="__l"></float-buttons>
 	<get-user-phone vue-id="37101324-7" bind:__l="__l"></get-user-phone>
-	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
+	<rwj-tabbar pageActive="3"></rwj-tabbar>
 </view>

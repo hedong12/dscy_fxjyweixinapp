@@ -1,1 +1,4 @@
 /* pages/orderConfirm/main.wxss */
+.clvse{
+	color: #4BAFA4;
+}

@@ -351,6 +351,7 @@ page {
 	border-left: 0;
 	border-right: 0;
 	width: 20%;
+	padding-left: 20rpx;
 }
 
 .chuise{

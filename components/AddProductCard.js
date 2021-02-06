@@ -1,12 +1,12 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([
-	["components/ProductCard"], {
+	["components/AddProductCard"], {
 		"3cce": function(t, e, n) {
 			"use strict";
 			Object.defineProperty(e, "__esModule", {
 				value: !0
 			}), e.default = void 0;
 			var r = {
-				name: "ProductCard",
+				name: "AddProductCard",
 				props: {
 					imgUrl: {
 						type: String,
@@ -89,13 +89,13 @@
 	}
 ]);;
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([
-	'components/ProductCard-create-component',
+	'components/AddProductCard-create-component',
 	{
-		'components/ProductCard-create-component': (function(module, exports, __webpack_require__) {
+		'components/AddProductCard-create-component': (function(module, exports, __webpack_require__) {
 			__webpack_require__('543d')['createComponent'](__webpack_require__("e915"))
 		})
 	},
 	[
-		['components/ProductCard-create-component']
+		['components/AddProductCard-create-component']
 	]
 ]);

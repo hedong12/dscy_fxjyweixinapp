@@ -2,7 +2,7 @@
   "navigationBarTitleText": "我的预约",
   "usingComponents": {
     "address-item": "/components/addressItem",
-    "product-card": "/components/ProductCard",
+    "product-card": "/components/AddMeProductCard",
     "dialog-box": "/components/dialogBox"
   }
 }

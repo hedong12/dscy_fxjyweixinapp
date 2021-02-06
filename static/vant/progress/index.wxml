@@ -5,9 +5,9 @@
   class="van-progress custom-class"
   style="height: {{ utils.addUnit(strokeWidth) }}; {{ trackColor ? 'background: ' + trackColor : '' }}"
 >
-  <view
+  <view 
     class="van-progress__portion"
-    style="width: {{ percentage }}%; background: {{ inactive ? '#cacaca' : color }}"
+    style="width: {{ percentage }}%; background: {{ inactive ? '#cacaca' : '#46AEA3' }}"
   >
     <view
       wx:if="{{ showPivot && getters.text(pivotText, percentage) }}"

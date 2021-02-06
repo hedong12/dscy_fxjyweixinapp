@@ -1,1 +1,15 @@
-<view class="_div data-v-0bf892df"><view class="c-textarea fs16 _div data-v-0bf892df"><label class="fbold lh49 c38 data-v-0bf892df">{{title}}</label><view class="pb10 lh22 _div data-v-0bf892df"><block wx:if="{{showTextarea}}"><textarea class="textarea data-v-0bf892df" name focus="{{showTextarea}}" maxlength="200" placeholder="{{placeholder}}" data-event-opts="{{[['blur',[['e0',['$event']]]],['input',[['__set_model',['','text','$event',[]]],['upDateValue',['$event']]]]]}}" value="{{text}}" bindblur="__e" bindinput="__e"></textarea></block><block wx:else><view data-event-opts="{{[['tap',[['e1',['$event']]]]]}}" class="{{['textarea _div data-v-0bf892df',(!text)?'empty':'']}}" bindtap="__e">{{''+(text||placeholder)+''}}</view></block></view></view></view>
+<view class="_div data-v-0bf892df">
+	<view class="c-textarea fs16 _div data-v-0bf892df">
+		<!-- <label class="lh49 c38 data-v-0bf892df">{{title}}</label> -->
+		<label class="lh49 c38 data-v-0bf892df">预约备注</label>
+		<view class="pb10 lh22 _div data-v-0bf892df">
+			<block wx:if="{{showTextarea}}"><textarea class="textarea data-v-0bf892df" name focus="{{showTextarea}}" maxlength="200"
+				 placeholder="{{placeholder}}" data-event-opts="{{[['blur',[['e0',['$event']]]],['input',[['__set_model',['','text','$event',[]]],['upDateValue',['$event']]]]]}}"
+				 value="{{text}}" bindblur="__e" bindinput="__e"></textarea></block>
+			<block wx:else>
+				<view data-event-opts="{{[['tap',[['e1',['$event']]]]]}}" class="{{['textarea _div data-v-0bf892df',(!text)?'empty':'']}}"
+				 bindtap="__e">{{''+(text||placeholder)+''}}</view>
+			</block>
+		</view>
+	</view>
+</view>

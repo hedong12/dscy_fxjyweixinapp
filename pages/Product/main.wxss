@@ -240,7 +240,7 @@
 
 .product-content-title {
   color: #747272;
-  font-size: 24rpx;
+  font-size: 26rpx;
   line-height: 30rpx;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -283,10 +283,10 @@
 .product-content-price-mianfei{
 	color: white;
 	font-size: 16rpx;
-  margin-right: 11rpx;
-  border-radius: 4px;
+    margin-right: 11rpx;
+    border-radius: 4px;
 	background-color: #F0966e;
-	padding: 2rpx 16rpx;
+	padding: 3rpx 16rpx;
 }
  
 

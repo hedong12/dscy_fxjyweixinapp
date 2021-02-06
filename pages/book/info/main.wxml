@@ -1,1 +1,49 @@
-<view hidden="{{!(data)}}" class="alice _div"><swiper indicator-dots="{{true}}" current="{{current}}"><block wx:for="{{data.list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><swiper-item><image mode="aspectFit" src="{{item.photo}}" alt class="_img"></image></swiper-item></block></swiper><view class="disabled-swiper-slide _div"></view><view class="control _div"><image class="book-back _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/book-back.png" alt data-event-opts="{{[['tap',[['back',['$event']]]]]}}" bindtap="__e"></image><block wx:if="{{isPlay}}"><image class="book-suspend _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/book-suspend.png" alt data-event-opts="{{[['tap',[['suspend',['$event']]]]]}}" bindtap="__e"></image></block><block wx:else><image class="book-suspend _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/book-play.png" alt data-event-opts="{{[['tap',[['play',['$event']]]]]}}" bindtap="__e"></image></block><image class="book-forward _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/book-forward.png" alt data-event-opts="{{[['tap',[['forward',['$event']]]]]}}" bindtap="__e"></image><button class="book-share" open-type="share"></button></view><view class="test _div">小朋友听完啦，快来测试一下吧<label data-event-opts="{{[['tap',[['goToQA',['$event']]]]]}}" bindtap="__e" class="_span"></label></view><view class="content _div"><view class="content-title _div">{{''+data.pictureBooksTitle+''}}</view><view class="content-body _div">{{''+data.describe+''}}</view></view><van-overlay vue-id="014a45ce-1" show="{{overlayShow}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><view class="overlayShow _div"><image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user-book-induce-share.png"></image></view></van-overlay><block wx:if="{{overlayShow}}"><view class="key _div" style="{{('left:'+bounding.x+'px;padding-left:'+bounding.width+'px;')}}"></view></block><van-toast vue-id="014a45ce-2" id="van-toast" data-com-type="wx" bind:__l="__l"></van-toast></view>
+<view hidden="{{!(data)}}" class="alice _div">
+	<swiper indicator-dots="{{false}}" current="{{current}}">
+		<block wx:for="{{data.list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<swiper-item>
+				<image mode="aspectFit" src="{{item.photo}}" alt class="_img"></image>
+			</swiper-item>
+		</block>
+	</swiper> 
+	<!-- <view class="disabled-swiper-slide _div"></view> -->
+	<view class="control _div">
+		<image class="book-back _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_shang.png"
+		 alt data-event-opts="{{[['tap',[['back',['$event']]]]]}}" bindtap="__e"></image>
+		<block wx:if="{{isPlay}}">
+			<image class="book-suspend _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_tingzhi3.png"
+			 alt data-event-opts="{{[['tap',[['suspend',['$event']]]]]}}" bindtap="__e"></image>
+		</block>
+		<block wx:else>
+			<image class="book-suspend _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_bofang.png"
+			 alt data-event-opts="{{[['tap',[['play',['$event']]]]]}}" bindtap="__e"></image>
+		</block>
+		<image class="book-forward _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_xia.png"
+		 alt data-event-opts="{{[['tap',[['forward',['$event']]]]]}}" bindtap="__e"></image> 
+		 
+		 
+		<!--分享-->
+		 <!-- <button class="book-share" open-type="share"></button> -->
+	</view>
+	<view class="test _div">
+		<label class="fenbian"></label>
+		小朋友，听完啦，快来测试一下吧
+		<label data-event-opts="{{[['tap',[['goToQA',['$event']]]]]}}" bindtap="__e"
+		 class="_span"></label>
+		<label class="bbtang"></label>
+	</view>
+	
+	<view class="content _div">
+		<view class="content-title _div">{{''+data.pictureBooksTitle+''}}</view>
+		<view class="content-body _div">{{''+data.describe+''}}</view>
+	</view>
+	<van-overlay vue-id="014a45ce-1" show="{{overlayShow}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">
+		<view class="overlayShow _div">
+			<image src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user-book-induce-share.png"></image>
+		</view>
+	</van-overlay>
+	<block wx:if="{{overlayShow}}">
+		<view class="key _div" style="{{('left:'+bounding.x+'px;padding-left:'+bounding.width+'px;')}}"></view>
+	</block>
+	<van-toast vue-id="014a45ce-2" id="van-toast" data-com-type="wx" bind:__l="__l"></van-toast>
+</view>

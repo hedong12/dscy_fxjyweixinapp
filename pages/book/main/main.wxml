@@ -3,7 +3,7 @@
 	
 		<view class="search-type _div" slot="label">
 			<view data-event-opts="{{[['tap',[['setRecordId',[3]]]]]}}" class="{{['_div',(recordId===3)?'search-type-active':'']}}"
-			 bindtap="__e">全部</view>
+			 bindtap="__e">全部</view> 
 			<view data-event-opts="{{[['tap',[['setRecordId',[1]]]]]}}" class="{{['_div',(recordId===1)?'search-type-active':'']}}"
 			 bindtap="__e">已解锁</view>
 			<view data-event-opts="{{[['tap',[['setRecordId',[0]]]]]}}" class="{{['_div',(recordId===0)?'search-type-active':'']}}"
@@ -41,7 +41,7 @@
 		</view>
 	</view>
 	<view class="info _div">解锁提示：分享绘本给一位新朋友，新朋友进入登录后，可以免费解锁任意一本绘本啦！联系老师成为会员后可以解锁所有的绘本！</view>
-	<scroll-view class="list" scroll-y="{{true}}" lower-threshold="{{100}}" data-event-opts="{{[['scrolltolower',[['getData',['$event']]]]]}}"
+	<scroll-view class="list" scroll-y="{{true}}" lower-threshold="{{1}}" data-event-opts="{{[['scrolltolower',[['getData',['$event']]]]]}}"
 	 bindscrolltolower="__e">
 		<block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
 			<view data-event-opts="{{[['tap',[['goToBookInfo',['$0'],[[['list','',index]]]]]]]}}" class="item _div" bindtap="__e">

@@ -1,1 +1,79 @@
-page{width:100%;height:100%;background:#f5f5f6}.size_item.active{color:var(--theme-purple);background:#e5f8f7;border:1rpx solid var(--theme-purple)}.add_to_card{border-radius:40rpx 0 0 40rpx}.buy_now{border-radius:0 40rpx 40rpx 0}.prod_detail_float > ._div{bottom:200rpx}.number-change-btn-group > ._span:first-child{line-height:46rpx;border-radius:10rpx 0 0 10rpx}.number-change-btn-group > ._span:last-child{line-height:46rpx;border-radius:0 10rpx 10rpx 0}
+page {
+	width: 100%;
+	height: 100%;
+	background: #f5f5f6
+}
+
+.size_item.active {
+	color: var(--theme-purple);
+	background: #e5f8f7;
+	border: 1rpx solid var(--theme-purple)
+}
+
+.add_to_card {
+	border-radius: 40rpx 0 0 40rpx
+}
+
+.buy_now {
+	border-radius: 0 40rpx 40rpx 0
+}
+
+.prod_detail_float>._div {
+	bottom: 200rpx
+}
+
+.number-change-btn-group>._span:first-child {
+	line-height: 46rpx;
+	border-radius: 10rpx 0 0 10rpx
+}
+
+.number-change-btn-group>._span:last-child {
+	line-height: 46rpx;
+	border-radius: 0 10rpx 10rpx 0
+}
+
+.calvse{
+	color: #3FAA9F;
+}
+
+.bg-color{
+	background-color: #ACDED3;
+}
+
+.mrfu{
+	margin-right: -30rpx;
+}
+
+.yuyuebut{
+	width: 380rpx;
+	height: 62rpx;
+	margin-top: 26rpx;
+	margin-right: 30rpx;
+	border-radius: 50rpx;
+	background-color: #ACDED3;
+	color: #48AEA3;
+	font-size: 30rpx;
+}
+
+.describe{
+	font-size: 30rpx;
+	color: black;
+}
+
+.xiangqing{
+	border-bottom: 4rpx solid #45ACA1;
+	width: 22%;
+	line-height: 50rpx;
+	padding-top: 45rpx;
+	padding-left: 20rpx;
+	font-weight: 600;
+}
+
+.pditem{
+	padding: 30rpx;
+}
+
+.huise{
+	color: #A1A1A1;
+	text-decoration:line-through;
+}

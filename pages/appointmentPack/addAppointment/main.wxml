@@ -3,17 +3,17 @@
 		<product-card vue-id="24299dfc-1" outStyle="margin:0;" imgUrl="{{info.prodLogo}}" title="{{info.productsName}}" desc="{{info.describe}}"
 		 typeName="{{info.productsTypeName}}" price="{{info.price}}" bind:__l="__l"></product-card>
 	</view>
-	<view class="bgfff pl15 pr15 lh49 fs16 c38 mb11 _div">
-		<view class="disflex jsbet align-cen _div"><label class="fbold marks pr15" for="name">姓名</label><input class="pha8 textr h49"
+	<view class="bgfff pl5 ml10 mr10 lh49 fs16 c38 mb11 _div">
+		<view class="disflex jsbet align-cen _div"><label class="marks fs14 pr9" for="name">姓名</label><input class="pha8 fs14 textl w75p h49"
 			 placeholder-class="place-holder" type="text" id="name" placeholder="请输入您的姓名" data-event-opts="{{[['input',[['__set_model',['$0','name','$event',[]],['orderForm']]]]]}}"
 			 value="{{orderForm.name}}" bindinput="__e" /></view>
-		<view class="disflex jsbet align-cen _div"><label class="fbold marks pr15" for="phone">电话</label><input class="pha8 textr h49"
+		<view class="disflex jsbet align-cen _div"><label class="marks fs14 pr9" for="phone">电话</label><input class="pha8 fs14 textl w75p h49"
 			 placeholder-class="place-holder" type="text" id="phone" placeholder="请输入您的电话" data-event-opts="{{[['input',[['__set_model',['$0','phone','$event',[]],['orderForm']]]]]}}"
 			 value="{{orderForm.phone}}" bindinput="__e" /></view>
 		<picker range="{{typeLists}}" range-key="label" data-event-opts="{{[['change',[['chooseType',['$event']]]]]}}"
 		 bindchange="__e">
-			<view class="disflex jsbet align-cen _div"><label class="fbold marks pr15" for="type">服务类型</label>
-				<view class="disflex align-cen _div"><input class="pha8 textr h49 pr15" placeholder-class="place-holder" type="text"
+			<view class="disflex jsbet align-cen _div"><label class="marks fs14 pr9" for="type">服务类型</label>
+				<view class="disflex w75p align-cen _div"><input class="pha8 textl fs14 h49 pr100" placeholder-class="place-holder" type="text"
 					 id="type" disabled placeholder="请选择服务类型" data-event-opts="{{[['input',[['__set_model',['','typeName','$event',[]]]]]]}}"
 					 value="{{typeName}}" bindinput="__e" />
 					<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
@@ -23,8 +23,8 @@
 		</picker>
 		<picker mode="date" start="{{limitStartDate}}" data-event-opts="{{[['change',[['chooseDateOrTime',['$event','date']]]]]}}"
 		 bindchange="__e">
-			<view class="disflex jsbet align-cen _div"><label class="fbold marks pr15" for="date">预约日期</label>
-				<view class="disflex align-cen _div"><input class="pha8 textr h49 pr15" placeholder-class="place-holder" type="text"
+			<view class="disflex jsbet align-cen _div"><label class="marks fs14 pr9" for="date">预约日期</label>
+				<view class="disflex w75p align-cen _div"><input class="pha8 textl  fs14 h49 pr100" placeholder-class="place-holder" type="text"
 					 id="date" disabled placeholder="请选择您的日期" data-event-opts="{{[['input',[['__set_model',['$0','date','$event',[]],['orderForm']]]]]}}"
 					 value="{{orderForm.date}}" bindinput="__e" />
 					<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
@@ -34,19 +34,19 @@
 		</picker>
 		<picker mode="time" start="{{limitTime}}" data-event-opts="{{[['change',[['chooseDateOrTime',['$event','startTime']]]]]}}"
 		 bindchange="__e">
-			<view class="disflex jsbet align-cen _div"><label class="fbold marks pr15" for="startTime">预约开始时间</label>
-				<view class="disflex align-cen _div"><input class="pha8 textr h49 pr15" placeholder-class="place-holder" type="text"
+			<view class="disflex jsbet align-cen _div"><label class="marks fs14 pr9" for="startTime">开始时间</label>
+				<view class="disflex w75p align-cen _div"><input class="pha8 textl  fs14 h49 pr100" placeholder-class="place-holder" type="text"
 					 id="startTime" disabled placeholder="请选择您的开始时间" data-event-opts="{{[['input',[['__set_model',['$0','startTime','$event',[]],['orderForm']]]]]}}"
 					 value="{{orderForm.startTime}}" bindinput="__e" />
 					<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
 					 alt></image>
-				</view>
+				</view> 
 			</view>
 		</picker>
 		<picker mode="time" start="{{limitStartTime}}" data-event-opts="{{[['change',[['chooseDateOrTime',['$event','endTime']]]]]}}"
 		 bindchange="__e">
-			<view class="disflex jsbet align-cen _div"><label class="fbold marks pr15" for="endTime">预约结束时间</label>
-				<view class="disflex align-cen _div"><input class="pha8 textr h49 pr15" placeholder-class="place-holder" type="text"
+			<view class="disflex jsbet align-cen _div"><label class="marks fs14 pr9" for="endTime">结束时间</label>
+				<view class="disflex w75p align-cen _div"><input class="pha8 textl  fs14 h49 pr100" placeholder-class="place-holder" type="text"
 					 id="endTime" disabled placeholder="请选择您的结束时间" data-event-opts="{{[['input',[['__set_model',['$0','endTime','$event',[]],['orderForm']]]]]}}"
 					 value="{{orderForm.endTime}}" bindinput="__e" />
 					<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
@@ -55,11 +55,11 @@
 			</view>
 		</picker>
 	</view>
-	<view class="mt10 bgfff pl15 pr15 _div">
-		<c-textarea vue-id="24299dfc-2" title="备注" placeholder="请输入您的备注" value="{{orderForm.remark}}" data-event-opts="{{[['^updateValue',[['updateValue']]],['^input',[['__set_model',['$0','remark','$event',[]],['orderForm']]]]]}}"
+	<view class="mt10 bgfff ml10 mr10 pl10 pr10 _div">
+		<c-textarea vue-id="24299dfc-2" title="备注" placeholder="   选填, 可简述预约说明, 谢谢" value="{{orderForm.remark}}" data-event-opts="{{[['^updateValue',[['updateValue']]],['^input',[['__set_model',['$0','remark','$event',[]],['orderForm']]]]]}}"
 		 bind:updateValue="__e" bind:input="__e" bind:__l="__l"></c-textarea>
 	</view>
-	<view class="h60 _div"></view>
+	<view class="h70 _div"></view>
 	<bottom-button-small vue-id="24299dfc-3" text="立即预约" data-event-opts="{{[['^btn_tap',[['submit']]]]}}" bind:btn_tap="__e"
 	 bind:__l="__l"></bottom-button-small>
 </view>

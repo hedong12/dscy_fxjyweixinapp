@@ -7,17 +7,20 @@ web-view {
 }
 
 .button {
-	font-size: 36rpx;
+	font-size: 26rpx;
 	color: #41AB9F;
 	background-color: #ACDED3;
 	border-radius: 50rpx;
 	text-align: center;
-	height: 60rpx;
-	line-height: 60rpx;
+	height: 64rpx;
+	line-height: 64rpx;
 	margin: 0 auto;
-	width: 92%;
-	margin-top: 140rpx;
+	width: 350rpx;
+	margin-top: 130rpx;
 	border-radius: 50rpx;
+	font-weight: 600;
+	-webkit-box-shadow: 0 1rpx 11rpx 0 rgba(4, 0, 1, .22);
+	box-shadow: 0 1rpx 11rpx 0 rgba(4, 0, 1, .22);
 }
 
 .card-constrole {

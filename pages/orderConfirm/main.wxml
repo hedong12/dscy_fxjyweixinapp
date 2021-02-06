@@ -14,7 +14,7 @@
 		 id="mark" type="text" placeholder="选填:填写内容已和卖家协商确认" data-event-opts="{{[['input',[['__set_model',['','remark','$event',[]]]]]]}}"
 		 value="{{remark}}" bindinput="__e" /></view>
 	<view class="disflex row-reverse fix_bottom pt5 pb5 lh39 bgfff _div"><label data-event-opts="{{[['tap',[['toPay',['$event']]]]]}}"
-		 class="bg_line_blue textc cfff fs18 fbold bradius20 w110 mr16 _span" bindtap="__e">提交订单</label>
+		 class="bg_line_blue textc clvse fs18 fbold bradius20 w110 mr16 _span" bindtap="__e">提交订单</label>
 		<view class="fs16 c38 pr26 _div"><label class="_span">实付:</label><label class="corange fbold _span">{{"￥"+total_money}}</label></view>
 	</view>
 </view>

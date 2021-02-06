@@ -283,6 +283,12 @@ button::after {
 	border-radius: 10rpx
 }
 
+
+.bradius7 {
+	border-radius: 14rpx
+}
+
+
 .bradius10 {
 	border-radius: 20rpx
 }
@@ -302,6 +308,11 @@ button::after {
 .bradius30 {
 	border-radius: 60rpx
 }
+
+.bradius25 {
+	border-radius: 50rpx
+}
+
 
 .bradius50p {
 	border-radius: 50%
@@ -423,6 +434,7 @@ button::after {
 .lh50 {
 	line-height: 100rpx
 }
+
 
 .lh60 {
 	line-height: 120rpx
@@ -701,6 +713,10 @@ button::after {
 	padding-right: 16rpx
 }
 
+.pr9 {
+	padding-right: 18rpx
+}
+
 .pr10 {
 	padding-right: 20rpx
 }
@@ -779,6 +795,15 @@ button::after {
 
 .pr42 {
 	padding-right: 84rpx
+}
+
+
+.pr50 {
+	padding-right: 100rpx
+}
+
+.pr100 {
+	padding-right: 200rpx
 }
 
 .pb3 {
@@ -924,6 +949,11 @@ button::after {
 .mt20 {
 	margin-top: 40rpx
 }
+
+.mt25 {
+	margin-top: 50rpx
+}
+
 
 .mt13 {
 	margin-top: 26rpx
@@ -1326,6 +1356,10 @@ button::after {
 	width: 100rpx
 }
 
+.w56 {
+	width: 112rpx
+}
+
 .w57 {
 	width: 114rpx
 }
@@ -1338,6 +1372,8 @@ button::after {
 	width: 120rpx
 }
 
+
+
 .w65 {
 	width: 130rpx
 }
@@ -1345,6 +1381,15 @@ button::after {
 .w70 {
 	width: 140rpx
 }
+
+.w70p {
+	width: 70%
+}
+
+.w77p {
+	width: 77%
+}
+
 
 .w90 {
 	width: 180rpx
@@ -1450,8 +1495,20 @@ button::after {
 	width: 33.3%
 }
 
+.w39p {
+	width: 39%
+}
+
 .w50p {
 	width: 50%
+}
+
+.w60p {
+	width: 60%
+}
+
+.w75p {
+	width: 74%
 }
 
 .w100p {
@@ -1497,6 +1554,11 @@ button::after {
 .h20 {
 	height: 40rpx
 }
+
+.h21 {
+	height: 42rpx
+}
+
 
 .h22 {
 	height: 44rpx
@@ -1555,6 +1617,11 @@ button::after {
 	height: 100rpx
 }
 
+.h55 {
+	height: 110rpx
+}
+
+
 .h59 {
 	height: 118rpx
 }
@@ -1569,6 +1636,10 @@ button::after {
 
 .h65 {
 	height: 130rpx
+}
+
+.h68 {
+	height: 136rpx
 }
 
 .h70 {

@@ -139,7 +139,7 @@
 .leftaa{
 	    width: 48%;
 	    float: left;
-		margin-top: 60rpx;
+		margin-top: 36rpx;
 	    text-align: center;
 }
 
@@ -147,7 +147,7 @@
 	    width: 48%;
 	    float: left;
 	    text-align: center;
-		margin-top: 60rpx;
+		margin-top: 36rpx;
 }
 .fontjiacu{
 	    font-size: 28rpx;
@@ -160,8 +160,8 @@
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
-    height: 100rpx;
-	margin-top: 43rpx;
+    height: 65rpx;
+	margin-top: 36rpx;
 }
 
 
@@ -420,15 +420,17 @@ button.textc {
 
 .toCRMBtn {
 	margin: 0 auto;
-	margin-top: 80rpx;
-	margin-bottom: 88rpx;
+	margin-top: 70rpx;
+	margin-bottom: 78rpx;
 	height: 64rpx;
 	line-height: 64rpx;
 	background: #41AB9F;
-	border-radius: 25rpx;
+	border-radius: 40rpx;
 	color: #fff;
-	width: 420rpx;
-	font-size: 34rpx;
+	width: 340rpx;
+	font-size: 26rpx;
+	-webkit-box-shadow: 0 1rpx 11rpx 0 rgba(4, 0, 1, .22);
+	box-shadow: 0 1rpx 11rpx 0 rgba(4, 0, 1, .22);
 	font-weight: 400
 }
 

@@ -1,1 +1,6 @@
-<view class="lh49 fix_bottom _div"><view data-event-opts="{{[['tap',[['btn_tap',['$0'],['url']]]]]}}" class="fs18 textc lh49  bg_line_blue cfff _p" bindtap="__e">{{text}}</view><login-intercept class="login-intercept" bind:loginSuccess="__e" vue-id="29520803-1" data-event-opts="{{[['^loginSuccess',[['loginInterceptSuccess']]]]}}" bind:__l="__l"></login-intercept></view>
+<view class="lh43 _div">
+	<view data-event-opts="{{[['tap',[['btn_tap',['$0'],['url']]]]]}}" class="fs18 textc lh30 ml10 mr10 bradius25 mb15  _p"  style="background-color: #ACDED3;color: #43ABA0;"
+	 bindtap="__e">{{text}}</view>
+	<login-intercept class="login-intercept" bind:loginSuccess="__e" vue-id="29520803-1" data-event-opts="{{[['^loginSuccess',[['loginInterceptSuccess']]]]}}"
+	 bind:__l="__l"></login-intercept>
+</view>

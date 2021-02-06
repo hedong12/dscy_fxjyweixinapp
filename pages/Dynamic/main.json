@@ -2,7 +2,7 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "dynamic-item": "/components/dynamicItem",
-    "no-data": "/components/noData",
+    "no-data": "/components/noDataYuYue",
     "self-swiper": "/components/swiper",
     "nav-bar-by-user": "/components/NavBarByUser",
     "float-buttons": "/components/FloatButtons",

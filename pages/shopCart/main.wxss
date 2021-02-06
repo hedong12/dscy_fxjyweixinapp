@@ -12,3 +12,6 @@
 .cart-setting {
   background: var(--theme-light-green);
 }
+.cblack{
+	color: black;
+}

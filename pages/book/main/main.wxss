@@ -39,40 +39,41 @@ page,
 .search-type-active::after {
 	content: "";
 	display: inline-block;
-	position: absolute;
+	position: absolute; 
 	height: 6rpx;
-	width: calc(100% - 28rpx);
+	width: calc(100% - 0rpx);
 	background-color: #3BA89C;
-	left: 14rpx;
+	left: 0rpx;
 	bottom: 0
 }
 
 .item-recordid-text {
-	    background-color: #3BA89C;
-	    border-radius: 24rpx;
-	    color: #fff;
-	    height: 47rpx;
-	    text-align: center;
-	    line-height: 47rpx;
-	    width: 122rpx;
-	    font-size: 24rpx;
-	    position: absolute;
-	    top: 75rpx;
-	    left: calc(20% - 74rpx);
+	background-color: #3BA89C;
+	border-radius: 24rpx;
+	color: #fff;
+	height: 47rpx;
+	text-align: center;
+	line-height: 47rpx;
+	width: 122rpx;
+	font-size: 24rpx;
+	position: absolute;
+	top: 170rpx;
+	left: calc(50% - 74rpx);
 }
 
 .item-recordid {
-	width: 100%;
-	height: 100%;
+	width: 308rpx;
+	height: 308rpx;
 	background-image: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/user-book-suo2.png);
 	background-repeat: no-repeat;
-	background-position-x: 115rpx;
-	background-position-y: 17rpx;
+	background-position-x: 125rpx;
+	background-position-y: 67rpx;
 	background-size: 40rpx 59rpx;
+	border-radius: 25rpx;
 	background-color: rgba(0, 0, 0, .5);
 	z-index: 2;
 	top: 0;
-	left: 0;
+	left: 18rpx;
 	position: absolute;
 }
 
@@ -151,20 +152,23 @@ page,
 .item {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 100%;
-	margin: 0 4.5rpx;
+	width: 48%;
+	margin: 0rpx 14rpx 20rpx 0;
 	position: relative;
-	height: 158rpx;
+	height: 398rpx;
+	text-align: center;
 	display: inline-block;
 	margin-top: 8rpx;
-	background: #fff
+	background: #fff;
+	float: left;
 }
 
 .item ._img {
-	float: left;
-	margin-right: 20rpx;
-	width: 258rpx;
-	height: 138rpx
+	width: 308rpx;
+	border-radius: 25rpx;
+	-webkit-box-shadow: 0 6rpx 10rpx 6rpx rgba(10, 0, 1, .17);
+	box-shadow: 0 10rpx 6rpx 6rpx rgba(10, 0, 1, .17);
+	height: 308rpx
 }
 
 .item-title {
@@ -173,11 +177,13 @@ page,
 	height: 43rpx;
 	line-height: 43rpx;
 	padding-left: 21rpx;
-	font-size: 28rpx;
+	font-size: 22rpx;
 	color: black;
 	border-top-right-radius: 200rpx;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box
+	box-sizing: border-box;
+	text-align: left;
+	padding-top: 10rpx;
 }
 
 .header {
@@ -205,13 +211,13 @@ page,
 	line-height: 39rpx; 
 	padding-left: 28rpx;
 	padding-right: 28rpx;
-	color: #3BA89C;
+	color: black;
 	font-size: 28rpx;
 	margin: 0 7rpx
 }
 
 .type1 {
-	margin: 0 21rpx
+	margin: 22rpx 21rpx 0
 }
 
 /* .type1-item:nth-child(1) {
@@ -242,12 +248,14 @@ page,
 	display: inline-block;
 	font-size: 30rpx;
 	color: black;
-	border-radius: 32rpx;
+	border-radius: 10rpx;
 	text-align: center;
 	height: 64rpx;
+	background-color: #F2F2F2;
 	line-height: 64rpx
 }
 
 .activenav{
 	color: #0D9784;
+	background-color: #ACDED3;
 }

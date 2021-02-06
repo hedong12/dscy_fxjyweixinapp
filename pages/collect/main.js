@@ -128,7 +128,7 @@
 				}(),
 				mounted: function() {
 					wx.setNavigationBarTitle({
-						title: "收藏"
+						title: "我的收藏"
 					}), this.prods = [], this.page = 1, this.inits()
 				},
 				methods: {

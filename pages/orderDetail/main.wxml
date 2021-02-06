@@ -33,7 +33,7 @@
 	
 	
 	<block wx:if="{{orderState!=1}}">
-		<view class="disflex jsbet ml16 mr17 c38 lh44 fkbgfff _div"><label class="fs16 _span">实付款</label><label class="fs16 corange fbold _span">{{"￥"+cart_lists[0].payPrice/100}}</label></view>
+		<view class="disflex jsbet ml16 mr17 c38 lh44 fkbgfff _div"><label class="fs16 ml16 _span">实付款</label><label class="fs16 corange mr17 fbold _span">{{"￥"+cart_lists[0].payPrice/100}}</label></view>
 	</block>
 	<view class="bgwidth92 lh44 fs16 c38 mb15 mt10 _div">
 		<view class="before_line fs18 pl21 _p">订单信息</view>

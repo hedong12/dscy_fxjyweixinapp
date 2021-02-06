@@ -1,5 +1,5 @@
 {
-  "navigationBarBackgroundColor": "#fff",
+  "navigationBarBackgroundColor": "#ACDED3",
   "navigationBarTitleText": "测评详情",
   "usingComponents": {
     "van-radio": "/static/vant/radio/index",

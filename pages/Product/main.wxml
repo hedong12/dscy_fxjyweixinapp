@@ -195,5 +195,5 @@
   </block>
 
   <get-user-phone vue-id="06c73858-9" bind:__l="__l"></get-user-phone>
-  <rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
+  <rwj-tabbar pageActive="1"></rwj-tabbar>
 </view>

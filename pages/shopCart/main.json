@@ -4,7 +4,7 @@
   "navigationBarTextStyle": "black",
   "navigationBarBackgroundColor": "#ACDED3",
   "usingComponents": {
-    "order-item": "/components/orderItem",
+    "order-item": "/components/cartOrderItem",
     "no-data": "/components/noDataShopCart"
   }
 }

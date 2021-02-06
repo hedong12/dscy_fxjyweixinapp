@@ -130,36 +130,25 @@
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/index/main",
-        "iconPath": "static/tabs/computer.png",
-        "selectedIconPath": "static/tabs/computer_select.png"
+        "pagePath": "pages/index/main"
       },
       {
         "text": "教育生活圈",
-        "pagePath": "pages/Product/main",
-        "iconPath": "static/tabs/appointment.png",
-        "selectedIconPath": "static/tabs/appointment_select.png"
+        "pagePath": "pages/Product/main"
       },
       {
         "text": "短视频",
         "pagePath": "pages/video/main",
-        "iconPath": "static/tabs/prod_gray.png",
-        "navigationStyle": "custom",
-        "selectedIconPath": "static/tabs/prod_select.png"
+        "navigationStyle": "custom"
 		 
       },
       {
         "text": "新鲜事",
-        "pagePath": "pages/Dynamic/main",
-        "iconPath": "static/tabs/browser.png",
-        "navigationStyle": "custom",
-        "selectedIconPath": "static/tabs/browser_select.png"
+        "pagePath": "pages/Dynamic/main"
       }, 
       {
         "text": "我的",
-        "pagePath": "pages/usercenter/main",
-        "iconPath": "static/tabs/user.png",
-        "selectedIconPath": "static/tabs/user-active.png"  
+        "pagePath": "pages/usercenter/main"
       }
     ],
     "position": "bottom"

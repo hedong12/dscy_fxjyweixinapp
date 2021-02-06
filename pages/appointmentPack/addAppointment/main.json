@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "预约信息",
   "usingComponents": {
-    "product-card": "/components/ProductCard",
+    "product-card": "/components/AddProductCard",
     "bottom-button-small": "/components/bottom_button_small",
     "c-textarea": "/components/CTextarea"
   }

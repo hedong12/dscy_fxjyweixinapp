@@ -1,1 +1,11 @@
-.textarea.data-v-0bf892df{width:100%;min-height:300rpx;color:#333}.empty.data-v-0bf892df{color:#a8a8a8}
+.textarea.data-v-0bf892df {
+	width: 100%;
+	min-height: 300rpx;
+	color: #333
+}
+
+.empty.data-v-0bf892df {
+	background-color: #F7F7F7;
+	border-radius: 10rpx;
+	color: #a8a8a8
+}

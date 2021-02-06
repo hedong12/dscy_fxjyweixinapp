@@ -1,1 +1,63 @@
-<view class="_div"><view class="bg_line_blue pl16 pr15 cfff disflex jsbet h99 borderbox pt30 _div"><view class="_div"><block wx:if="{{orderState}}"><view class="fs18 fbold _p">{{textInfo[orderState].title}}</view></block><block wx:if="{{orderInfo.applyRemark}}"><view class="fs12 pt7 _p">{{orderInfo.applyRemark}}</view></block></view><image class="w57 h79 _img" style="flex:0 0 114rpx;" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/orderDetail.png" alt></image></view><view class="bgfff mt10 _div"><view data-event-opts="{{[['tap',[['toAppointMentPage',['$event']]]]]}}" class="company disflex jsbet pl15 lh44 posre pr21 _div" bindtap="__e"><view class="disflex align-cen h44 _div"><image class="w16 h16 mr8 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/company_name.png" alt></image><label class="fs14 pr11 _span">{{orderInfo.companyName}}</label><image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png" alt></image></view><block wx:if="{{orderInfo.state==1}}"><label class="corange fs14 _span">等待商户接单</label></block></view><product-card vue-id="24d5f24d-1" title="{{orderInfo.productsName}}" desc="{{orderInfo.describe}}" price="{{orderInfo.price}}" typeName="{{orderInfo.productsTypeName}}" imgUrl="{{orderInfo.photo}}" outStyle="margin-top:0" bind:__l="__l"></product-card></view><view class="bgfff lh44 fs16 c38 mb15 mt10 _div"><view class="before_line fs18 pl21 fbold _p">订单信息</view><view class="disflex jsbet pl15 pr16 _div"><label class="_span">预约人</label><label class="ca8 _span">{{orderInfo.name}}</label></view><view class="disflex jsbet pl15 pr16 _div"><label class="_span">联系电话</label><label class="ca8 _span">{{orderInfo.phone}}</label></view><view class="disflex jsbet pl15 pr16 _div"><label class="_span">下单时间</label><label class="ca8 _span">{{orderInfo.createTime}}</label></view><view class="disflex jsbet pl15 pr16 _div"><label class="_span">预约时间</label><label class="ca8 _span">{{orderInfo.appointmentTime}}</label></view><block wx:if="{{orderInfo.state==3||orderInfo.state==4}}"><view class="disflex jsbet pl15 pr16 _div"><label class="_span">{{orderInfo.state==3?'完成时间':'取消时间'}}</label><label class="ca8 _span">{{orderInfo.state==3?orderInfo.completionTime:orderInfo.cancellationTime}}</label></view></block><view class="disflex jsbet pl15 pr16 _div"><label class="_span">服务类型</label><label class="ca8 _span">{{orderInfo.typeName}}</label></view><block wx:if="{{orderInfo.remark}}"><view class="pl15 pr16  _div"><view class="_p">备注</view><view class="fs14 ca8 lh18 pb10 _p">{{''+orderInfo.remark+''}}</view></view></block></view><block wx:if="{{orderInfo.state==1||orderInfo.state==2}}"><view class="disflex row-reverse pt9 pb11 lh30 bgfff fs14 pr6 footer-btns bte8 _div"><block wx:if="{{orderInfo.state==2}}"><label data-event-opts="{{[['tap',[['showTips',['$0','use'],['orderInfo']]]]]}}" class="disinblock bgblue textc cfff bradius20 w90 mr10 _span" bindtap="__e">确认使用</label></block><label data-event-opts="{{[['tap',[['showTips',['$0','cancel'],['orderInfo']]]]]}}" class="disinblock textc be8 ca8 bradius20 w90 mr10 _span" bindtap="__e">取消预约</label></view></block><view hidden="{{!(isShowCancelOrderBox)}}" class="_div"><dialog-box vue-id="24d5f24d-2" dialog_title="提示" dialog_ph="{{tipsTitle}}" type="{{dialogType}}" left="取消" right="确定" data-event-opts="{{[['^btn_tap',[['dialogTap']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box></view></view>
+<view class="_div">
+	<view class="bg_line_blue pl16 pr15 cfff disflex jsbet h93 borderbox pt20 _div">
+		
+			<block wx:if="{{orderInfo.state==1}}"><view class="jiedan _span">等待商户接单</view></block>
+			<block wx:if="{{orderInfo.applyRemark}}">
+				<view class="fs12 pt7 _p">{{orderInfo.applyRemark}}</view>
+			</block>
+		
+	<!--	<image class="w57 h79 _img" style="flex:0 0 114rpx;" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/orderDetail.png"
+		 alt></image> -->
+	</view>
+	<view class="bgfff mr10 ml10 mt10 _div">
+	<!--	<view data-event-opts="{{[['tap',[['toAppointMentPage',['$event']]]]]}}" class="company disflex jsbet pl15 lh44 posre pr21 _div"
+		 bindtap="__e">
+			<view class="disflex align-cen h44 _div">
+				<image class="w16 h16 mr8 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/company_name.png"
+				 alt></image><label class="fs14 pr11 _span">{{orderInfo.companyName}}</label>
+				<image class="w10 h10 _img" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/right.png"
+				 alt></image>
+			</view>
+			<block wx:if="{{orderInfo.state==1}}"><label class="corange fs14 _span">等待商户接单</label></block>
+		</view> -->
+		<product-card vue-id="24d5f24d-1" title="{{orderInfo.productsName}}" desc="{{orderInfo.describe}}" price="{{orderInfo.price}}"
+		 typeName="{{orderInfo.productsTypeName}}" imgUrl="{{orderInfo.photo}}" outStyle="margin-top:0" bind:__l="__l"></product-card>
+	</view>
+	<view class="bgfff lh44 fs14 c38 mb15 mr10 ml10 mt10 _div">
+		<view class="before_line fs14 pl15 _p">预约信息:</view>
+		<view class="disflex jsbet pl15 pr16 _div"><label class="_span">预约姓名:</label><label class="ca8 w77p _span">{{orderInfo.name}}</label></view>
+		<view class="disflex jsbet pl15 pr16 _div"><label class="_span">联系电话:</label><label class="ca8 w77p _span"></label></view>
+		<view class="disflex jsbet pl15 pr16 _div"><label class="_span">服务类型:</label><label class="ca8 w77p _span">{{orderInfo.typeName}}</label></view>
+		<!-- <view class="disflex jsbet pl15 pr16 _div"><label class="_span">下单时间</label><label class="ca8 w77p _span">{{orderInfo.createTime}}</label></view> -->
+		<view class="disflex jsbet pl15 pr16 _div"><label class="_span">预约日期:</label><label class="ca8 w77p _span">{{orderInfo.appointmentTime}}</label></view>
+		<block wx:if="{{orderInfo.state==3||orderInfo.state==4}}">
+			<view class="disflex jsbet pl15 pr16 _div"><label class="_span">{{orderInfo.state==3?'完成时间':'取消时间'}}</label><label
+				 class="ca8 w77p _span">{{orderInfo.state==3?orderInfo.completionTime:orderInfo.cancellationTime}}</label></view>
+		</block>
+		<view class="pl15 pr16 _div">
+			<view class="_p">预约备注</view>
+			<view class="fs14 ca8 lh18 pb10 _p">{{orderInfo.remark}}</view>
+		</view>
+	
+	<!--	<block wx:if="{{orderInfo.remark}}">
+			<view class="pl15 pr16  _div">
+				<view class="_p">预约备注</view>
+				<view class="fs14 ca8 lh18 pb10 _p">{{''+orderInfo.remark+''}}</view>
+			</view>
+		</block>  -->
+		
+	</view>
+<!--	<block wx:if="{{orderInfo.state==1||orderInfo.state==2}}">
+		<view class="disflex row-reverse pt9 pb11 lh30 bgfff fs14 pr6 footer-btns bte8 _div">
+			<block wx:if="{{orderInfo.state==2}}"><label data-event-opts="{{[['tap',[['showTips',['$0','use'],['orderInfo']]]]]}}"
+				 class="disinblock bgblue textc cfff bradius20 w90 mr10 _span" bindtap="__e">确认使用</label></block><label
+			 data-event-opts="{{[['tap',[['showTips',['$0','cancel'],['orderInfo']]]]]}}" class="disinblock textc be8 ca8 bradius20 w90 mr10 _span"
+			 bindtap="__e">取消预约</label>
+		</view>
+	</block>
+	<view hidden="{{!(isShowCancelOrderBox)}}" class="_div">
+		<dialog-box vue-id="24d5f24d-2" dialog_title="提示" dialog_ph="{{tipsTitle}}" type="{{dialogType}}" left="取消" right="确定"
+		 data-event-opts="{{[['^btn_tap',[['dialogTap']]]]}}" bind:btn_tap="__e" bind:__l="__l"></dialog-box>
+	</view> -->
+	
+</view>

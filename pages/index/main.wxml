@@ -263,16 +263,18 @@
 					<view style="width:100%"><image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image></view>
 					<view style="width:100%"><image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image></view>
 				</button>
-			</block>
+			</block>  
 			<block wx:else>
 				<button class="no-button">
-					<view style="width:100%"><image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png"></image></view>
-					<view style="width:100%"><image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif"></image></view>
+					<view style="width:100%"><image class="isEvaluationimage1" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_cp.png" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+	 				 catchtap="__e"></image></view>
+					<view style="width:100%"><image class="isEvaluationimage2" src="https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/login/dscy_index_anniu.gif" data-event-opts="{{[['tap',[['goTo',['newEvaluation/home']]]]]}}"
+	 				 catchtap="__e"></image></view>
 				</button>
 			</block> 
 		</view>  
 	</van-overlay> 
 	
 	 
-	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
+	<rwj-tabbar pageActive="0"></rwj-tabbar>
 </scroll-view>

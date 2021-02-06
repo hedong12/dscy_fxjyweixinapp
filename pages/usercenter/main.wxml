@@ -71,7 +71,7 @@
 		</view>
 	
 	
-	<view class="bgfff h93 fs12 c78 mt10 mb10 _div">
+	<view class="bgfff h68 fs12 c78 mt10 mb10 _div">
 		
 		<view class="leftaa">
 			<view class="item-ctr mlctr">
@@ -413,5 +413,5 @@
 		<view data-event-opts="{{[['tap',[['toCrmAPP',['$event']]]]]}}"  class="toCRMBtn textc _div" bindtap="__e">前往管理系统</view>
 	</block>
 	<view class="bottom-text"></view>
-	<rwj-tabbar page-active="{{pageNum}}"></rwj-tabbar>
+	<rwj-tabbar pageActive="4"></rwj-tabbar>
 </view>
