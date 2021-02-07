@@ -1,1 +1,16 @@
-.seckill-count-down.data-v-040586fa{height:40rpx}.seckill-count-title.data-v-040586fa{width:114rpx;height:40rpx;background-color:#fd634e;border-radius:10rpx}.count-down.data-v-040586fa{height:60rpx}
+.seckill-count-down.data-v-040586fa {
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.seckill-count-title.data-v-040586fa {
+  width: 114rpx;
+  height: 40rpx;
+  background-color: #fd634e;
+  border-radius: 10rpx
+}
+
+.count-down.data-v-040586fa {
+  height: 60rpx
+}

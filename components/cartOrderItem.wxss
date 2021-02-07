@@ -31,3 +31,47 @@
 .right_span{
   margin-right:10px ;
 }
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20rpx 0;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkBoxs {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkBox {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: relative;
+	left: -9999px
+}
+
+.checkBoxs ._span {
+	width: 40rpx;
+	height: 40rpx;
+	background: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_noCheck.png) no-repeat;
+	background-size: 100%;
+}
+
+.checkBoxs.active ._span {
+	background: url(https://yyker-one-stand.oss-cn-beijing.aliyuncs.com/yimai_photos/user/dscy_check.png) no-repeat;
+	background-size: 100%
+}

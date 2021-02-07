@@ -25,22 +25,6 @@
     <view
       data-event-opts="{{[['tap',[['order_tap',[isOrder?orderData.ordersId:prod_item.$orig.goodsId,'$0'],[[['orderData.shopcartModelList','goodsId',prod_item.$orig.goodsId,'cardId']]]]]]]}}"
       class="{{['disflex posre flex-c-c order-content _div',iscart?'bbF2F3F4':'']}}" bindtap="__e">
-      <block wx:if="{{!iscart&&prod_item.$orig.isKill&&order_type==1}}">
-        <seckill-cuntdown class=" pt15 pl15" vue-id="{{'78de2120-1-'+k}}" diffTime="{{prod_item.m0}}" bind:__l="__l">
-        </seckill-cuntdown>
-      </block>
-      <block wx:else>
-        <block wx:if="{{iscart&&prod_item.$orig.isKill&&order_type==1}}">
-          <seckill-cuntdown class=" pt15 pl15" vue-id="{{'78de2120-2-'+k}}" diffTime="{{prod_item.m1}}" bind:__l="__l">
-          </seckill-cuntdown>
-        </block>
-        <block wx:else>
-          <block wx:if="{{order_type==null&&prod_item.$orig.isKill&&order_type==1}}">
-            <seckill-cuntdown class=" pt15 pl15" vue-id="{{'78de2120-3-'+k}}" diffTime="{{prod_item.m2}}"
-              bind:__l="__l"></seckill-cuntdown>
-          </block>
-        </block>
-      </block>
       <!-- <van-swipe-cell
         id="{{prod_item.$orig.shopCartId}}"
         right-width="{{ 70 }}"
@@ -48,20 +32,38 @@
         data-event-opts="{{[['^close',[['delOrder',['$event',prod_item.$orig.shopCartId]]]]]}}"
         bind:close="__e"
       > -->
-        <view class="{{['_div pb21 bgfff bradius10 mt10',iscart?'pl45':'pl15']}}">
+      <view class="cart-item">
+        <block wx:if="{{!iscart&&prod_item.$orig.isKill&&order_type==1}}">
+          <seckill-cuntdown vue-id="{{'78de2120-1-'+k}}" diffTime="{{prod_item.m0}}" bind:__l="__l">
+          </seckill-cuntdown>
+        </block>
+        <block wx:else>
+          <block wx:if="{{iscart&&prod_item.$orig.isKill&&order_type==1}}">
+            <seckill-cuntdown vue-id="{{'78de2120-2-'+k}}" diffTime="{{prod_item.m1}}" bind:__l="__l">
+            </seckill-cuntdown>
+          </block>
+          <block wx:else>
+            <block wx:if="{{order_type==null&&prod_item.$orig.isKill&&order_type==1}}">
+              <seckill-cuntdown vue-id="{{'78de2120-3-'+k}}" diffTime="{{prod_item.m2}}" bind:__l="__l">
+              </seckill-cuntdown>
+            </block>
+          </block>
+        </block>
+        <view class="item">
           <block wx:if="{{iscart}}">
-            <label data-event-opts="{{[['tap',[['choose_order',['prod',k]]]]]}}" class="{{['checkBox',label_prod[k]?'active':'']}}" catchtap="__e">
+            <label data-event-opts="{{[['tap',[['choose_order',['prod',k]]]]]}}"
+              class="{{['checkBoxs',label_prod[k]?'active':'']}}" catchtap="__e">
               <input class="checkBox" type="checkbox" />
               <label class="_span"></label>
             </label>
           </block>
-          <view class="disflex  w100p  pr16 _div">
+          <view class="disflex w100p _div">
             <image class="w70 h70 mr11 bradius5 _img" src="{{prod_item.$orig.photoUrl}}" alt mode="aspectFill"></image>
             <view class="flex1 _div">
               <view class="over_1 fs14 c38 w200 _p">{{prod_item.$orig.goodsName||prod_item.$orig.name}}</view>
               <block wx:if="{{iscart}}">
-                <view class="disflex mt5 _div"><label
-                    class="pl7 pr8 lh20 fs12 ca8 mr8 bradius3 _span" style="background: #f5f5f5;color: #848484;">{{''+(prod_item.$orig.specName||'')+"；"+prod_item.$orig.specAttribute+''}}</label>
+                <view class="disflex mt5 _div"><label class="pl7 pr8 lh20 fs12 ca8 mr8 bradius3 _span"
+                    style="background: #f5f5f5;color: #848484;">{{''+(prod_item.$orig.specName||'')+"；"+prod_item.$orig.specAttribute+''}}</label>
                 </view>
               </block>
               <block wx:else>
@@ -69,7 +71,8 @@
                     class="pl7 pr8 lh20 fs12 ca8 mr8 _span">{{(prod_item.$orig.specName||'')+"；"}}<block
                       wx:if="{{prod_item.$orig.specAttribute}}">{{prod_item.$orig.specAttribute}}</block>
                     {{'x '+prod_item.$orig.num+''}}</label>
-                  <view class="_div"><label class="pl7 pr8 lh20 fs12 ca8 mr8 _span">{{"￥"+prod_item.$orig.price}}</label>
+                  <view class="_div"><label
+                      class="pl7 pr8 lh20 fs12 ca8 mr8 _span">{{"￥"+prod_item.$orig.price}}</label>
                   </view>
                 </view>
               </block>
@@ -98,7 +101,8 @@
             </view>
           </view>
         </view>
-        <!-- <view slot="right" class="van-swipe-cell__right">
+      </view>
+      <!-- <view slot="right" class="van-swipe-cell__right">
           <van-icon name="delete" color="#41AB9F" size="20px"/>
         </view>
       </van-swipe-cell> -->

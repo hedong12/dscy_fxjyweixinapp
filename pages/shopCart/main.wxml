@@ -1,7 +1,7 @@
 <view class="shopcart_bg w100p h100p posre _div">
   <view wx:if="{{cart_lists.length}}" class="disflex jsbet lh44 pl16 pr16 cblack fs16 _div cart-setting">
     <view class="disflex _div">共<view class="_b">{{cart_total}}</view>件宝贝</view><label
-      data-event-opts="{{[['tap',[['todel',['$event']]]]]}}" class="fs18 fbold _span"
+      data-event-opts="{{[['tap',[['todel',['$event']]]]]}}" class="fs16 fbold _span"
       bindtap="__e">{{isdel?'完成':'管理'}}</label>
   </view>
   <view class="pl15 pr15 pb50 _div">
